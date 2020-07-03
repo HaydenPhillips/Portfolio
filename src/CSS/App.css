@@ -1,0 +1,268 @@
+.landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff6bbc;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #b80065;
+}
+
+.roy {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #750041;
+}
+
+.zap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff008c;
+}
+
+.random {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffbde1;
+}
+
+.things {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #83566f;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff42aa;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #7c2a57;
+}
+
+.title1 {
+  color: #534129;
+}
+
+.icon_test {
+  color: #494919;
+}
+
+.grid_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 85%;
+}
+
+.grid_container .nav_ {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 40px;
+  position: fixed;
+  height: auto;
+  padding: 40px;
+  background-color: #ff6bbc;
+}
+
+.grid_container .nav_ .active {
+  border-bottom: 2px solid white;
+}
+
+.grid_container .one {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 100px 50px 200px;
+  background-color: #c885ff;
+}
+
+.grid_container .two {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 100px 50px 200px;
+  background-color: #89a9ff;
+}
+
+.page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  position: absolute;
+  top: 0px;
+  left: 15%;
+  width: 85%;
+  padding: 20px;
+  background-color: thistle;
+}
+
+.set_high {
+  margin-top: -65px;
+  width: 100%;
+}
+
+.set_high .container1 {
+  width: 100%;
+  height: auto;
+  background-color: #91b6ff;
+  z-index: 0;
+}
+
+.set_high .container1 .layer-one {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  width: 100%;
+  height: 200%;
+  background-image: url("../assets/mountains.jpg");
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
+.set_high .container1 .layer-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  color: red;
+}
+
+.set_high .container1 .layer-two .box-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+.set_high .container1 .layer-three {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
+  width: 100%;
+  height: 200%;
+  background-image: url("../assets/mountains-z3.png");
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.mountain_img {
+  width: auto;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=App.css.map */
