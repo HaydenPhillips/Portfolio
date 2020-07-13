@@ -1,67 +1,82 @@
-
-.landing {
+section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    width: 100%;
+    width: 85% !important;
+    margin-left: 15%;
+    padding: 20px;
+
+    h1 {
+        margin: 0;
+        font-size: 100pt;
+        font-weight: bolder;
+        letter-spacing: -0.08em;
+        color: white;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        text-shadow: 1px 1px 8px #757575;
+    }
+}
+
+.landing {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     height: 100vh;
     background-color: rgb(255, 107, 188);
 }
 .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     width: 100%;
     height: 100vh;
     background-color: rgb(184, 0, 101);
 }
 .roy {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    gap: 20px;
     width: 100%;
-    height: 100vh;
-    background-color: rgb(117, 0, 65);
+    background-color: rgb(255, 255, 255);
 }
 .zap {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 0, 140);
 }
 .random {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 189, 225);
 }
 .things {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     width: 100%;
     height: 100vh;
     background-color: rgb(131, 86, 111);
 }
 .about {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 66, 170);
 }
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     width: 100%;
     height: 100vh;
     background-color: rgb(124, 42, 87);
+}
+.some-album {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(185, 113, 153);
+}
+.album-name {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 69, 209);
+}
+.marlborough {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(143, 0, 79);
+}
+.tasman {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(226, 0, 124);
 }
 
 .title1 {
@@ -88,7 +103,7 @@
         height: auto;
         padding: 40px;
         background-color: rgb(255, 107, 188);
-    
+
         .active {
             border-bottom: 2px solid white;
         }
@@ -138,7 +153,7 @@
             width: 100%;
             height: 200%;
             // background-color: #5baa00;
-            background-image: url("../assets/mountains.jpg");
+            background-image: url("../../assets/images/mountains.jpg");
             background-size: cover;
             background-position: top left;
             background-attachment: fixed;
@@ -181,7 +196,7 @@
             height: 200%;
             // opacity: 0.5;
             // background-color: goldenrod;
-            background-image: url("../assets/mountains-z3.png");
+            background-image: url("../../assets/images/mountains-z3.png");
             background-size: cover;
             background-position: top left;
             background-attachment: fixed;

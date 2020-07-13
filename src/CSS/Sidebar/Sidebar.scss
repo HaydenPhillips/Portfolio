@@ -1,0 +1,92 @@
+.sidebar {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(179, 179, 179, 0.815);
+    border-right: 1px solid rgba(66, 66, 66, 0.719);
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 20px;
+        align-items: center;
+
+        .section-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+
+            .section-link {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                align-items: center;
+                gap: 10px;
+                font-size: large;
+                font-weight: bolder;
+                color: black;
+                opacity: 0.6;
+            }
+            .section-link-seen {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                align-items: center;
+                gap: 10px;
+                font-size: large;
+                font-weight: bolder;
+                color: rgb(255, 0, 0);
+                opacity: 1;
+            }
+
+            .section-line {
+                border-top: 2px dashed black;
+            }
+
+            .sub-section-link {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                gap: 10px;
+                align-items: center;
+                padding-left: 10px;
+                font-size: small;
+                font-weight: bold;
+                color: black;
+                opacity: 0.7;
+            }
+
+            .sub-section-line {
+                border-top: 1.5px dashed black;
+            }
+
+            .section-link:hover {
+                grid-template-columns: 2fr 4fr !important;
+            }
+            .sub-section-link:hover {
+                grid-template-columns: 2fr 4fr !important;
+            }
+        }
+    }
+}
+
+.active {
+    grid-template-columns: 2fr 4fr !important;
+    opacity: 1 !important;
+    .section-line {
+        border-top: 2px solid black !important;
+    }
+    .sub-section-line {
+        border-top: 1.5px solid black !important;
+    }
+}
+
+.waves-effect.waves-poo .waves-ripple {
+    background-color: rgba(116, 116, 116, 0.6);
+}
+
+// .side_dots {
+
+// }

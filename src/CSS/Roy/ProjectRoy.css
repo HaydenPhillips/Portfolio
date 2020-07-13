@@ -1,0 +1,151 @@
+.row_vh100 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+.video_clip {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(1fr, 720px);
+      grid-template-rows: minmax(1fr, 720px);
+  width: auto;
+  height: 100%;
+  background-color: black;
+}
+
+.video_clip_small {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-row-align: start;
+      align-self: start;
+  background-color: black;
+}
+
+.image {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  place-items: center;
+}
+
+.image img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.image_6 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  place-items: center;
+}
+
+.image_6 img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+
+.image_wide {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  place-items: center;
+  background-image: url("../../assets/images/project_roy/five_swingtag_wide.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.image_wide img {
+  display: inline-block;
+  width: auto !important;
+  height: 100% !important;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.image_high {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  place-items: center;
+}
+
+.image_high img {
+  display: inline-block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.image_high .care {
+  width: 82% !important;
+}
+
+.box {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+}
+
+.gcs1 {
+  grid-column: span 1;
+}
+
+.gcs2 {
+  grid-column: span 2;
+}
+
+.gcs3 {
+  grid-column: span 3;
+}
+
+.gcs4 {
+  grid-column: span 4;
+}
+
+.gcs5 {
+  grid-column: span 5;
+}
+
+.gcs6 {
+  grid-column: span 6;
+}
+
+.grs1 {
+  grid-row: span 1;
+}
+
+.grs2 {
+  grid-row: span 2;
+}
+
+.grs3 {
+  grid-row: span 3;
+}
+
+.grs4 {
+  grid-row: span 4;
+}
+
+.grs5 {
+  grid-row: span 5;
+}
+
+.grs6 {
+  grid-row: span 6;
+}
+/*# sourceMappingURL=ProjectRoy.css.map */
