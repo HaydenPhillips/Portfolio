@@ -1,9 +1,21 @@
 import React, { Component, Fragment } from 'react';
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 // import './CSS/Sidebar.css';
 
 class Sidebar extends Component {
 
+    // handleSetActive = (to) => {
+    //     console.log(to);
+    //     document.getElementById('project').className = 'section-link-seen';
+    // }
+    // handleSetInactive = (to) => {
+        // console.log(to);
+        // let id = this.getElementById();
+        // console.log(Link.activeClass.id);
+        // console.log(document.getElementById('landing'));
+        // console.log(className)
+        // this.className = 'section-link-seen';
+    // }
     render() {
         return (
             <Fragment>
@@ -12,89 +24,165 @@ class Sidebar extends Component {
                         <div className="section-list">
 
 
-                            <div className="section-item">
-                                <Link className="section-link" activeClass="active" to="landing" spy={true} smooth={true} duration={500}>
-                                    <div className="section-line" />
-                                    <div className="section-title">landing</div>
-                                </Link>
-                            </div>
+                            <Link
+                                id="landing_link"
+                                className="section-link"
+                                activeClass="active"
+                                to="landing"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                                // containerId= "ContainerElementID"
+                            >
+                                <hr className="section-line" />landing
+                            </Link>
 
-                            <div className="section-item">
-                                <Link className="section-link" activeClass="active" to="projects" spy={true} 
-                                smooth={true} duration={500} onSetActive={this.handleSetActive}>
-                                    <div className="section-line" />
-                                    <div className="section-title">projects</div>
-                                </Link>
+                            <Link
+                                id="projects_link"
+                                className="section-link"
+                                activeClass="active"
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                // onSetActive={this.handleSetActive}
+                                onSetInactive={this.handleSetInactive}
+                            >
 
-                                <div className="sub-section-item">
-                                    <Link className="sub-section-link" activeClass="active" to="roy" spy={true} smooth={true} duration={500}>
-                                        <div className="sub-section-line" />
-                                        <div className="sub-section-title">roy</div>
-                                    </Link>
-                                </div>
+                                <hr className="section-line" />
+                                projects
+                            </Link>
 
-                                <div className="sub-section-item">
-                                    <Link className="sub-section-link" activeClass="active" to="zap" spy={true} smooth={true} duration={500}>
-                                        <div className="sub-section-line" />
-                                        <div className="sub-section-title">zap</div>
-                                    </Link>
-                                </div>
+                            <Link
+                                id="roy_link"
+                                className="sub-section-link"
+                                activeClass="active"
+                                to="roy"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="sub-section-line" />roy
+                            </Link>
 
-                                <div className="sub-section-item">
-                                    <Link className="sub-section-link" activeClass="active" to="random" spy={true} smooth={true} duration={500}>
-                                        <div className="sub-section-line" />
-                                        <div className="sub-section-title">processing</div>
-                                    </Link>
-                                </div>
-                            </div>
+                            <Link
+                                id="zap_link"
+                                className="sub-section-link"
+                                activeClass="active"
+                                to="zap"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="sub-section-line" />zap
+                            </Link>
 
-                            <div className="section-item">
-                                <Link className="section-link" activeClass="active" to="things" spy={true} smooth={true} duration={500}>
-                                    <div className="section-line" />
-                                    <div className="section-title">things</div>
-                                </Link>
-                            </div>
+                            <Link
+                                id="random_link"
+                                className="sub-section-link"
+                                activeClass="active"
+                                to="random"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="sub-section-line" />processing
+                            </Link>
 
-                            <div className="section-item">
-                                <Link className="section-link" activeClass="active" to="about" spy={true} smooth={true} duration={500}>
-                                    <div className="section-line" />
-                                    <div className="section-title">about</div>
-                                </Link>
-                            </div>
+                            <Link
+                                id="things_link"
+                                className="section-link"
+                                activeClass="active"
+                                to="things"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="section-line" />things
+                            </Link>
 
-                            <div className="section-item">
-                                <Link className="section-link" activeClass="active" to="gallery" spy={true} smooth={true} duration={500}>
-                                    <div className="section-line" />
-                                    <div className="section-title">gallery</div>
-                                </Link>
+                            <Link
+                                id="about_link"
+                                className="section-link"
+                                activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="section-line" />about
+                            </Link>
 
-                                <div className="sub-section-item">
-                                    <Link className="sub-section-link" activeClass="active" to="album" spy={true} smooth={true} duration={500}>
-                                        <div className="sub-section-line" />
-                                        <div className="sub-section-title">some album</div>
-                                    </Link>
-                                </div>
+                            <Link
+                                id="gallery_link"
+                                className="section-link"
+                                activeClass="active"
+                                to="gallery"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="section-line" />gallery
+                            </Link>
 
-                                <div className="sub-section-item">
-                                    <Link className="sub-section-link" activeClass="active" to="album-name" spy={true} smooth={true} duration={500}>
-                                        <div className="sub-section-line" />
-                                        <div className="sub-section-title">album name</div>
-                                    </Link>
-                                </div>
+                            <Link
+                                id="some-album_link"
+                                className="sub-section-link"
+                                activeClass="active"
+                                to="some-album"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="sub-section-line" />some album
+                            </Link>
 
-                                <div className="sub-section-item">
-                                    <Link className="sub-section-link" activeClass="active" to="marlborough" spy={true} smooth={true} duration={500}>
-                                        <div className="sub-section-line" />
-                                        <div className="sub-section-title">marlborough</div>
-                                    </Link>
-                                </div>
-                                <div className="sub-section-item">
-                                    <Link className="sub-section-link" activeClass="active" to="tasman" spy={true} smooth={true} duration={500}>
-                                        <div className="sub-section-line" />
-                                        <div className="sub-section-title">tasman</div>
-                                    </Link>
-                                </div>
-                            </div>
+                            <Link
+                                id="album-name_link"
+                                className="sub-section-link"
+                                activeClass="active"
+                                to="album-name"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="sub-section-line" />album name
+                            </Link>
+
+                            <Link
+                                id="marlborough_link"
+                                className="sub-section-link"
+                                activeClass="active"
+                                to="marlborough"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="sub-section-line" />marlborough
+                            </Link>
+
+                            <Link
+                                id="tasman_link"
+                                className="sub-section-link"
+                                activeClass="active"
+                                to="tasman"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onSetInactive={this.handleSetInactive}
+                            >
+                                <hr className="sub-section-line" />tasman
+                            </Link>
 
                         </div>
                     </div>

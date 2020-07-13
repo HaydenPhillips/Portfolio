@@ -14,7 +14,7 @@
 // export default Contact;
 
 import React from 'react';
-import { makeStyles, rgbToHex } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
