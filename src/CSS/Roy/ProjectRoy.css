@@ -1,76 +1,232 @@
-.row_vh100 {
+@font-face {
+  font-family: BebasNeue;
+  src: url(../../assets/fonts/BebasNeue.otf);
+}
+
+@font-face {
+  font-family: Equal-Sans-Demo;
+  src: url(../../assets/fonts/EqualSans_Demo.ttf);
+}
+
+@font-face {
+  font-family: NeutraText-Book;
+  src: url(../../assets/fonts/NeutraText-Book.otf);
+}
+
+@font-face {
+  font-family: Coves-Light;
+  src: url(../../assets/fonts/Coves_Light.otf);
+}
+
+.grid-roy {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  width: 100%;
+  height: 200vh;
+}
+
+.grid-roy .gcs1 {
+  grid-column: span 1;
+}
+
+.grid-roy .gcs2 {
+  grid-column: span 2;
+}
+
+.grid-roy .gcs3 {
+  grid-column: span 3;
+}
+
+.grid-roy .gcs4 {
+  grid-column: span 4;
+}
+
+.grid-roy .gcs5 {
+  grid-column: span 5;
+}
+
+.grid-roy .gcs6 {
+  grid-column: span 6;
+}
+
+.grid-roy .grs1 {
+  grid-row: span 1;
+}
+
+.grid-roy .grs2 {
+  grid-row: span 2;
+}
+
+.grid-roy .grs3 {
+  grid-row: span 3;
+}
+
+.grid-roy .grs4 {
+  grid-row: span 4;
+}
+
+.grid-roy .grs5 {
+  grid-row: span 5;
+}
+
+.grid-roy .grs6 {
+  grid-row: span 6;
+}
+
+.grid-roy img {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+}
+
+.grid-roy .fullscreen_video {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
   width: 100%;
   height: 100vh;
 }
 
-.video_clip {
+.grid-roy .wrapper {
+  position: relative;
+}
+
+.grid-roy .player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-roy .overlay {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: minmax(1fr, 720px);
-      grid-template-rows: minmax(1fr, 720px);
-  width: auto;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+
+.grid-roy .logo-small {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+          filter: drop-shadow(5px 5px 5px black);
+}
+
+.grid-roy .content {
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+  color: white;
+  text-shadow: 4px 4px 15px black;
+  justify-items: center;
+}
+
+.grid-roy .content .title {
+  font-family: BebasNeue;
+  font-size: 60pt;
+  letter-spacing: 15px;
+}
+
+.grid-roy .content .description {
+  font-family: Coves-light;
+  font-size: x-large;
+  letter-spacing: 2px;
+}
+
+.grid-roy #roy-title {
+  color: black;
+  text-shadow: 1px 1px 8px #ffffff;
+}
+
+.grid-roy #roy-logo {
+  height: 100%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.grid-roy #placeholder {
   height: 100%;
   background-color: black;
 }
 
-.video_clip_small {
+.grid-roy .video_clip {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(1fr, 720px);
+      grid-template-rows: minmax(1fr, 720px);
+  height: 470px;
+  background-color: white;
+}
+
+.grid-roy .video_clip_small {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-row-align: start;
       align-self: start;
-  background-color: black;
+  background-color: white;
 }
 
-.image {
+.grid-roy .image {
   display: -ms-grid;
   display: grid;
   width: 100%;
+  min-width: 300px;
+  max-width: 500px;
   place-items: center;
 }
 
-.image img {
+.grid-roy .image img {
   display: inline-block;
   width: 100%;
   height: auto;
 }
 
-.image_6 {
+.grid-roy .image_6 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: minmax(100px, 300px);
+      grid-template-rows: minmax(100px, 300px);
   width: 100%;
   place-items: center;
+  overflow: hidden;
 }
 
-.image_6 img {
+.grid-roy .image_6 img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
-  height: 100%;
+  width: 100%;
 }
 
-.image_wide {
+.grid-roy .image_wide {
   display: -ms-grid;
   display: grid;
   width: 100%;
+  height: 300px;
   place-items: center;
   background-image: url("../../assets/images/project_roy/five_swingtag_wide.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.image_wide img {
+.grid-roy .image_wide img {
   display: inline-block;
   width: auto !important;
   height: 100% !important;
@@ -78,74 +234,27 @@
       justify-self: center;
 }
 
-.image_high {
+.grid-roy .image_high {
   display: -ms-grid;
   display: grid;
   width: 100%;
   place-items: center;
 }
 
-.image_high img {
+.grid-roy .image_high img {
   display: inline-block;
   width: 100% !important;
   height: auto !important;
 }
 
-.image_high .care {
+.grid-roy .image_high .care {
   width: 82% !important;
 }
 
-.box {
+.grid-roy .box {
   display: -ms-grid;
   display: grid;
   width: 100%;
-}
-
-.gcs1 {
-  grid-column: span 1;
-}
-
-.gcs2 {
-  grid-column: span 2;
-}
-
-.gcs3 {
-  grid-column: span 3;
-}
-
-.gcs4 {
-  grid-column: span 4;
-}
-
-.gcs5 {
-  grid-column: span 5;
-}
-
-.gcs6 {
-  grid-column: span 6;
-}
-
-.grs1 {
-  grid-row: span 1;
-}
-
-.grs2 {
-  grid-row: span 2;
-}
-
-.grs3 {
-  grid-row: span 3;
-}
-
-.grs4 {
-  grid-row: span 4;
-}
-
-.grs5 {
-  grid-row: span 5;
-}
-
-.grs6 {
-  grid-row: span 6;
+  background-color: #ff7ecd;
 }
 /*# sourceMappingURL=ProjectRoy.css.map */

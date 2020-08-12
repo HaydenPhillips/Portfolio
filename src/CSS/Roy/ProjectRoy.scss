@@ -1,136 +1,223 @@
-.row_vh100 {
+@font-face {
+    font-family: BebasNeue;
+    src: url(../../assets/fonts/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: Equal-Sans-Demo;
+    src: url(../../assets/fonts/EqualSans_Demo.ttf);
+}
+
+@font-face {
+    font-family: NeutraText-Book;
+    src: url(../../assets/fonts/NeutraText-Book.otf);
+}
+
+@font-face {
+    font-family: Coves-Light;
+    src: url(../../assets/fonts/Coves_Light.otf);
+}
+
+.grid-roy {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
     width: 100%;
-    height: 100vh;
-}
+    height: 200vh;
 
-.video_clip {
-    display: grid;
-    // grid-template-columns: 1fr;
-    grid-template-rows: minmax(1fr, 720px);
-    width: auto;
-    height: 100%;
-    background-color: black;
-}
-.video_clip_small {
-    display: grid;
-    grid-template-columns: 1fr;
-    // margin: auto;
-    align-self: start;
-    // grid-template-rows: minmax(auto, 360px);
-    // width: 100%;
-    // height: 100%;
-    background-color: black;
-}
-
-.image {
-    display: grid;
-    width: 100%;
-    place-items: center;
-    img {
-        display: inline-block;
-        width: 100%;
-        height: auto;
+    .gcs1 {
+        grid-column: span 1;
     }
-}
-
-.image_6 {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    width: 100%;
-    place-items: center;
-    // background-color: rgb(214, 214, 214);
-    // justify-content: space-between;
+    .gcs2 {
+        grid-column: span 2;
+    }
+    .gcs3 {
+        grid-column: span 3;
+    }
+    .gcs4 {
+        grid-column: span 4;
+    }
+    .gcs5 {
+        grid-column: span 5;
+    }
+    .gcs6 {
+        grid-column: span 6;
+    }
+    .grs1 {
+        grid-row: span 1;
+    }
+    .grs2 {
+        grid-row: span 2;
+    }
+    .grs3 {
+        grid-row: span 3;
+    }
+    .grs4 {
+        grid-row: span 4;
+    }
+    .grs5 {
+        grid-row: span 5;
+    }
+    .grs6 {
+        grid-row: span 6;
+    }
 
     img {
-        display: flex;
-        width: auto;
+        display: grid;
+        // width: 100%;
         height: 100%;
     }
-}
 
-.image_wide {
-    display: grid;
-    width: 100%;
-    place-items: center;
-    // background-color: rgb(240, 240, 240);
-    // background: linear-gradient(to right, rgb(221, 221, 221), rgb(245, 245, 245));
-    // background-image: "../assets/images/project_roy/five_swingtag.jpg";
-    // background-position: center;
-    // background-size: cover;
-    background-image: url("../../assets/images/project_roy/five_swingtag_wide.jpg");
-    background-position: center;
-    background-size: cover;
-    img {
-        display: inline-block;
-        width: auto !important;
-        height: 100% !important;
-        justify-self: center;
+    .fullscreen_video {
+        position: relative;
+        display: grid;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        height: 100vh;
     }
-    // .wide {
-    //     display: grid;
-    //     background-image: url("../../assets/images/project_roy/five_swingtag_wide.jpg");
-    //     background-position: center;
-    //     background-size: cover;
-    // }
-}
-.image_high {
-    display: grid;
-    width: 100%;
-    place-items: center;
-    img {
-        display: inline-block;
-        width: 100% !important;
-        height: auto !important;
-    }
-    .care {
-        width: 82% !important;
-    }
-}
 
-.box {
-    display: grid;
-    width: 100%;
-    // background-color: rgb(255, 126, 205);
-}
+    .wrapper {
+        position: relative;
+    }
 
-.gcs1 {
-    grid-column: span 1;
+    .player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay {
+        display: grid;
+        position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 100%;
+        height: 100vh;
+        justify-items: center;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .logo-small {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 100px;
+        height: 100px;
+        // -webkit-filter: drop-shadow(5px 5px 5px rgb(255, 0, 0));
+        filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    }
+    .content {
+        display: grid;
+        gap: 40px;
+        color: white;
+        text-shadow: 4px 4px 15px rgb(0, 0, 0);
+        justify-items: center;
+
+        .title {
+            font-family: BebasNeue;
+            font-size: 60pt;
+            letter-spacing: 15px;
+        }
+        .description {
+            font-family: Coves-light;
+            font-size: x-large;
+            letter-spacing: 2px;
+        }
+    }
+
+    #roy-title {
+        color: black;
+        text-shadow: 1px 1px 8px #ffffff;
+    }
+    #roy-logo {
+        height: 100%;
+        align-self: start;
+    }
+
+    #placeholder {
+        height: 100%;
+        background-color: black;
+    }
+
+    .video_clip {
+        display: grid;
+        // grid-template-columns: 1fr;
+        grid-template-rows: minmax(1fr, 720px);
+        // width: 100%;
+        height: 470px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .video_clip_small {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: start;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .image {
+        display: grid;
+        width: 100%;
+        min-width: 300px;
+        max-width: 500px;
+        place-items: center;
+        img {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .image_6 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: minmax(100px, 300px);
+        width: 100%;
+        place-items: center;
+        overflow: hidden;
+
+        img {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    .image_wide {
+        display: grid;
+        width: 100%;
+        height: 300px;
+        place-items: center;
+        background-image: url("../../assets/images/project_roy/five_swingtag_wide.jpg");
+        background-position: center;
+        background-size: cover;
+        img {
+            display: inline-block;
+            width: auto !important;
+            height: 100% !important;
+            justify-self: center;
+        }
+    }
+    .image_high {
+        display: grid;
+        width: 100%;
+        place-items: center;
+        img {
+            display: inline-block;
+            width: 100% !important;
+            height: auto !important;
+        }
+        .care {
+            width: 82% !important;
+        }
+    }
+
+    .box {
+        display: grid;
+        width: 100%;
+        // height: 400px;
+        background-color: rgb(255, 126, 205);
+    }
 }
-.gcs2 {
-    grid-column: span 2;
-}
-.gcs3 {
-    grid-column: span 3;
-}
-.gcs4 {
-    grid-column: span 4;
-}
-.gcs5 {
-    grid-column: span 5;
-}
-.gcs6 {
-    grid-column: span 6;
-}
-.grs1 {
-    grid-row: span 1;
-}
-.grs2 {
-    grid-row: span 2;
-}
-.grs3 {
-    grid-row: span 3;
-}
-.grs4 {
-    grid-row: span 4;
-}
-.grs5 {
-    grid-row: span 5;
-}
-.grs6 {
-    grid-row: span 6;
-}
-// }

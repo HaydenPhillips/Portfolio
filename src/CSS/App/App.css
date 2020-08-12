@@ -1,13 +1,18 @@
+.max-width-1800 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(auto, 1800px);
+      grid-template-columns: minmax(auto, 1800px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  width: 85% !important;
-  margin-left: 15%;
-  padding: 20px;
+  width: 100%;
+  margin: auto;
 }
 
 section h1 {
@@ -21,75 +26,60 @@ section h1 {
 }
 
 .landing {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
   gap: 20px;
-  height: 100vh;
-  background-color: #ff6bbc;
+  height: auto;
+  background-color: #a84e80;
 }
 
 .projects {
-  width: 100%;
   height: 100vh;
   background-color: #b80065;
 }
 
 .roy {
-  gap: 20px;
-  width: 100%;
   background-color: white;
 }
 
 .zap {
-  width: 100%;
-  height: 100vh;
-  background-color: #ff008c;
+  background-color: #e8b5ff;
 }
 
 .random {
-  width: 100%;
   height: 100vh;
   background-color: #ffbde1;
 }
 
 .things {
-  width: 100%;
   height: 100vh;
   background-color: #83566f;
 }
 
 .about {
-  width: 100%;
   height: 100vh;
-  background-color: #ff42aa;
+  background-color: #a851a1;
 }
 
 .gallery {
-  width: 100%;
   height: 100vh;
   background-color: #7c2a57;
 }
 
 .some-album {
-  width: 100%;
   height: 100vh;
   background-color: #b97199;
 }
 
 .album-name {
-  width: 100%;
   height: 100vh;
-  background-color: #ff45d1;
+  background-color: #b667eb;
 }
 
 .marlborough {
-  width: 100%;
   height: 100vh;
   background-color: #8f004f;
 }
 
 .tasman {
-  width: 100%;
   height: 100vh;
   background-color: #e2007c;
 }
@@ -111,8 +101,6 @@ section h1 {
       grid-template-rows: 100vh;
   position: absolute;
   top: 0;
-  left: 15%;
-  width: 85%;
 }
 
 .grid_container .nav_ {
@@ -132,14 +120,12 @@ section h1 {
 }
 
 .grid_container .one {
-  width: 100%;
   height: 100vh;
   padding: 50px 100px 50px 200px;
   background-color: #c885ff;
 }
 
 .grid_container .two {
-  width: 100%;
   height: 100vh;
   padding: 50px 100px 50px 200px;
   background-color: #89a9ff;
@@ -153,20 +139,12 @@ section h1 {
   position: absolute;
   top: 0px;
   left: 15%;
-  width: 85%;
   padding: 20px;
   background-color: thistle;
 }
 
-.set_high {
-  margin-top: -65px;
-  width: 100%;
-}
-
 .set_high .container1 {
-  width: 100%;
-  height: auto;
-  background-color: #91b6ff;
+  height: 195vh;
   z-index: 0;
 }
 
@@ -188,7 +166,6 @@ section h1 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  justify-items: center;
   z-index: 2;
   width: 100%;
   height: auto;
@@ -204,7 +181,7 @@ section h1 {
   position: absolute;
   top: 0px;
   z-index: 2;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -221,48 +198,56 @@ section h1 {
   background-attachment: fixed;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    -webkit-animation: App-logo-spin infinite 20s linear;
-            animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@-webkit-keyframes App-logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 .mountain_img {
   width: auto;
   height: 100vh;
   padding: 0;
   margin: 0;
+}
+
+.dot-navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  width: 200px;
+  height: 100vh;
+  place-items: center;
+  padding: 40px;
+  background-color: rgba(194, 222, 255, 0.438);
+}
+
+.dot-navbar .dot-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: auto;
+  height: auto;
+  place-items: center;
+}
+
+.dot-navbar .dot-grid .dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #00158f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot-navbar .dot-grid .active {
+  height: 20px !important;
+  width: 20px !important;
+  background-color: rgba(255, 0, 0, 0.514);
+}
+
+.dot-navbar .dot-grid .seen {
+  background-color: rgba(68, 0, 255, 0.514) !important;
 }
 /*# sourceMappingURL=App.css.map */
