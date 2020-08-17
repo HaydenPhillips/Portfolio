@@ -1,8 +1,8 @@
-.max-width-1800 {
+.max-width-1920 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(auto, 1800px);
-      grid-template-columns: minmax(auto, 1800px);
+  -ms-grid-columns: minmax(auto, 1920px);
+      grid-template-columns: minmax(auto, 1920px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -37,7 +37,7 @@ section h1 {
 }
 
 .roy {
-  background-color: white;
+  background-color: #ffd2d2;
 }
 
 .zap {
