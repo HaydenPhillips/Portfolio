@@ -1,17 +1,15 @@
 .max-width-1920 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(auto, 1920px);
-      grid-template-columns: minmax(auto, 1920px);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-grid-columns: minmax(1fr, 1920px);
+      grid-template-columns: minmax(1fr, 1920px);
 }
 
 section {
   display: -ms-grid;
   display: grid;
   width: 100%;
+  height: 100vh;
   margin: auto;
 }
 
@@ -203,51 +201,5 @@ section h1 {
   height: 100vh;
   padding: 0;
   margin: 0;
-}
-
-.dot-navbar {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 30;
-  width: 200px;
-  height: 100vh;
-  place-items: center;
-  padding: 40px;
-  background-color: rgba(194, 222, 255, 0.438);
-}
-
-.dot-navbar .dot-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  width: auto;
-  height: auto;
-  place-items: center;
-}
-
-.dot-navbar .dot-grid .dot {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  background-color: #00158f;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.dot-navbar .dot-grid .active {
-  height: 20px !important;
-  width: 20px !important;
-  background-color: rgba(255, 0, 0, 0.514);
-}
-
-.dot-navbar .dot-grid .seen {
-  background-color: rgba(68, 0, 255, 0.514) !important;
 }
 /*# sourceMappingURL=App.css.map */

@@ -5,6 +5,7 @@
       grid-template-columns: 1fr;
   gap: 10px;
   overflow: hidden;
+  background-color: #efcdff;
 }
 
 .grid-zap .empty {
