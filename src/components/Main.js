@@ -2,16 +2,12 @@ import React from 'react';
 import { render } from 'react-dom'
 import { BrowserRouter, Switch, Route, Link, useLocation } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
-// import Scrollable from './Scrollable';
 import ProjectRoy from './ProjectRoy'
 import ProjectZap from './ProjectZap'
-import Deck from './Deck'
 import Home from './Home/Home'
 
 
-
 const Main = () => (
-
     <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/projectzap' component={ProjectZap} />
