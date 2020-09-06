@@ -2,11 +2,7 @@ import React from 'react';
 import { render } from 'react-dom'
 import { BrowserRouter, Switch, Route, Link, useLocation } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
-// import LandingPage from './landingpage';
-// import Projects from './projects';
-// import Contact from './contact';
 // import Scrollable from './Scrollable';
-// import LayeredBackground from './LayeredBackground';
 import ProjectRoy from './ProjectRoy'
 import ProjectZap from './ProjectZap'
 import Deck from './Deck'
@@ -21,7 +17,6 @@ const Main = () => (
         <Route path='/projectzap' component={ProjectZap} />
         <Route path='/projectroy' component={ProjectRoy} />
         <Route path='/deck' component={Deck} />
-
     </Switch>
 )
 

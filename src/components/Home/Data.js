@@ -57,28 +57,28 @@ export default [
   },
 
 
-  // {
-  //   name: 'Contact',
-  //   description: '#fdfbfb → #ebedee',
-  //   css: 'linear-gradient(-225deg, #f1e1ff 0%, #ebd3ff 100%)',
-  //   height: 300,
-  //   componentName: 'Contact',
-  // },
-  // {
-  //   name: 'Gallery',
-  //   description: '#f093fb → #f5576c',
-  //   css: 'linear-gradient(120deg, #97e7ff 0%, #cdf3ff 100%)',
-  //   height: 300,
-  //   componentName: 'Gallery',
-  // },
+  {
+    name: 'Contact',
+    description: '#fdfbfb → #ebedee',
+    css: 'linear-gradient(-225deg, #f1e1ff 0%, #ebd3ff 100%)',
+    height: 300,
+    componentName: 'Contact',
+  },
+  {
+    name: 'Gallery',
+    description: '#f093fb → #f5576c',
+    css: 'linear-gradient(120deg, #97e7ff 0%, #cdf3ff 100%)',
+    height: 300,
+    componentName: 'Gallery',
+  },
 
-  // {
-  //   name: 'Random',
-  //   description: '#d299c2 → #fef9d7',
-  //   css: 'linear-gradient(to top, #d1e6ff 0%, #869cff 100%)',
-  //   height: 100,
-  //   componentName: 'Random',
-  // },
+  {
+    name: 'Random',
+    description: '#d299c2 → #fef9d7',
+    css: 'linear-gradient(to top, #d1e6ff 0%, #869cff 100%)',
+    height: 100,
+    componentName: 'Random',
+  },
   // {
   //   name: 'New York',
   //   description: ' #fff1eb → #ace0f9',
