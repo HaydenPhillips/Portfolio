@@ -5,8 +5,8 @@ export class Slug extends React.PureComponent {
   render() {
     const {
       children,
-      from = { opacity: 0, transform: 'translate3d(0,40px,0)' },
-      to = { opacity: 1, transform: 'translate3d(0,0px,0)' },
+      from = { opacity: 0, transform: 'translate3d(0, 100px, 0)' },
+      to = { opacity: 1, transform: 'translate3d(0, 0px, 0)' },
       ...rest
     } = this.props
     const result = React.Children.map(children, child => styles => {
@@ -22,11 +22,7 @@ export class Slug extends React.PureComponent {
       return <Component {...props} />
     })
     return (
-      <Trail
-        native
-        {...rest}
-        items={result}
-        keys={result.map((_, i) => i)}
+      <Trail native {...rest} items={result} keys={result.map((_, i) => i)}
         from={from}
         to={to}
         children={child => child}
@@ -79,9 +75,9 @@ export class FadeUp extends React.PureComponent {
     const {
       children,
       show,
-      from = { opacity: 0, transform: 'translate3d(0,140px,0)' },
-      enter = { opacity: 1, transform: 'translate3d(0,0px,0)' },
-      leave = { opacity: 0, transform: 'translate3d(0,-500px,0)' },
+      from = { opacity: 0, transform: 'translate3d(0, 200px,0)' },
+      enter = { opacity: 1, transform: 'translate3d(0, 0px, 0)' },
+      leave = { opacity: 0, transform: 'translate3d(0, -100px, 0)' },
       ...rest
     } = this.props
 
@@ -90,11 +86,7 @@ export class FadeUp extends React.PureComponent {
     const result = styles => {
       const newProps = {
         ...props,
-        style: {
-          willChange: 'opacity, transform',
-          ...props.style,
-          ...styles,
-        },
+        style: { willChange: 'opacity, transform', ...props.style, ...styles }
       }
       return <Component {...newProps} />
     }

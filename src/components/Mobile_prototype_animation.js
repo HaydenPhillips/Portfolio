@@ -12,28 +12,28 @@ const Mobile_prototype_animation = () => {
   const fade_downRight_main = useSpring({
     from: { opacity: 0, top: -200, left: -400 },
     to: { opacity: 1, top: 120, left: 0 },
-    delay: 500,
+    delay: 300,
     // config: { duration: 4000 }
   });
 
   const fade_upLeft_home = useSpring({
     from: { opacity: 0, top: 600, left: 300 },
     to: { opacity: 1, top: 374, left: -90 },
-    delay: 700,
+    delay: 500,
     // config: { duration: 500 }
   });
 
   const fade_downRight_select = useSpring({
     from: { opacity: 0, top: -200, left: 500 },
     to: { opacity: 1, top: -10, left: 815 },
-    delay: 1200,
+    delay: 1000,
     // config: { duration: 1000 }
   });
 
   const fade_upLeft_dropdown = useSpring({
     from: { opacity: 0, top: 300, left: 900 },
     to: { opacity: 1, top: 130, left: 560 },
-    delay: 1000,
+    delay: 800,
     // config: { duration: 1200 }
   });
 

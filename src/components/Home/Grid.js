@@ -5,17 +5,8 @@ import { Transition, animated, interpolate } from 'react-spring/renderprops'
 
 const styles = {
   outer: { position: 'relative', width: '100%', height: '100%' },
-  inner: {
-    position: 'relative',
-    width: '100%',
-    // height: '110%',
-    overflow: 'hidden',
-    minHeight: '100%',
-  },
-  cell: {
-    position: 'absolute',
-    willChange: 'transform, width, height, opacity',
-  },
+  inner: { position: 'relative', width: '100%' },
+  cell: { position: 'absolute', willChange: 'transform, width, height, opacity' },
 }
 
 export default class Grid extends React.Component {
@@ -62,7 +53,8 @@ export default class Grid extends React.Component {
   update = ({ key, x, y, width, height }) => {
     const open = this.state.open === key
     return {
-      opacity: this.state.open && !open ? 0 : 1,
+      // opacity: 0.5,
+      opacity: this.state.open && !open ? 0.4 : 1,
       x: open ? this.outerRef.scrollLeft : x,
       y: open ? this.outerRef.scrollTop : y,
       width: open ? this.state.width : width,
@@ -113,6 +105,7 @@ export default class Grid extends React.Component {
       }
     })
     const overflow = lockScroll ? (open ? 'hidden' : 'auto') : 'auto'
+    // const height = 'auto'
     const height = Math.max(...columnHeights) + margin
     return (
       <Measure

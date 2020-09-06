@@ -1,10 +1,12 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import LandingPage from './landingpage';
-import Projects from './projects';
-import Contact from './contact';
-import Scrollable from './Scrollable';
-import LayeredBackground from './LayeredBackground';
+import { render } from 'react-dom'
+import { BrowserRouter, Switch, Route, Link, useLocation } from 'react-router-dom'
+import { useTransition, animated } from 'react-spring'
+// import LandingPage from './landingpage';
+// import Projects from './projects';
+// import Contact from './contact';
+// import Scrollable from './Scrollable';
+// import LayeredBackground from './LayeredBackground';
 import ProjectRoy from './ProjectRoy'
 import ProjectZap from './ProjectZap'
 import Deck from './Deck'
@@ -13,19 +15,32 @@ import Home from './Home/Home'
 
 
 const Main = () => (
+
     <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/projectzap' component={ProjectZap} />
         <Route path='/projectroy' component={ProjectRoy} />
         <Route path='/deck' component={Deck} />
-        {/* <Route path='/home' component={Home} /> */}
 
-        {/* <Route path="/scrollable" component={Scrollable} /> */}
-        {/* <Route path="/maze" component={Maze} /> */}
-        {/* <Route path="/projects" component={Projects} /> */}
-        {/* <Route path="/contact" component={Contact} /> */}
-        {/* <Route path="/layeredbackground" component={LayeredBackground} /> */}
     </Switch>
 )
 
 export default Main;
+
+// const location = useLocation()
+
+//     const transitions = useTransition(location, location => location.pathname, {
+//         from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
+//         enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
+//         leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
+//     })
+//     return transitions.map(({ item: location, props, key }) => (
+//         <animated.div key={key} style={props}>
+//             <Switch location={location}>
+//                 <Route path="/" exact component={Home} />
+//                 <Route path='/projectroy' component={ProjectRoy} />
+//                 <Route path='/projectzap' component={ProjectZap} />
+//                 <Route path='/deck' component={Deck} />
+//             </Switch>
+//         </animated.div>
+//     ))

@@ -7,7 +7,7 @@ import './CSS/Zap/ProjectZap.css';
 import './CSS/Deck/Deck.css';
 
 import Main from './components/Main';
-import Sidebar from './components/Sidebar';
+// import Sidebar from './components/Sidebar';
 
 function App() {
   return (
