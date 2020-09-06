@@ -1,7 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom'
-import { BrowserRouter, Switch, Route, Link, useLocation } from 'react-router-dom'
-import { useTransition, animated } from 'react-spring'
+// import { render } from 'react-dom'
+import { Switch, Route } from 'react-router-dom'
+// import { useTransition, animated } from 'react-spring'
 import ProjectRoy from './ProjectRoy'
 import ProjectZap from './ProjectZap'
 import Home from './Home/Home'

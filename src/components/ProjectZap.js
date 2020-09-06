@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import lightening from '../assets/icons/lightening.svg';
 import split from '../assets/icons/split.svg';
 import piechart from '../assets/icons/pie-chart.svg';
@@ -6,7 +6,7 @@ import arrow from '../assets/icons/down-arrow.svg';
 import account_left from '../assets/images/zap_prototype/account-45.png';
 import account_right from '../assets/images/zap_prototype/account-45-right.png';
 import zap_logo from '../assets/images/zap_prototype/zap_logo.png';
-import Animation_in from './Mobile_prototype_animation';
+import AnimationIn from './Mobile_prototype_animation';
 import { useInView } from 'react-intersection-observer'
 import '../CSS/Zap/ProjectZap.css';
 
@@ -14,9 +14,9 @@ import '../CSS/Zap/ProjectZap.css';
 
 const ProjectZap = () => {
 
-  const [ref, inView] = useInView({ 
+  const [ref, inView] = useInView({
     threshold: 0,
-    rootMargin: '800px 0px -400px 0px' 
+    rootMargin: '800px 0px -400px 0px'
   });
 
   return (
@@ -41,7 +41,7 @@ const ProjectZap = () => {
         </div>
 
         <div ref={ref} className='prototype_collection'>
-          {inView ? <Animation_in /> : <div className='empty'></div>}
+          {inView ? <AnimationIn /> : <div className='empty'></div>}
         </div>
 
 
@@ -103,12 +103,3 @@ const ProjectZap = () => {
 }
 
 export default ProjectZap
-
-
-{/* <iframe
-style={{ border: "0" }}
-width="100%"
-height="100%"
-src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgIHTEsG5mj6MktvvUrMerV%2FUser-experience-flow-options%3Fnode-id%3D1228%253A0%26scaling%3Dscale-down-height&chrome=DOCUMENTATION"
->
-</iframe> */}

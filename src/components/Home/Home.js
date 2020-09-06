@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { config } from 'react-spring/renderprops'
 import Grid from './Grid'
-import { Slug, Fade, FadeUp } from './Primitives'
+import { Slug, FadeUp } from './Primitives'
 import data from './Data'
 import '../../CSS/Home/Home.css'
 import 'antd/dist/antd.css'
@@ -89,7 +89,7 @@ export class DynamicComponent extends Component {
 
 export class Roy extends Component {
   render() {
-    const { toggle, image } = this.props
+    const { toggle } = this.props
     return (
       <Slug delay={400}>
         <div className='name'>Roy Apparel</div>
@@ -167,7 +167,7 @@ export class About extends Component {
 
 export class Zap extends Component {
   render() {
-    const { toggle, image } = this.props
+    const { toggle } = this.props
     return (
       <Slug delay={600}>
 
@@ -191,9 +191,12 @@ export class Zap extends Component {
         </div>
         <div className='tag'>#Prototyping #Ui #Ux #Mobile-appication</div>
 
-        <Link to={'/projectzap'} target='_blank' className='link' style={{ cursor: 'pointer' }}>
-          View Project
-        </Link>
+        <div className='link'>
+          <Link to={'/projectzap'} target='_blank' style={{ cursor: 'pointer', color: 'black' }}>
+            View Project
+          </Link>
+        </div>
+
         {/* <img className='image' src={this.props.image} /> */}
       </Slug>
     )
@@ -215,7 +218,7 @@ export class Education extends Component {
           <CloseOutlined type="close" style={{ cursor: 'pointer' }} onClick={toggle} />
         </div>
         <div className='VIC' >
-          <img className='image' style={{ width: '200px', height: 'auto', paddingBottom: '10px' }} src={VIC} />
+          <img className='image' style={{ width: '200px', height: 'auto', paddingBottom: '10px' }} src={VIC} alt='VIC' />
           <div className='title-small'>Victoria University of Wellington</div>
           <div className='description'>
             BSc - Bachelor of Science<br />
@@ -224,7 +227,7 @@ export class Education extends Component {
           </div>
         </div>
         <div className='CHQ' >
-          <img className='image' style={{ width: '100px', height: 'auto', paddingBottom: '10px' }} src={CHQ} />
+          <img className='image' style={{ width: '100px', height: 'auto', paddingBottom: '10px' }} src={CHQ} alt='CHQ' />
           <div className='title-small'>Venture Up | Startup Accelerator</div>
           <div className='description'>
             CEO of PierToPeer | Feb18 - Mar18<br />
@@ -233,7 +236,7 @@ export class Education extends Component {
           </div>
         </div>
         <div className='NUS' >
-          <img className='image' src={NUS} style={{ width: '100px', height: 'auto', paddingBottom: '10px' }} />
+          <img className='image' src={NUS} style={{ width: '100px', height: 'auto', paddingBottom: '10px' }} alt='NUS' />
           <div className='title-small'>National University of Singapore</div>
           <div className='description'>
             Software Engineering<br />
@@ -242,7 +245,7 @@ export class Education extends Component {
           </div>
         </div>
         <div className='NZFT' >
-          <img className='image' style={{ width: '100px', height: 'auto', paddingBottom: '20px' }} src={NZFT} />
+          <img className='image' style={{ width: '100px', height: 'auto', paddingBottom: '20px' }} src={NZFT} alt='NZFT' />
           <div className='title-small'>New Zealand Institute of Fashion</div>
           <div className='description'>
             Diploma | 2013 - 2014<br />
@@ -268,7 +271,7 @@ export class Education extends Component {
 
 export class ActionMotorsport extends Component {
   render() {
-    const { toggle, image } = this.props
+    const { toggle } = this.props
     return (
       <Slug delay={600}>
         <div className='name'>Action Motorsport</div>
