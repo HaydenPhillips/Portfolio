@@ -25,7 +25,7 @@ import leaves_back from '../assets/images/project_roy/leaves_layer.png';
 // import LSR_6 from "../assets/images/project_roy/LSR_6.jpg";
 // import ParallaxTest from './ParallaxTest';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
-import { useSpring } from 'react-spring'
+// import { useSpring } from 'react-spring'
 import { useInView } from 'react-intersection-observer'
 import Fade from './fade';
 // import Deck from './Deck';
@@ -168,7 +168,7 @@ const ProjectRoy = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center'
                             }}>
-                            <img src={roy_logo_white} className='logo-small' />
+                            <img src={roy_logo_white} className='logo-small' alt='roy_logo' />
                         </ParallaxLayer>
 
                         <ParallaxLayer offset={1} speed={0.7}
