@@ -12,7 +12,6 @@ const Main = () => (
         <Route exact path='/' component={Home} />
         <Route path='/projectzap' component={ProjectZap} />
         <Route path='/projectroy' component={ProjectRoy} />
-        <Route path='/deck' component={Deck} />
     </Switch>
 )
 
