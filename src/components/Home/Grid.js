@@ -108,54 +108,29 @@ export default class Grid extends React.Component {
     // const height = 'auto'
     const height = Math.max(...columnHeights) + margin
     return (
-      <Measure
-        client
-        innerRef={r => (this.outerRef = r)}
-        onResize={this.resizeOuter}>
+      <Measure client innerRef={r => (this.outerRef = r)} onResize={this.resizeOuter}>
         {({ measureRef }) => (
-          <div
-            ref={measureRef}
-            style={{ ...styles.outer, ...this.props.style, overflow }}
+          <div ref={measureRef} style={{ ...styles.outer, ...this.props.style, overflow }}
             {...rest}
             onScroll={this.scrollOut}
             onWheel={this.scrollOut}
             onTouchMove={this.scrollOut}>
-            <Measure
-              client
-              innerRef={r => (this.innerRef = r)}
-              onResize={this.resizeInner}>
+            <Measure client innerRef={r => (this.innerRef = r)} onResize={this.resizeInner}>
               {({ measureRef }) => (
                 <div ref={measureRef} style={{ ...styles.inner, height }}>
-                  <Transition
-                    native
-                    items={displayData}
-                    keys={d => d.key}
-                    from={{ opacity: 0 }}
-                    leave={{ opacity: 0 }}
-                    enter={this.update}
-                    update={this.update}
+                  <Transition native items={displayData} keys={d => d.key}
+                    from={{ opacity: 0 }} leave={{ opacity: 0 }} enter={this.update} update={this.update}
                     impl={impl}
-                    config={{
-                      ...config,
-                      delay: this.clicked && !open ? closeDelay : 0,
-                    }}>
-                    {(c, i) => ({ opacity, x, y, width, height }) => (
-                      <animated.div
-                        style={{
-                          ...styles.cell,
-                          opacity,
-                          width,
-                          height,
-                          zIndex:
-                            lastOpen === c.key || open === c.key ? 1000 : i,
-                          transform: interpolate(
-                            [x, y],
-                            (x, y) => `translate3d(${x}px,${y}px, 0)`
-                          ),
-                        }}
-                        children={children(c.object, open === c.key, () =>
-                          this.toggle(c.key)
-                        )}
+                    config={{ ...config, delay: this.clicked && !open ? closeDelay : 0, }}>
+
+                    {(c) => ({ opacity, x, y, width, height }) => (
+                      <animated.div style={{
+                        ...styles.cell, opacity, width, height,
+                        zIndex: lastOpen === c.key || open === c.key ? 1000 : 0,
+                        transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px, 0)`),
+                      }}
+
+                        children={children(c.object, open === c.key, () => this.toggle(c.key))}
                       />
                     )}
                   </Transition>

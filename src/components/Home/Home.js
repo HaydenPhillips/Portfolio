@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { config } from 'react-spring/renderprops'
 import Grid from './Grid'
-import { Slug, FadeUp } from './Primitives'
+import { Slug, FadeUp, Fade } from './Primitives'
 import data from './Data'
 import '../../CSS/Home/Home.css'
 import 'antd/dist/antd.css'
@@ -59,14 +59,17 @@ class Cell extends Component {
           </div>
         </FadeUp>
 
-        <FadeUp show={!active} delay={active ? 0 : 900}>
+        <Fade show={!active}
+          from={{ opacity: 0, transform: 'translate3d(0,140px,0)' }}
+          enter={{ opacity: 1, transform: 'translate3d(0,0px,0)' }}
+          leave={{ opacity: 0, transform: 'translate3d(0,-50px,0)' }} delay={active ? 0 : 900}>
           <div className="cell-content">
             <div className='name-hash'>
               <div className='cell-name'>{name}</div>
               <div className='cell-tags' id='ct'>{tags}</div>
             </div>
           </div>
-        </FadeUp>
+        </Fade>
       </div>
     )
   }
@@ -141,21 +144,22 @@ export class About extends Component {
         </div>
         <div className='section1'>
           <div className='title-small'>Hayden Phillips</div>
+          <div className='title-small'>Software Developer & Designer</div>
           <div className='title-small'>Wellington based</div>
           <div className='title-small'>26</div>
+          <div className='title-small'>Ambitious creative</div>
         </div>
         <div className='section2' style={{ alignSelf: 'flex-end' }}>
           <div className='title-small'>Interests</div>
           <div className='description'>
-            I am ambitiously creative.<br />
-            I like to code, particularly with visual aspects.<br />
-            I like to design interfaces.<br />
-            Making clothes.<br />
-            I like to socialise in small groups, the smaller better.<br />
-            I like to ponder.<br />
+            Coding, particularly when incorporating visual aspects.<br />
+            Designing interfaces.<br />
+            Socialising in small groups, the smaller the better.<br />
             Business strategy.<br />
+            Making clothes.<br />
+            Pondering.<br />
             1v1 games: chess, ping pong, squash, Tekken.<br />
-            Taking photos with a slow shutter speed.<br />
+            Taking photos with a slow shutter speed (it's like painting, but with light).<br />
           </div>
         </div>
         <div className='tag'>#Interests #Profile #Location</div>
