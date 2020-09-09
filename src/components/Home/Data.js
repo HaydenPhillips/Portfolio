@@ -4,6 +4,8 @@ import CHQ from '../../assets/icons/education/CHQ.svg';
 import NUS from '../../assets/icons/education/NUS.svg';
 import VIC from '../../assets/icons/education/VIC.svg';
 import NZFT from '../../assets/icons/education/NZFT.jpg';
+import github from '../../assets/icons/contact/github.svg';
+import linkedin from '../../assets/icons/contact/linkedin.png';
 
 
 export default [
@@ -13,7 +15,7 @@ export default [
     css: 'linear-gradient(to top, #d1e6ff 0%, #99c7ff 100%)',
     area: 'area-roy',
     height: 400,
-    tags: '#Product-design #Photography #Videography #Packaging #Clothing #Web-Developer',
+    tags: '#Product-Design #Photography #Videography #Packaging #Clothing #Web-Development',
     image: [roy_logo_white],
   },
   {
@@ -22,7 +24,7 @@ export default [
     css: 'linear-gradient(to top, #f0d5ff 0%, #b490ca 100%)',
     height: 300,
     area: 'area-action',
-    tags: '#Web-Developer #HTML #CSS #JS',
+    tags: '#Web-Development #HTML #CSS #JS',
   },
   {
     componentName: 'About',
@@ -31,6 +33,7 @@ export default [
     height: 200,
     area: 'area-about',
     tags: '#Interests #Profile #Thoughts',
+    image: [github, linkedin]
   },
   {
     name: 'Education',
@@ -38,7 +41,7 @@ export default [
     css: 'linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)',
     height: 300,
     area: 'area-education',
-    tags: '#ComputerScience #Engineering #Design #Business',
+    tags: '#Computer-Science #Engineering #Design #Business',
     componentName: 'Education',
     image: [VIC, NUS, CHQ, NZFT]
   },
@@ -53,9 +56,11 @@ export default [
   // {
   //   componentName: 'Contact',
   //   name: 'Contact',
-  //   description: '#fdfbfb → #ebedee',
+  //   area: 'area-contact',
   //   css: 'linear-gradient(-225deg, #f1e1ff 0%, #ebd3ff 100%)',
   //   height: 300,
+  //   tags: '#Email #Github #Linkedin',
+  //   image: [github, linkedin]
   // },
   // {
   //   componentName: 'Gallery',

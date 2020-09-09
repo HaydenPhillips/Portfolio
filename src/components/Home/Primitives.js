@@ -92,15 +92,7 @@ export class FadeUp extends React.PureComponent {
     }
 
     return (
-      <Transition
-        native
-        items={show}
-        {...rest}
-        from={from}
-        enter={enter}
-        leave={leave}
-        children={show => show && result}
-      />
+      <Transition native items={show} {...rest} from={from} enter={enter} leave={leave} children={show => show && result} />
     )
   }
 }

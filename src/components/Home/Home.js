@@ -3,6 +3,7 @@ import { config } from 'react-spring/renderprops'
 import Grid from './Grid'
 import { Slug, FadeUp, Fade } from './Primitives'
 import data from './Data'
+// import 'materialize-css';
 import '../../CSS/Home/Home.css'
 import 'antd/dist/antd.css'
 import { CloseOutlined } from '@ant-design/icons'
@@ -84,8 +85,8 @@ export class DynamicComponent extends Component {
     else if (componentName === 'Zap') return <Zap toggle={toggle} image={image} />
     else if (componentName === 'Education') return <Education toggle={toggle} image={image} />
     else if (componentName === 'AM') return <ActionMotorsport toggle={toggle} image={image} />
-    // else if (componentName === 'Random') return <Random toggle={toggle} image={image} />
     // else if (componentName === 'Contact') return <Contact toggle={toggle} image={image} />
+    // else if (componentName === 'Random') return <Random toggle={toggle} image={image} />
     // else if (componentName === 'Gallery') return <Gallery toggle={toggle} image={image} />
   }
 }
@@ -135,7 +136,10 @@ export class Roy extends Component {
 
 export class About extends Component {
   render() {
-    const { toggle } = this.props
+    const { toggle, image } = this.props
+    const github = image[0]
+    const linkedin = image[1]
+
     return (
       <Slug delay={600}>
         <div className='name'>About Me</div>
@@ -147,22 +151,52 @@ export class About extends Component {
           <div className='title-small'>Software Developer & Designer</div>
           <div className='title-small'>Wellington based</div>
           <div className='title-small'>26</div>
-          <div className='title-small'>Ambitious creative</div>
         </div>
         <div className='section2' style={{ alignSelf: 'flex-end' }}>
-          <div className='title-small'>Interests</div>
+          <div className='title-small'>Me in one minute</div>
           <div className='description'>
-            Coding, particularly when incorporating visual aspects.<br />
-            Designing interfaces.<br />
-            Socialising in small groups, the smaller the better.<br />
-            Business strategy.<br />
-            Making clothes.<br />
-            Pondering.<br />
-            1v1 games: chess, ping pong, squash, Tekken.<br />
-            Taking photos with a slow shutter speed (it's like painting, but with light).<br />
+            Ambitious and creative - Freelance web-developer & Ui designer
+            - Bachelor of Science majoring in Computer Science -
+            Previously owned and operated a menswear brand called Roy Apparel.
+            In my spare time I like to code, play chess, take photos,
+            listen to podcasts and audiobooks, hang with friends, and meet new people.
+            I am interested in frontend development e.g. React, Javascript, CSS design
+            libraries etc. as well as Ui prototyping tools such as Figma and Xd.
+            I enjoy problem-solving and have the ability to listen to, understand, learn from,
+            and build good relationships with clients, which is why web-development
+            fits me well.
           </div>
         </div>
-        <div className='tag'>#Interests #Profile #Location</div>
+        <div className='section3'>
+          <div className='contact-details'>
+            <div>
+              <Link
+                style={{ cursor: 'pointer', color: 'black' }}>
+                <div className='description'>
+                  hayden.colony@gmail.com
+                </div>
+              </Link>
+            </div>
+
+            <div className='flex'>
+              <Link
+                to={{ pathname: 'https://github.com/HaydenPhillips' }}
+                target='_blank'
+                style={{ cursor: 'pointer', color: 'black' }}>
+                <img src={github} style={{ width: '50px', height: 'auto' }} />
+              </Link>
+
+              <Link
+                to={{ pathname: 'https://www.linkedin.com/in/hayden-phillips-86a466197/' }}
+                target='_blank'
+                style={{ cursor: 'pointer', color: 'black', }}>
+                <img src={linkedin} style={{ width: '50px', height: 'auto' }} />
+              </Link>
+            </div>
+
+          </div>
+        </div>
+        {/* <div className='tag'>#Interests #Profile #Location</div> */}
         {/* <img className='image' src={image} /> */}
       </Slug>
     )
@@ -294,11 +328,60 @@ export class ActionMotorsport extends Component {
         </div>
 
         <div className='tag'>#Web-dev #HTML #CSS #JS</div>
-        <Link to={{ pathname: 'https://www.actionmotorsport.co.nz/' }} target='_blank' className='link' style={{ cursor: 'pointer' }}>
-          View Project
-          </Link>
+        <div className='link'>
+          <Link to={{ pathname: 'https://www.actionmotorsport.co.nz/' }} target='_blank' style={{ cursor: 'pointer', color: 'black' }}>
+            View Project
+        </Link>
+        </div>
+
         {/* <img className='image' src={this.props.image} /> */}
       </Slug>
     )
   }
 }
+
+// export class Contact extends Component {
+//   render() {
+//     const { image } = this.props
+//     // const email = image[0]
+//     const github = image[0]
+//     const linkedin = image[1]
+
+//     return (
+//       <Slug delay={600}>
+//         <div className='name'>Contact</div>
+//         <div className='email'>
+//           <span class="material-icons">alternate_email</span>
+//           {/* <div className='title-small'>Email</div> */}
+//           <div className='description'>
+//             hayden.colony@gmail.com
+//           </div>
+//         </div>
+//         <div className='tag'><span class="material-icons">alternate_email</span></div>
+
+//         <div className='contact-details'>
+//           <Link
+//             to={{ pathname: 'https://github.com/HaydenPhillips' }}
+//             target='_blank'
+//             style={{ cursor: 'pointer', color: 'black' }}>
+//             <span class="material-icons">alternate_email</span>
+//           </Link>
+//           <Link
+//             to={{ pathname: 'https://github.com/HaydenPhillips' }}
+//             target='_blank'
+//             style={{ cursor: 'pointer', color: 'black' }}>
+//             <img src={github} style={{ width: '30px', height: 'auto' }} />
+//           </Link>
+//           <Link
+//             to={{ pathname: 'https://www.linkedin.com/in/hayden-phillips-86a466197/' }}
+//             target='_blank'
+//             style={{ cursor: 'pointer', color: 'black', }}>
+//             <img src={linkedin} style={{ width: '30px', height: 'auto' }} />
+//           </Link>
+//         </div>
+
+//         {/* <img className='image' src={this.props.image} /> */}
+//       </Slug>
+//     )
+//   }
+// }

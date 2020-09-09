@@ -35,15 +35,33 @@
     "des      des       des     ."
     "sec1     sec1      sec1    sec1"
     "sec2     sec2      sec2    sec2"
-    "tag      tag      link    link";
+    "tag      tag      . .";
 }
 
 .area-about {
   grid-template-areas:
     "name     name    name"
-    "sec1     sec1    sec1"
+    "sec1     sec1    sec3"
     "sec2     sec2    sec2"
-    "tag      tag     tag";
+    "sec2     sec2    sec2";
+
+  .section3 {
+    .contact-details {
+      display: grid;
+      grid-template-columns: 1f;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      justify-content: center;
+      // align-items: center;
+      padding: 20px;
+
+      .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+      }
+    }
+  }
 }
 
 .area-zap {
@@ -61,6 +79,34 @@
     "sec1     sec1      sec1"
     "tag      link      link";
 }
+
+// .area-contact {
+//   grid-template-areas:
+//     "name     name      name"
+//     "des      des       des"
+//     "sec1     sec1      sec1"
+//     "tag      link      link";
+
+//   .section3 {
+//     .contact-details {
+//       display: grid;
+//       grid-template-rows: 1fr 1fr 1fr;
+//     }
+//   }
+//   .email {
+//     display: flex;
+//     grid-area: email;
+//     align-self: center;
+//   }
+//   .github {
+//     grid-area: github;
+//     align-self: center;
+//   }
+//   .linkedin {
+//     grid-area: linkedin;
+//     align-self: center;
+//   }
+// }
 
 .area-education {
   grid-template-areas:
@@ -113,11 +159,8 @@
   line-height: 1.5vw;
   letter-spacing: 1px;
   overflow: auto;
-  // z-index: 2000;
   opacity: 0;
   transition: opacity 100ms;
-  // transition-delay: 200ms;
-  // overflow: hidden;
 
   .opacity {
     opacity: 1 !important;
@@ -174,7 +217,7 @@
     grid-area: des;
     justify-self: flex-start;
     align-self: flex-start;
-    line-height: clamp(16px, 1.5vw, 20px);
+    line-height: clamp(16px, 1.5vw, 30px);
     font-size: clamp(16px, 1.5vw, 20px);
     b {
       font-weight: bolder;

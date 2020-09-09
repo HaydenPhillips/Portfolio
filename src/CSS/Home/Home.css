@@ -39,11 +39,33 @@
 .area-roy {
   -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
       grid-template-columns: 1fr 1fr 1fr 1fr !important;
-      grid-template-areas: "name     name      name    ." "des      des       des     ." "sec1     sec1      sec1    sec1" "sec2     sec2      sec2    sec2" "tag      tag      link    link";
+      grid-template-areas: "name     name      name    ." "des      des       des     ." "sec1     sec1      sec1    sec1" "sec2     sec2      sec2    sec2" "tag      tag      . .";
 }
 
 .area-about {
-      grid-template-areas: "name     name    name" "sec1     sec1    sec1" "sec2     sec2    sec2" "tag      tag     tag";
+      grid-template-areas: "name     name    name" "sec1     sec1    sec3" "sec2     sec2    sec2" "sec2     sec2    sec2";
+}
+
+.area-about .section3 .contact-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1f;
+      grid-template-columns: 1f;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.area-about .section3 .contact-details .flex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .area-zap {
@@ -174,6 +196,7 @@
 
 .full-cell-content .section2 {
   -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: sec2;
@@ -199,7 +222,7 @@
   justify-self: flex-start;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  line-height: clamp(16px, 1.5vw, 20px);
+  line-height: clamp(16px, 1.5vw, 30px);
   font-size: clamp(16px, 1.5vw, 20px);
 }
 
