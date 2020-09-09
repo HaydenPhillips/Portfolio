@@ -46,28 +46,6 @@
       grid-template-areas: "name     name    name" "sec1     sec1    sec3" "sec2     sec2    sec2" "sec2     sec2    sec2";
 }
 
-.area-about .section3 .contact-details {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1f;
-      grid-template-columns: 1f;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
-}
-
-.area-about .section3 .contact-details .flex {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-
 .area-zap {
       grid-template-areas: "name     name      name" "des      des       des" "sec1     sec1      sec1" "tag      link      link";
 }
@@ -136,7 +114,7 @@
       grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   width: calc(100% - 1em);
-  height: auto;
+  height: calc(100% - 1em);
   background: #ffffff69;
   padding: 20px;
   font-family: "Roboto", sans-serif;
@@ -147,6 +125,8 @@
   opacity: 0;
   -webkit-transition: opacity 100ms;
   transition: opacity 100ms;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .full-cell-content .opacity {
@@ -184,6 +164,8 @@
   line-height: 2vw;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.534);
+  line-height: clamp(20px, 1.7vw, 28px);
+  font-size: clamp(20px, 1.7vw, 28px);
 }
 
 .full-cell-content .section1 {
@@ -199,6 +181,26 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: sec2;
+}
+
+.full-cell-content .section3 .contact-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1f;
+      grid-template-columns: 1f;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.full-cell-content .section3 .contact-details .flex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .full-cell-content .title-small {
@@ -221,12 +223,12 @@
   justify-self: flex-start;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  line-height: clamp(16px, 1.5vw, 30px);
-  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: clamp(16px, 1.4vw, 30px);
+  font-size: clamp(16px, 1.2vw, 20px);
 }
 
 .full-cell-content .description b {
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 .full-cell-content .circle {
@@ -269,9 +271,10 @@
       align-content: center;
   text-align: center;
   font-family: BebasNeue;
-  font-size: 3vw;
-  line-height: 3vw;
   letter-spacing: 1vw;
+  line-height: clamp(35px, 3vw, 50px);
+  font-size: clamp(35px, 3vw, 50px);
+  font-weight: 100;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.534);
   -webkit-box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);

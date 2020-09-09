@@ -24,7 +24,7 @@ export default [
     css: 'linear-gradient(to top, #f0d5ff 0%, #b490ca 100%)',
     height: 300,
     area: 'area-action',
-    tags: '#Web-Development #HTML #CSS #JS',
+    tags: '#Web-Development #HTML #CSS #JS #PHP',
   },
   {
     componentName: 'About',
@@ -32,7 +32,7 @@ export default [
     css: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
     height: 200,
     area: 'area-about',
-    tags: '#Interests #Profile #Thoughts',
+    tags: '#Interests #Contact',
     image: [github, linkedin]
   },
   {

@@ -44,24 +44,6 @@
     "sec1     sec1    sec3"
     "sec2     sec2    sec2"
     "sec2     sec2    sec2";
-
-  .section3 {
-    .contact-details {
-      display: grid;
-      grid-template-columns: 1f;
-      grid-template-rows: 1fr 1fr;
-      gap: 20px;
-      justify-content: center;
-      // align-items: center;
-      padding: 20px;
-
-      .flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-      }
-    }
-  }
 }
 
 .area-zap {
@@ -143,24 +125,23 @@
   scrollbar-width: none; /* Firefox */
 }
 .full-cell-content {
-  // opacity: 0 !important;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   width: calc(100% - 1em);
-  height: auto;
+  // height: auto;
   // margin-top: 20px;
-  // height: calc(100% - 1em);
+  height: calc(100% - 1em);
   background: #ffffff69;
   padding: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 20;
   font-size: 1.5vw;
   line-height: 1.5vw;
-  // letter-spacing: 1px;
   overflow: auto;
   opacity: 0;
   transition: opacity 100ms;
+  align-self: center;
 
   .opacity {
     opacity: 1 !important;
@@ -190,6 +171,8 @@
     line-height: 2vw;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.534);
+    line-height: clamp(20px, 1.7vw, 28px);
+    font-size: clamp(20px, 1.7vw, 28px);
     // box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);
     // transition: box-shadow 300ms;
   }
@@ -200,6 +183,23 @@
 
   .section2 {
     grid-area: sec2;
+  }
+
+  .section3 {
+    .contact-details {
+      display: grid;
+      grid-template-columns: 1f;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      justify-content: space-around;
+      // align-content: space-around;
+
+      .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+      }
+    }
   }
 
   .title-small {
@@ -217,10 +217,10 @@
     grid-area: des;
     justify-self: flex-start;
     align-self: flex-start;
-    line-height: clamp(16px, 1.5vw, 30px);
-    font-size: clamp(16px, 1.5vw, 20px);
+    line-height: clamp(16px, 1.4vw, 30px);
+    font-size: clamp(16px, 1.2vw, 20px);
     b {
-      font-weight: bolder;
+      font-weight: 500;
     }
   }
 
@@ -256,10 +256,10 @@
     align-content: center;
     text-align: center;
     font-family: BebasNeue;
-    font-size: 3vw;
-    line-height: 3vw;
     letter-spacing: 1vw;
-    // color: black;
+    line-height: clamp(35px, 3vw, 50px);
+    font-size: clamp(35px, 3vw, 50px);
+    font-weight: 100;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.534);
     box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);

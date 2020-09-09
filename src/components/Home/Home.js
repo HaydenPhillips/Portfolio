@@ -8,8 +8,6 @@ import '../../CSS/Home/Home.css'
 import 'antd/dist/antd.css'
 import { CloseOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
-// import ProjectRoy from '../ProjectRoy'
-// import { render } from 'react-dom'
 
 
 
@@ -47,7 +45,6 @@ export default class Home extends Component {
 class Cell extends Component {
   render() {
     const { toggle, name, tags, css, active, image, area, componentName } = this.props
-    // const transparency
 
     return (
       <div className={active ? 'cell crop' : 'cell'}
@@ -75,7 +72,6 @@ class Cell extends Component {
     )
   }
 }
-
 
 export class DynamicComponent extends Component {
   render() {
@@ -130,8 +126,6 @@ export class Roy extends Component {
             View Project
           </Link>
         </div>
-
-
       </Slug>
     )
   }
@@ -172,15 +166,7 @@ export class About extends Component {
         </div>
         <div className='section3'>
           <div className='contact-details'>
-            <div>
-              <Link
-                style={{ cursor: 'pointer', color: 'black' }}>
-                <div className='description'>
-                  hayden.colony@gmail.com
-                </div>
-              </Link>
-            </div>
-
+            <div>hayden.colony@gmail.com</div>
             <div className='flex'>
               <Link
                 to={{ pathname: 'https://github.com/HaydenPhillips' }}
@@ -188,7 +174,6 @@ export class About extends Component {
                 style={{ cursor: 'pointer', color: 'black' }}>
                 <img src={github} style={{ width: '50px', height: 'auto' }} alt='github' />
               </Link>
-
               <Link
                 to={{ pathname: 'https://www.linkedin.com/in/hayden-phillips-86a466197/' }}
                 target='_blank'
@@ -196,11 +181,8 @@ export class About extends Component {
                 <img src={linkedin} style={{ width: '50px', height: 'auto' }} alt='linkedin' />
               </Link>
             </div>
-
           </div>
         </div>
-        {/* <div className='tag'>#Interests #Profile #Location</div> */}
-        {/* <img className='image' src={image} /> */}
       </Slug>
     )
   }
@@ -324,13 +306,13 @@ export class ActionMotorsport extends Component {
         <div className='section1'>
           <div className='title-small'>Info</div>
           <div className='description'>
-            The client is a budding company in the mechanics industry, specialising in motorsports racing.
+            This client is a budding company in the mechanics industry, specialising in motorsports racing.
             This is a simple single page website with elegant navigation + basic animation and parallax effects.
             New content to be added soon.
           </div>
         </div>
 
-        <div className='tag'>#Web-dev #HTML #CSS #JS</div>
+        <div className='tag'>#Web-development #HTML #CSS #JS #PHP</div>
         <div className='link'>
           <Link to={{ pathname: 'https://www.actionmotorsport.co.nz/' }} target='_blank' style={{ cursor: 'pointer', color: 'black' }}>
             View Project
