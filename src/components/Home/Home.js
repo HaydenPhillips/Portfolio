@@ -123,11 +123,14 @@ export class Roy extends Component {
             - Generated sales through online and boutique clothing stores across the nation.
           </div>
         </div>
-        <div className='tag'>#product design #clothing #photography #videography #packaging</div>
+        <div className='tag'>#Product-Design #Clothing #Photography #Videography #Packaging</div>
 
-        <Link to={'/projectroy'} target='_blank' className='link' style={{ cursor: 'pointer' }}>
-          View Project
-      </Link>
+        <div className='link'>
+          <Link to={'/projectroy'} target='_blank' style={{ cursor: 'pointer', color: 'black' }}>
+            View Project
+          </Link>
+        </div>
+
 
       </Slug>
     )
