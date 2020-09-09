@@ -183,14 +183,14 @@ export class About extends Component {
                 to={{ pathname: 'https://github.com/HaydenPhillips' }}
                 target='_blank'
                 style={{ cursor: 'pointer', color: 'black' }}>
-                <img src={github} style={{ width: '50px', height: 'auto' }} />
+                <img src={github} style={{ width: '50px', height: 'auto' }} alt='github' />
               </Link>
 
               <Link
                 to={{ pathname: 'https://www.linkedin.com/in/hayden-phillips-86a466197/' }}
                 target='_blank'
                 style={{ cursor: 'pointer', color: 'black', }}>
-                <img src={linkedin} style={{ width: '50px', height: 'auto' }} />
+                <img src={linkedin} style={{ width: '50px', height: 'auto' }} alt='linkedin' />
               </Link>
             </div>
 
