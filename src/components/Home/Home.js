@@ -147,21 +147,18 @@ export class About extends Component {
           <div className='title-small'>Hayden Phillips</div>
           <div className='title-small'>Software Developer & Designer</div>
           <div className='title-small'>Wellington based</div>
-          <div className='title-small'>26</div>
+          <div className='title-small'>27</div>
         </div>
         <div className='section2' style={{ alignSelf: 'flex-end' }}>
           <div className='title-small'>Me in one minute</div>
           <div className='description'>
-            Ambitious and creative - Freelance web-developer & Ui designer
-            - Bachelor of Science majoring in Computer Science -
-            Previously owned and operated a menswear brand called Roy Apparel.
-            In my spare time I like to code, play chess, take photos,
-            listen to podcasts and audiobooks, hang with friends, and meet new people.
-            I am interested in frontend development e.g. React, Javascript, CSS design
-            libraries etc. as well as Ui prototyping tools such as Figma and Xd.
-            I enjoy problem-solving and have the ability to listen to, understand, learn from,
-            and build good relationships with clients, which is why web-development
-            fits me well.
+            Ambitiously creative - Software developer - Ui & Ux designer
+            - Computer Science Major -
+            I build web-apps, design & make clothing, play chess, take photos, shoot hoops, repetitively lift heavy objects, ponder life,
+            listen to podcasts, audiobooks, and music.
+            I am interested in frontend development because writing code that involves visual aspects is the beez kneez.
+            I enjoy problem-solving and always try to listen to, understand, and learn from,
+            the people around.
           </div>
         </div>
         <div className='section3'>
