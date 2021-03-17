@@ -1,15 +1,10 @@
 import React, { Fragment } from 'react';
-import lightening from '../assets/icons/lightening.svg';
-import split from '../assets/icons/split.svg';
-import piechart from '../assets/icons/pie-chart.svg';
-import arrow from '../assets/icons/down-arrow.svg';
-import account_left from '../assets/images/zap_prototype/account-45.png';
-import account_right from '../assets/images/zap_prototype/account-45-right.png';
+import account_left from '../assets/images/zap_prototype/account-45.svg';
+import account_right from '../assets/images/zap_prototype/account-45-right.svg';
 import zap_logo from '../assets/images/zap_prototype/zap_logo.png';
 import AnimationIn from './Mobile_prototype_animation';
 import { useInView } from 'react-intersection-observer'
 import '../CSS/Zap/ProjectZap.css';
-
 
 
 const ProjectZap = () => {
@@ -28,11 +23,19 @@ const ProjectZap = () => {
           </div>
           <div className="mid">
             <img src={zap_logo} alt='zap-logo' />
-            <div>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+            <div className='text-con'>
+              <h5>Payments made easy, the way it should be.</h5>
               <br />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>
+                Send and receive money with anyone, donate to an important cause, or tip professionals.
+                Just enter a ZapTag, phone number, or scan their QR code to pay.
+              </p>
+              <p>
+                Did you pay for a group birthday gift or vacation with plans
+                to have everyone pay you back later? Remind your friends who
+                owes what with Zap and send money requests at any time.
+                You can also pay your friends back if they request you.
+              </p>
             </div>
           </div>
           <div className="right">
@@ -42,60 +45,6 @@ const ProjectZap = () => {
 
         <div ref={ref} className='prototype_collection'>
           {inView ? <AnimationIn /> : <div className='empty'></div>}
-        </div>
-
-
-
-        <div className='grid-c3'>
-          <div className='ellipse'>
-            <h2>P1</h2>
-            {/* <img src={lightening} alt="lightening" /> */}
-          </div>
-          <div className='ellipse'>
-            <h2>P2</h2>
-            {/* <img src={split} alt="split-payment" /> */}
-          </div>
-          <div className='ellipse'>
-            <h2>P3</h2>
-            {/* <img src={piechart} alt="pie-chart" /> */}
-          </div>
-          <div className='text-box'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div className='text-box'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div className='text-box'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div className='box'>
-            <img src={arrow} alt="arrow" />
-          </div>
-          <div className='box'>
-            <img src={arrow} alt="arrow" />
-          </div>
-          <div className='box'>
-            <img src={arrow} alt="arrow" />
-          </div>
-
-          <div className='ellipse'>
-            <img src={lightening} alt="lightening" />
-          </div>
-          <div className='ellipse'>
-            <img src={split} alt="split-payment" />
-          </div>
-          <div className='ellipse'>
-            <img src={piechart} alt="pie-chart" />
-          </div>
-          <div className='text-box'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div className='text-box'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div className='text-box'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
         </div>
       </div>
     </Fragment>

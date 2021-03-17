@@ -5,7 +5,6 @@
   overflow: hidden;
   background-color: rgb(239, 205, 255);
 
-
   .empty {
     position: relative;
     display: grid;
@@ -14,9 +13,8 @@
     justify-items: center;
     margin: auto;
     left: -110px;
-    // background-color: blanchedalmond;
   }
-  
+
   .prototype_collection {
     position: relative;
     display: grid;
@@ -25,8 +23,7 @@
     justify-items: center;
     margin: auto;
     left: -110px;
-    // background-color: blanchedalmond;
-  
+
     .line {
       z-index: 10;
       width: 100%;
@@ -34,7 +31,7 @@
       border-bottom: solid black;
       background-color: black;
     }
-  
+
     .png {
       display: grid;
       img {
@@ -42,7 +39,7 @@
       }
     }
   }
-  
+
   #phone_main {
     position: absolute;
     z-index: 3;
@@ -50,7 +47,7 @@
     left: 0px;
     width: 80%;
   }
-  
+
   #phone_home_screen {
     z-index: 4;
     position: absolute;
@@ -58,7 +55,7 @@
     left: -90px;
     width: 45%;
   }
-  
+
   #contact_dropdown {
     position: absolute;
     z-index: 2;
@@ -67,7 +64,7 @@
     width: 80%;
     overflow: hidden;
   }
-  
+
   #recipient_selected {
     position: absolute;
     z-index: 1;
@@ -75,16 +72,15 @@
     left: 815px;
     width: 35%;
   }
-  
+
   .grid-c3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    // grid-template-rows: 400px;
     width: 100%;
     gap: 20px;
   }
-  
+
   .con {
     width: 100%;
     justify-content: space-between;
@@ -96,17 +92,17 @@
     height: auto;
     width: 100%;
     place-items: center;
-  
+
     .left {
       grid-row: span 3;
       justify-self: flex-start;
       margin-left: -20px;
-      // margin-top: 320px;
     }
     .right {
       grid-row: span 3;
       justify-self: flex-end;
       margin-right: -20px;
+      margin-top: -100px;
     }
     .mid {
       grid-row: span 3;
@@ -114,12 +110,12 @@
       grid-template-columns: 1fr;
       gap: 50px;
       justify-items: center;
-    
+      .text-con {
+        width: 165%;
+      }
     }
   }
-  
-  
-  
+
   .ellipse {
     display: grid;
     width: 300px;
@@ -129,26 +125,24 @@
     padding: 50px;
     place-items: center;
     box-shadow: 10px 10px 30px rgb(103, 33, 112);
-  
+
     img {
       width: 100%;
     }
   }
-  
+
   .box {
     display: grid;
     place-items: center;
     width: 300px;
     height: 200px;
-    // background-color: rgb(72, 178, 211);
     padding: 20px;
-  
+
     img {
-      // width: 100%;
       height: 100%;
     }
   }
-  
+
   .text-box {
     display: grid;
     justify-self: center;
@@ -156,7 +150,4 @@
     height: auto;
     padding: 10px;
   }
-  
 }
-
-
