@@ -1,4 +1,5 @@
 .sidebar {
+  z-index: 100;
   position: fixed;
   display: -ms-grid;
   display: grid;
@@ -6,10 +7,9 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  width: 200px;
+  width: 15%;
   height: 100vh;
-  background-color: rgba(179, 179, 179, 0.815);
-  border-right: 1px solid rgba(66, 66, 66, 0.719);
+  background-color: rgba(255, 255, 255, 0.342);
 }
 
 .sidebar .content {
@@ -66,7 +66,7 @@
 }
 
 .sidebar .content .section-list .section-line {
-  border-top: 2px dashed black;
+  border-top: 2px solid black;
 }
 
 .sidebar .content .section-list .sub-section-link {
@@ -78,15 +78,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: small;
-  font-weight: bold;
+  font-weight: normal;
   color: black;
   opacity: 0.7;
 }
 
 .sidebar .content .section-list .sub-section-line {
-  border-top: 1.5px dashed black;
+  border-top: 1.5px solid black;
 }
 
 .sidebar .content .section-list .section-link:hover {

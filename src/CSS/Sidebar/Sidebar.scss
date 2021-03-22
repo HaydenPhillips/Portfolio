@@ -1,12 +1,13 @@
 .sidebar {
+    z-index: 100;
     position: fixed;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    width: 200px;
+    width: 15%;
     height: 100vh;
-    background-color: rgba(179, 179, 179, 0.815);
-    border-right: 1px solid rgba(66, 66, 66, 0.719);
+    background-color: rgba(255, 255, 255, 0.342);
+    // border-right: 1px solid rgba(66, 66, 66, 0.719);
 
     .content {
         display: grid;
@@ -43,7 +44,7 @@
             }
 
             .section-line {
-                border-top: 2px dashed black;
+                border-top: 2px solid black;
             }
 
             .sub-section-link {
@@ -51,15 +52,15 @@
                 grid-template-columns: 1fr 4fr;
                 gap: 10px;
                 align-items: center;
-                padding-left: 10px;
+                padding-left: 20px;
                 font-size: small;
-                font-weight: bold;
+                font-weight: normal;
                 color: black;
                 opacity: 0.7;
             }
 
             .sub-section-line {
-                border-top: 1.5px dashed black;
+                border-top: 1.5px solid black;
             }
 
             .section-link:hover {
@@ -86,7 +87,3 @@
 .waves-effect.waves-poo .waves-ripple {
     background-color: rgba(116, 116, 116, 0.6);
 }
-
-// .side_dots {
-
-// }

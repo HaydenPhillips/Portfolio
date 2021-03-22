@@ -23,7 +23,6 @@ class Sidebar extends Component {
                     <div className="content waves-effect waves-poo">
                         <div className="section-list">
 
-
                             <Link
                                 id="landing_link"
                                 className="section-link"
@@ -49,7 +48,6 @@ class Sidebar extends Component {
                                 // onSetActive={this.handleSetActive}
                                 onSetInactive={this.handleSetInactive}
                             >
-
                                 <hr className="section-line" />
                                 projects
                             </Link>

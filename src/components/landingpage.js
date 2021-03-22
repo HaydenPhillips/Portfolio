@@ -2,8 +2,7 @@ import React, { Component, Fragment } from 'react';
 import 'materialize-css';
 import ProjectRoy from './ProjectRoy';
 import ProjectZap from './ProjectZap';
-import LayeredBackground from './LayeredBackground';
-import ParallaxTest from './ParallaxTest';
+// import LayeredBackground from './LayeredBackground';
 
 
 class Landing extends Component {
@@ -11,7 +10,7 @@ class Landing extends Component {
     render() {
         return (
             <Fragment>
-                <div className="max-width-1800">
+                <div className="max-width-1920">
                     <section className="landing">
                         {/* <LayeredBackground /> */}
                     </section>
@@ -29,9 +28,6 @@ class Landing extends Component {
                     <section className="random">
                         <h1>Project Three</h1>
                     </section>
-                    <section className="things">
-                        <h1>Things</h1>
-                    </section>
                     <section className="about">
                         <h1>About</h1>
                     </section>
@@ -43,12 +39,6 @@ class Landing extends Component {
                     </section>
                     <section className="album-name">
                         <h1>Album Two</h1>
-                    </section>
-                    <section className="marlborough">
-                        <h1>marlborough</h1>
-                    </section>
-                    <section className="tasman">
-                        <h1>tasman</h1>
                     </section>
                 </div>
             </Fragment>
