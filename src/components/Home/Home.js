@@ -81,6 +81,7 @@ export class DynamicComponent extends Component {
     else if (componentName === 'Zap') return <Zap toggle={toggle} image={image} />
     else if (componentName === 'Education') return <Education toggle={toggle} image={image} />
     else if (componentName === 'AM') return <ActionMotorsport toggle={toggle} image={image} />
+    else if (componentName === 'Whitepaper') return <Whitepaper toggle={toggle} image={image} />
     // else if (componentName === 'Contact') return <Contact toggle={toggle} image={image} />
     // else if (componentName === 'Random') return <Random toggle={toggle} image={image} />
     // else if (componentName === 'Gallery') return <Gallery toggle={toggle} image={image} />
@@ -158,7 +159,7 @@ export class About extends Component {
             listen to podcasts, audiobooks, and music.
             I am interested in frontend development because writing code that involves visual aspects is the beez kneez.
             I enjoy problem-solving and always try to listen to, understand, and learn from,
-            the people around.
+            the people around me.
           </div>
         </div>
         <div className='section3'>
@@ -321,6 +322,43 @@ export class ActionMotorsport extends Component {
     )
   }
 }
+
+export class Whitepaper extends Component {
+  render() {
+    const { toggle } = this.props
+    return (
+      <Slug delay={600}>
+        <div className='name'>DAO Whitepaper</div>
+        <div className="close">
+          <CloseOutlined type="close" style={{ cursor: 'pointer' }} onClick={toggle} />
+        </div>
+        <div className='description'>
+          A Decentralised Autonomous Organisation Whitepaper created during 
+          the summer of 2019 Tri-3 Victoria University.</div>
+
+        <div className='section1'>
+          <div className='title-small'>Info</div>
+          <div className='description'>
+          Planter Project aids in environmental sustainability via forestation of land. 
+          It is a platform which encourages landowners, companies, and consumers to 
+          collaborate as a community to offset carbon emissions.
+          </div>
+        </div>
+
+        <div className='tag'>#Blockchain #DAO #Diagram</div>
+        <div className='link'>
+          <Link to={ '/whitepaper' } target='_blank' style={{ cursor: 'pointer', color: 'black' }}>
+            View Project
+        </Link>
+        </div>
+
+        {/* <img className='image' src={this.props.image} /> */}
+      </Slug>
+    )
+  }
+}
+
+
 
 // export class Contact extends Component {
 //   render() {

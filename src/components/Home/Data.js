@@ -15,7 +15,7 @@ export default [
     css: 'linear-gradient(to top, #d1e6ff 0%, #99c7ff 100%)',
     area: 'area-roy',
     height: 400,
-    tags: '#Product-Design #Photography #Videography #Packaging #Clothing #Web-Development',
+    tags: '+product-design +photography +videography +packaging +clothing',
     image: [roy_logo_white],
   },
   {
@@ -24,7 +24,7 @@ export default [
     css: 'linear-gradient(to top, #f0d5ff 0%, #b490ca 100%)',
     height: 300,
     area: 'area-action',
-    tags: '#Web-Development #HTML #CSS #JS #PHP',
+    tags: '+web-development +HTML +CSS +JS +PHP',
   },
   {
     componentName: 'About',
@@ -32,7 +32,7 @@ export default [
     css: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
     height: 200,
     area: 'area-about',
-    tags: '#Interests #Contact',
+    tags: '+interests +contact',
     image: [github, linkedin]
   },
   {
@@ -41,27 +41,27 @@ export default [
     css: 'linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)',
     height: 300,
     area: 'area-education',
-    tags: '#Computer-Science #Engineering #Design #Business',
+    tags: '+computer-science +engineering +design +business',
     componentName: 'Education',
     image: [VIC, NUS, CHQ, NZFT]
   },
   {
     componentName: 'Zap',
-    name: 'Project Zap',
+    name: 'Zap',
     css: 'linear-gradient(to top, #b2e0ff 0%, #68a2c9 100%)',
     area: 'area-zap',
-    height: 300,
-    tags: '#Prototyping #Ui #Ux #Mobile-Application',
+    height: 200,
+    tags: '+prototype +Ui +Ux +mobile-application',
   },
-  // {
-  //   componentName: 'Contact',
-  //   name: 'Contact',
-  //   area: 'area-contact',
-  //   css: 'linear-gradient(-225deg, #f1e1ff 0%, #ebd3ff 100%)',
-  //   height: 300,
-  //   tags: '#Email #Github #Linkedin',
-  //   image: [github, linkedin]
-  // },
+  {
+    componentName: 'Whitepaper',
+    name: 'Planter Project',
+    area: 'area-action',
+    css: 'linear-gradient(-225deg, #f1e1ff 0%, #ebd3ff 100%)',
+    height: 100,
+    tags: '+whitepaper +DAO +blockchain',
+    // image: [ whitepaperPDF ]
+  },
   // {
   //   componentName: 'Gallery',
   //   name: 'Gallery',
