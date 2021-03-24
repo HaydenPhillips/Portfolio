@@ -6,7 +6,7 @@ const Whitepaper = () => {
   
   return (
     <div className='pdf'>
-      <img src={ whitepaper }></img>
+      <img src={ whitepaper } alt='DAO whitepaper'></img>
     </div>
   )
 } 
