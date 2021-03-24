@@ -10,21 +10,21 @@ import linkedin from '../../assets/icons/contact/linkedin.png';
 
 export default [
   {
-    componentName: 'Roy',
-    name: 'Roy Apparel',
-    css: 'linear-gradient(to top, #d1e6ff 0%, #99c7ff 100%)',
-    area: 'area-roy',
-    height: 400,
-    tags: '+product-design +photography +videography +packaging +clothing',
-    image: [roy_logo_white],
-  },
-  {
     componentName: 'AM',
     name: 'Action Motorsport',
-    css: 'linear-gradient(to top, #f0d5ff 0%, #b490ca 100%)',
-    height: 300,
+    css: 'linear-gradient(to top, #d1e6ff 0%, #99c7ff 100%)',
+    height: 400,
     area: 'area-action',
     tags: '+web-development +HTML +CSS +JS +PHP',
+  },
+  {
+    componentName: 'Roy',
+    name: 'Roy Apparel',
+    css: 'linear-gradient(to top, #f0d5ff 0%, #b490ca 100%)',
+    area: 'area-roy',
+    height: 300,
+    tags: '+product-design +photography +videography +packaging +clothing',
+    image: [roy_logo_white],
   },
   {
     componentName: 'About',
