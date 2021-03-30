@@ -3,7 +3,6 @@ import { config } from 'react-spring/renderprops'
 import Grid from './Grid'
 import { Slug, FadeUp, Fade } from './Primitives'
 import data from './Data'
-// import 'materialize-css';
 import '../../CSS/Home/Home.css'
 import 'antd/dist/antd.css'
 import { CloseOutlined } from '@ant-design/icons'
@@ -83,7 +82,6 @@ export class DynamicComponent extends Component {
     else if (componentName === 'AM') return <ActionMotorsport toggle={toggle} image={image} />
     else if (componentName === 'Whitepaper') return <Whitepaper toggle={toggle} image={image} />
     // else if (componentName === 'Contact') return <Contact toggle={toggle} image={image} />
-    // else if (componentName === 'Random') return <Random toggle={toggle} image={image} />
     // else if (componentName === 'Gallery') return <Gallery toggle={toggle} image={image} />
   }
 }
@@ -328,7 +326,7 @@ export class Whitepaper extends Component {
     const { toggle } = this.props
     return (
       <Slug delay={600}>
-        <div className='name'>DAO Whitepaper</div>
+        <div className='name'>Planter Project</div>
         <div className="close">
           <CloseOutlined type="close" style={{ cursor: 'pointer' }} onClick={toggle} />
         </div>
@@ -349,59 +347,9 @@ export class Whitepaper extends Component {
         <div className='link'>
           <Link to={ '/whitepaper' } target='_blank' style={{ cursor: 'pointer', color: 'black' }}>
             View Project
-        </Link>
+          </Link>
         </div>
-
-        {/* <img className='image' src={this.props.image} /> */}
       </Slug>
     )
   }
 }
-
-
-
-// export class Contact extends Component {
-//   render() {
-//     const { image } = this.props
-//     // const email = image[0]
-//     const github = image[0]
-//     const linkedin = image[1]
-
-//     return (
-//       <Slug delay={600}>
-//         <div className='name'>Contact</div>
-//         <div className='email'>
-//           <span class="material-icons">alternate_email</span>
-//           {/* <div className='title-small'>Email</div> */}
-//           <div className='description'>
-//             hayden.colony@gmail.com
-//           </div>
-//         </div>
-//         <div className='tag'><span class="material-icons">alternate_email</span></div>
-
-//         <div className='contact-details'>
-//           <Link
-//             to={{ pathname: 'https://github.com/HaydenPhillips' }}
-//             target='_blank'
-//             style={{ cursor: 'pointer', color: 'black' }}>
-//             <span class="material-icons">alternate_email</span>
-//           </Link>
-//           <Link
-//             to={{ pathname: 'https://github.com/HaydenPhillips' }}
-//             target='_blank'
-//             style={{ cursor: 'pointer', color: 'black' }}>
-//             <img src={github} style={{ width: '30px', height: 'auto' }} />
-//           </Link>
-//           <Link
-//             to={{ pathname: 'https://www.linkedin.com/in/hayden-phillips-86a466197/' }}
-//             target='_blank'
-//             style={{ cursor: 'pointer', color: 'black', }}>
-//             <img src={linkedin} style={{ width: '30px', height: 'auto' }} />
-//           </Link>
-//         </div>
-
-//         {/* <img className='image' src={this.props.image} /> */}
-//       </Slug>
-//     )
-//   }
-// }

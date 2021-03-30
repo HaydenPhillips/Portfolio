@@ -7,10 +7,13 @@ import eva_st from "../assets/videos/project_roy/eva_st.mp4";
 // import wheel_3 from "../assets/videos/project_roy/overlocker_motor_wheel_motion.mp4";
 // import package_insert from "../assets/videos/project_roy/package_insert.mp4";
 // import five_swingtag from "../assets/images/project_roy/five_swingtag.jpg";
-import gif1 from "../assets/images/project_roy/knolling_SS_navy.jpg";
-import gif2 from "../assets/images/project_roy/knolling_SS_white.jpg";
+import gif1 from "../assets/images/project_roy/knolling_SS_navy_small.jpg";
+import gif2 from "../assets/images/project_roy/knolling_SS_white_small.jpg";
+import SS_front_blue from "../assets/images/project_roy/SS_front_blue.jpg";
+import pyramid from "../assets/images/project_roy/pyramid_blue_small.jpg";
 // import roy_logo from "../assets/images/project_roy/logo_tree.jpg";
-import roy_logo_white from "../assets/images/project_roy/logo_tree_white.png";
+// import roy_logo_white from "../assets/images/project_roy/logo_tree_white.png";
+import roy_logo_white from "../assets/images/project_roy/logo_tree_white_small.png";
 import care_instructions from "../assets/images/project_roy/care_instructions.jpg";
 import LS_navy_background from '../assets/images/project_roy/LS_navy_background.jpg';
 import chiffon_macro from '../assets/images/project_roy/chiffon_macro.jpg';
@@ -108,7 +111,7 @@ const ProjectRoy = () => {
                     </ParallaxLayer>
 
                     <ParallaxLayer onClick={() => parallax.scrollTo(2)} offset={1.1} speed={0.5}
-                        style={{ backgroundColor: 'white' }}
+                        style={{ backgroundColor: 'transparent' }}
                     />
 
                     <ParallaxLayer onClick={() => parallax.scrollTo(3)} offset={2.1} speed={0.5}
@@ -177,7 +180,7 @@ const ProjectRoy = () => {
                                 alignItems: 'center',
                                 justifyContent: 'flex-start'
                             }}>
-                            <img className='image' src={gif1} alt="" />
+                            <img className='image' src={SS_front_blue} alt="" />
                         </ParallaxLayer>
                         <ParallaxLayer offset={1} speed={1}
                             style={{
@@ -185,7 +188,7 @@ const ProjectRoy = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center'
                             }}>
-                            <img className='image' src={gif2} alt="" />
+                            <img className='image' src={pyramid} alt="" />
                         </ParallaxLayer>
                         <ParallaxLayer offset={1} speed={0.6}
                             style={{
@@ -193,7 +196,7 @@ const ProjectRoy = () => {
                                 alignItems: 'center',
                                 justifyContent: 'flex-end'
                             }}>
-                            <img className='image' src={gif2} alt="" />
+                            <img className='image' src={gif1} alt="" />
                         </ParallaxLayer>
 
                         <ParallaxLayer offset={2.05} speed={0.8}

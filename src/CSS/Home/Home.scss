@@ -62,34 +62,6 @@
     "tag      link      link";
 }
 
-// .area-contact {
-//   grid-template-areas:
-//     "name     name      name"
-//     "des      des       des"
-//     "sec1     sec1      sec1"
-//     "tag      link      link";
-
-//   .section3 {
-//     .contact-details {
-//       display: grid;
-//       grid-template-rows: 1fr 1fr 1fr;
-//     }
-//   }
-//   .email {
-//     display: flex;
-//     grid-area: email;
-//     align-self: center;
-//   }
-//   .github {
-//     grid-area: github;
-//     align-self: center;
-//   }
-//   .linkedin {
-//     grid-area: linkedin;
-//     align-self: center;
-//   }
-// }
-
 .area-education {
   grid-template-areas:
     "name    name     name"

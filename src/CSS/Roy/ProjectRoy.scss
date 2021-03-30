@@ -109,14 +109,14 @@
     justify-items: center;
     align-items: center;
     z-index: 3;
-    background-image: url();
+    // background-image: url();
 }
 
 .logo-small {
     display: block;
-    width: 200px;
-    height: 200px;
-    justify-self: center;
+    width: 150px;
+    height: 150px;
+    justify-self: flex-end;
     // -webkit-filter: drop-shadow(5px 5px 5px rgb(255, 0, 0));
     filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }

@@ -61,15 +61,13 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 3;
-  background-image: url();
 }
 
 .logo-small {
   display: block;
-  width: 200px;
-  height: 200px;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  width: 150px;
+  height: 150px;
+  justify-self: flex-end;
   -webkit-filter: drop-shadow(5px 5px 5px black);
           filter: drop-shadow(5px 5px 5px black);
 }
