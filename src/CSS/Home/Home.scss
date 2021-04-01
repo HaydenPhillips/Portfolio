@@ -10,40 +10,37 @@
   display: flex;
   justify-content: center;
   box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.4s;
+  transition: box-shadow 0.3s;
   font-size: 15px;
   line-height: 10px;
   padding: 20px;
 }
 
 .crop {
-  // opacity: 0.3;
-  // justify-items: center;
   margin: auto;
   align-self: center;
   align-content: center;
-  width: 70%;
+  width: 90%;
   height: 90%;
   margin-top: 20px;
-  // opacity: 1;
 }
 
 .area-roy {
   grid-template-columns: 1fr 1fr 1fr 1fr !important;
   grid-template-areas:
     "name     name      name    ."
-    "des      des       des     ."
-    "sec1     sec1      sec1    sec1"
-    "sec2     sec2      sec2    sec2"
-    "tag      tag       link    link";
+    "des      des       .    ."
+    "sec1     sec1      .    ."
+    "sec2     sec2      .    ."
+    "sec2     sec2      link    link";
 }
 
 .area-about {
+  // grid-template-columns: 1fr 1fr 1fr 1fr !important;
   grid-template-areas:
     "name     name    name"
     "sec1     sec1    sec3"
-    "sec2     sec2    sec2"
-    "sec2     sec2    sec2";
+    "sec2     sec2    .";
 }
 
 .area-zap {
@@ -96,13 +93,12 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
 .full-cell-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   width: calc(100% - 1em);
-  // height: auto;
-  // margin-top: 20px;
   height: calc(100% - 1em);
   background: #ffffff69;
   padding: 20px;
@@ -142,7 +138,7 @@
     font-size: 2vw;
     line-height: 2vw;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.534);
+    background-color: rgba(255, 255, 255, 0.185);
     line-height: clamp(20px, 1.7vw, 28px);
     font-size: clamp(20px, 1.7vw, 28px);
     // box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);
@@ -158,18 +154,27 @@
   }
 
   .section3 {
+    grid-area: sec3;
     .contact-details {
       display: grid;
       grid-template-columns: 1f;
       grid-template-rows: 1fr 1fr;
       gap: 20px;
-      justify-content: space-around;
-      // align-content: space-around;
+      justify-content: flex-start;
 
       .flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+
+        .github {
+          width: 50px;
+          height: auto;
+        }
+        .linkedin {
+          width: 50px;
+          height: auto;
+        }
       }
     }
   }
@@ -234,11 +239,11 @@
     font-weight: 100;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.534);
-    box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.3);
     transition: box-shadow 300ms;
   }
   .link:hover {
-    box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
 
   .course {
@@ -278,7 +283,7 @@
 }
 
 .cell:hover {
-  box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   .name-hash {
     transform: translateY(calc(-100% + 25px));
     transition-duration: 300ms;

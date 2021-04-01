@@ -15,10 +15,10 @@
           justify-content: center;
   -webkit-box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
-  -webkit-transition: -webkit-box-shadow 0.4s;
-  transition: -webkit-box-shadow 0.4s;
-  transition: box-shadow 0.4s;
-  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   font-size: 15px;
   line-height: 10px;
   padding: 20px;
@@ -31,7 +31,7 @@
       align-self: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 70%;
+  width: 90%;
   height: 90%;
   margin-top: 20px;
 }
@@ -39,11 +39,11 @@
 .area-roy {
   -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
       grid-template-columns: 1fr 1fr 1fr 1fr !important;
-      grid-template-areas: "name     name      name    ." "des      des       des     ." "sec1     sec1      sec1    sec1" "sec2     sec2      sec2    sec2" "tag      tag       link    link";
+      grid-template-areas: "name     name      name    ." "des      des       .    ." "sec1     sec1      .    ." "sec2     sec2      .    ." "sec2     sec2      link    link";
 }
 
 .area-about {
-      grid-template-areas: "name     name    name" "sec1     sec1    sec3" "sec2     sec2    sec2" "sec2     sec2    sec2";
+      grid-template-areas: "name     name    name" "sec1     sec1    sec3" "sec2     sec2    .";
 }
 
 .area-zap {
@@ -163,7 +163,7 @@
   font-size: 2vw;
   line-height: 2vw;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.534);
+  background-color: rgba(255, 255, 255, 0.185);
   line-height: clamp(20px, 1.7vw, 28px);
   font-size: clamp(20px, 1.7vw, 28px);
 }
@@ -177,10 +177,15 @@
 
 .full-cell-content .section2 {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: sec2;
+}
+
+.full-cell-content .section3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: sec3;
 }
 
 .full-cell-content .section3 .contact-details {
@@ -191,8 +196,9 @@
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .full-cell-content .section3 .contact-details .flex {
@@ -201,6 +207,16 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   justify-items: center;
+}
+
+.full-cell-content .section3 .contact-details .flex .github {
+  width: 50px;
+  height: auto;
+}
+
+.full-cell-content .section3 .contact-details .flex .linkedin {
+  width: 50px;
+  height: auto;
 }
 
 .full-cell-content .title-small {
@@ -277,8 +293,6 @@
   font-weight: 100;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.534);
-  -webkit-box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);
   -webkit-transition: -webkit-box-shadow 300ms;
   transition: -webkit-box-shadow 300ms;
   transition: box-shadow 300ms;
@@ -286,8 +300,8 @@
 }
 
 .full-cell-content .link:hover {
-  -webkit-box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .full-cell-content .course {
@@ -334,8 +348,8 @@
 }
 
 .cell:hover {
-  -webkit-box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .cell:hover .name-hash {
