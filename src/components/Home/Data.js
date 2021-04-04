@@ -1,66 +1,69 @@
-import roy_logo_white from '../../assets/images/project_roy/logo_tree_white.png';
+import roy_logo_white from "../../assets/images/project_roy/logo_tree_white.png";
 // import chiffon_macro from '../../assets/images/project_roy/chiffon_macro.jpg';
-import CHQ from '../../assets/icons/education/CHQ.svg';
-import NUS from '../../assets/icons/education/NUS.svg';
-import VIC from '../../assets/icons/education/VIC.svg';
-import NZFT from '../../assets/icons/education/NZFT.jpg';
-import github from '../../assets/icons/contact/github.svg';
-import linkedin from '../../assets/icons/contact/linkedin.png';
-
+import CHQ from "../../assets/icons/education/CHQ.svg";
+import NUS from "../../assets/icons/education/NUS.svg";
+import VIC from "../../assets/icons/education/VIC.svg";
+import NZFT from "../../assets/icons/education/NZFT.jpg";
+import github from "../../assets/icons/contact/github.svg";
+import linkedin from "../../assets/icons/contact/linkedin.png";
 
 export default [
   {
-    componentName: 'AM',
-    name: 'Action Motorsport',
-    css: 'linear-gradient(to top, #d1e6ff 0%, #99c7ff 100%)',
+    componentName: "AM",
+    name: "Action Motorsport",
+    // css: "linear-gradient(to top, #d1e6ff 0%, #99c7ff 100%)",
+    css: "#CEDDFF",
     height: 400,
-    area: 'area-action',
-    tags: '+web-development +HTML +CSS +JS +PHP',
+    area: "area-action",
+    tags: "+web-development +HTML +CSS +JS +PHP",
   },
   {
-    componentName: 'Roy',
-    name: 'Roy Apparel',
-    css: 'linear-gradient(to top, #f0d5ff 0%, #b490ca 100%)',
-    area: 'area-roy',
+    componentName: "About",
+    name: "About",
+    css: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+    height: 200,
+    area: "area-about",
+    tags: "+interests +contact",
+    image: [github, linkedin],
+  },
+  {
+    componentName: "Roy",
+    name: "Roy Apparel",
+    // css: "linear-gradient(to top, #f0d5ff 0%, #b490ca 100%)",
+    css: "#CEDDFF",
+    area: "area-roy",
     height: 300,
-    tags: '+product-design +photography +videography +packaging +clothing',
+    tags: "+product-design +photography +videography +packaging +clothing",
     image: [roy_logo_white],
   },
+
   {
-    componentName: 'About',
-    name: 'About',
-    css: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+    componentName: "Zap",
+    name: "Zap",
+    // css: "linear-gradient(to top, #b2e0ff 0%, #68a2c9 100%)",
+    css: "#CEDDFF",
+    area: "area-zap",
     height: 200,
-    area: 'area-about',
-    tags: '+interests +contact',
-    image: [github, linkedin]
+    tags: "+prototype +Ui +Ux +mobile-application",
   },
   {
-    name: 'Education',
-    description: '#e0c3fc → #8ec5fc',
-    css: 'linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)',
-    height: 300,
-    area: 'area-education',
-    tags: '+computer-science +engineering +design +business',
-    componentName: 'Education',
-    image: [VIC, NUS, CHQ, NZFT]
-  },
-  {
-    componentName: 'Zap',
-    name: 'Zap',
-    css: 'linear-gradient(to top, #b2e0ff 0%, #68a2c9 100%)',
-    area: 'area-zap',
-    height: 200,
-    tags: '+prototype +Ui +Ux +mobile-application',
-  },
-  {
-    componentName: 'Whitepaper',
-    name: 'Planter Project',
-    area: 'area-action',
-    css: 'linear-gradient(-225deg, #f1e1ff 0%, #ebd3ff 100%)',
+    componentName: "Whitepaper",
+    name: "Planter Project",
+    area: "area-action",
+    // css: "linear-gradient(-225deg, #f1e1ff 0%, #ebd3ff 100%)",
+    css: "#CEDDFF",
     height: 100,
-    tags: '+whitepaper +DAO +blockchain',
-    // image: [ whitepaperPDF ]
+    tags: "+whitepaper +DAO +blockchain",
+  },
+  {
+    componentName: "Education",
+    name: "Education",
+    description: "#e0c3fc → #8ec5fc",
+    css: "linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)",
+    height: 300,
+    area: "area-education",
+    tags: "+computer-science +engineering +design +business",
+    image: [VIC, NUS, CHQ, NZFT],
   },
   // {
   //   componentName: 'Gallery',
@@ -95,4 +98,4 @@ export default [
   //   css: 'linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)',
   //   height: 100,
   // },
-]
+];

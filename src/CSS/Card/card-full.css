@@ -1,0 +1,48 @@
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: 100%;
+  background-color: blue;
+}
+
+.project-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  background-color: white;
+}
+
+.project-card .title-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  justify-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  background-color: silver;
+}
+
+.project-card .title-bar .title {
+  font-size: 50px;
+  font-family: BebasNeue;
+  letter-spacing: 30px;
+  justify-self: flex-start;
+}
+
+.project-card .card-split {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  height: 100%;
+}
+/*# sourceMappingURL=card-full.css.map */

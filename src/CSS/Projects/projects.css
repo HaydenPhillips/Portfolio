@@ -1,1 +1,232 @@
-/* No CSS *//*# sourceMappingURL=projects.css.map */
+@font-face {
+  font-family: BebasNeue;
+  src: url(../../assets/fonts/BebasNeue.otf);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  padding: 30px;
+  background-color: #eaf1ff;
+}
+
+.grid .column-one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 5fr 2fr;
+      grid-template-rows: 5fr 2fr;
+  gap: 30px;
+}
+
+.grid .column-one .wrapper1 {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  margin-right: -5px;
+  padding: 15px 0px 15px 15px;
+  background-color: #d9e2f5;
+  height: 100%;
+  -webkit-box-shadow: inset 0px 0px 10px #7a8abc;
+          box-shadow: inset 0px 0px 10px #7a8abc;
+}
+
+.grid .column-one .wrapper1 .inner-col-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  gap: 30px;
+  padding: 15px 5px 15px 15px;
+  background-color: #d9e2f5;
+  z-index: 5;
+  -webkit-box-shadow: 0px 0px 5px 10px #d9e2f5;
+          box-shadow: 0px 0px 5px 10px #d9e2f5;
+}
+
+.grid .column-one .inner-col-bot {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding-right: 30px;
+}
+
+.grid .column-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 7fr 1fr;
+      grid-template-rows: 7fr 1fr;
+  gap: 30px;
+}
+
+.grid .column-two .inner-col-top {
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
+  background-color: #d9e2f5;
+  -webkit-box-shadow: inset 0px 0px 10px #7a8abc;
+          box-shadow: inset 0px 0px 10px #7a8abc;
+}
+
+.grid .column-two .inner-col-bot {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.grid .column-three {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr 4fr;
+      grid-template-rows: 2fr 4fr;
+  gap: 30px;
+}
+
+.grid .column-three .wrapper1 {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  margin-left: -5px;
+  padding: 15px 15px 15px 0px;
+  background-color: #d9e2f5;
+  height: 100%;
+  -webkit-box-shadow: inset 0px 0px 10px #7a8abc;
+          box-shadow: inset 0px 0px 10px #7a8abc;
+}
+
+.grid .column-three .wrapper1 .inner-col-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 30px;
+  padding: 15px 15px 15px 5px;
+  background-color: #d9e2f5;
+  z-index: 5;
+  -webkit-box-shadow: 0px 0px 5px 10px #d9e2f5;
+          box-shadow: 0px 0px 5px 10px #d9e2f5;
+}
+
+.grid .column-three .inner-col-bot {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding-left: 30px;
+}
+
+.grid .cell {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 10px #7a8abc;
+          box-shadow: 0px 0px 10px #7a8abc;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.grid .cell .cell-content {
+  width: 100%;
+  height: 100%;
+}
+
+.grid .cell .cell-content .name-hash {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  position: absolute;
+  top: calc(100% - 40px);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  padding-right: 10px;
+}
+
+.grid .cell .cell-content .name-hash .cell-name {
+  font-family: BebasNeue;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+
+.grid .cell .cell-content .name-hash .cell-tags {
+  opacity: 0;
+  font-family: coves-light;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: black;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.grid .cell:hover {
+  -webkit-box-shadow: 0 0 20px #7a8abc;
+          box-shadow: 0 0 20px #7a8abc;
+}
+
+.grid .cell:hover .name-hash {
+  -webkit-transform: translateY(calc(-100% + 25px));
+          transform: translateY(calc(-100% + 25px));
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.grid .cell:hover .name-hash .cell-tags {
+  opacity: 1;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+.grid .title {
+  margin: -15px -15px;
+  font-size: 25px;
+  font-family: BebasNeue;
+  letter-spacing: 10px;
+  justify-self: flex-start;
+  text-shadow: 2px 2px 5px #7a8abc;
+  -webkit-transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s;
+}
+
+.grid .title:hover {
+  text-shadow: 2px 2px 10px #5d6b96;
+}
+/*# sourceMappingURL=projects.css.map */

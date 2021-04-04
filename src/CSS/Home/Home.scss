@@ -3,18 +3,18 @@
   src: url(../../assets/fonts/BebasNeue.otf);
 }
 
-.cell {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s;
-  font-size: 15px;
-  line-height: 10px;
-  padding: 20px;
-}
+// .cell {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
+//   transition: box-shadow 0.3s;
+//   font-size: 15px;
+//   line-height: 10px;
+//   padding: 20px;
+// }
 
 .crop {
   margin: auto;
@@ -252,48 +252,48 @@
   }
 }
 
-.cell-content {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+// .cell-content {
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
 
-  .name-hash {
-    display: grid;
-    grid-template-rows: auto auto;
-    position: absolute;
-    top: calc(100% - 25px);
-    transition: all 500ms ease;
+//   .name-hash {
+//     display: grid;
+//     grid-template-rows: auto auto;
+//     position: absolute;
+//     top: calc(100% - 25px);
+//     transition: all 500ms ease;
 
-    .cell-name {
-      font-family: BebasNeue;
-      font-size: 30px;
-      line-height: 30px;
-      letter-spacing: 5px;
-    }
-    .cell-tags {
-      opacity: 0;
-      font-family: coves-light;
-      font-size: 20px;
-      line-height: 30px;
-      letter-spacing: 1px;
-      color: rgb(0, 0, 0);
-      transition: all 500ms ease;
-    }
-  }
-}
+//     .cell-name {
+//       font-family: BebasNeue;
+//       font-size: 30px;
+//       line-height: 30px;
+//       letter-spacing: 5px;
+//     }
+//     .cell-tags {
+//       opacity: 0;
+//       font-family: coves-light;
+//       font-size: 20px;
+//       line-height: 30px;
+//       letter-spacing: 1px;
+//       color: rgb(0, 0, 0);
+//       transition: all 500ms ease;
+//     }
+//   }
+// }
 
-.cell:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  .name-hash {
-    transform: translateY(calc(-100% + 25px));
-    transition-duration: 300ms;
-    .cell-tags {
-      opacity: 1;
-      transition: opacity 200ms linear;
-      transition-delay: 200ms;
-    }
-  }
-}
+// .cell:hover {
+//   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+//   .name-hash {
+//     transform: translateY(calc(-100% + 25px));
+//     transition-duration: 300ms;
+//     .cell-tags {
+//       opacity: 1;
+//       transition: opacity 200ms linear;
+//       transition-delay: 200ms;
+//     }
+//   }
+// }
 
 .grid {
   flex: 1;

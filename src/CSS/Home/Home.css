@@ -3,27 +3,6 @@
   src: url(../../assets/fonts/BebasNeue.otf);
 }
 
-.cell {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  font-size: 15px;
-  line-height: 10px;
-  padding: 20px;
-}
-
 .crop {
   margin: auto;
   -ms-flex-item-align: center;
@@ -310,61 +289,6 @@
   -ms-grid-column: 3;
   grid-area: course;
   text-justify: auto;
-}
-
-.cell-content {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.cell-content .name-hash {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-  position: absolute;
-  top: calc(100% - 25px);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.cell-content .name-hash .cell-name {
-  font-family: BebasNeue;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: 5px;
-}
-
-.cell-content .name-hash .cell-tags {
-  opacity: 0;
-  font-family: coves-light;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: black;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.cell:hover {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.cell:hover .name-hash {
-  -webkit-transform: translateY(calc(-100% + 25px));
-          transform: translateY(calc(-100% + 25px));
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-}
-
-.cell:hover .name-hash .cell-tags {
-  opacity: 1;
-  -webkit-transition: opacity 200ms linear;
-  transition: opacity 200ms linear;
-  -webkit-transition-delay: 200ms;
-          transition-delay: 200ms;
 }
 
 .grid {
