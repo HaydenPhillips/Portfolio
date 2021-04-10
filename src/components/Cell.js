@@ -2,31 +2,54 @@ import "../CSS/Projects/projects.css";
 import React, { Fragment, useState } from "react";
 import CardFull from "./CardFull";
 import Modal from "./Modal";
+import { useSpring, animated } from "react-spring";
 
-const Cell = (props) => {
+export default function Cell({ componentName, name, tags }) {
+  const calc = (x, y) => {
+    const winW = window.innerWidth;
+    const winH = window.innerHeight;
+    const s = winW > 2000 || winH > 1200 ? 20 : 10;
+    if (x > winW * 0.66) {
+      return [-(y - winH / 2) / s, (x - winW * 0.33 - winW / 2) / s, 1.03];
+    } else if (x < winW * 0.33) {
+      return [-(y - winH / 2) / s, (x + winW * 0.33 - winW / 2) / s, 1.03];
+    } else {
+      return [-(y - winH / 2) / s, (x - winW / 2) / s, 1.03];
+    }
+  };
+  const trans = (x, y, s) =>
+    `perspective(5000px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
   const [isOpen, setIsOpen] = useState(false);
-  const bgColor = props.cellData.css;
+
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 300, friction: 60, clamp: true },
+  }));
+
+  const onClose = () => {
+    setIsOpen(false);
+  };
 
   return (
     <Fragment>
-      <div
+      <animated.div
         className="cell"
-        style={{ background: bgColor }}
+        onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+        onMouseLeave={() => set({ xys: [0, 0, 1] })}
+        style={{ transform: props.xys.interpolate(trans) }}
         onClick={() => setIsOpen(true)}
       >
         <div className="cell-content">
           <div className="name-hash">
-            <div className="cell-name">{props.cellData.name}</div>
-            <div className="cell-tags">{props.cellData.tags}</div>
+            <div className="cell-name">{name}</div>
+            <div className="cell-tags">{tags}</div>
           </div>
         </div>
-      </div>
+      </animated.div>
 
-      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-        <CardFull />
+      <Modal open={isOpen}>
+        <CardFull componentName={componentName} onClose={onClose} />
       </Modal>
     </Fragment>
   );
-};
-
-export default Cell;
+}

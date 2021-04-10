@@ -11,9 +11,9 @@ export default function Modal({ open, children, onClose }) {
         <div className="modal-container">
           {children}
 
-          <button className="close-modal" onClick={onClose}>
+          {/* <button className="close-modal" onClick={onClose}>
             <i className="material-icons">close</i>
-          </button>
+          </button> */}
         </div>
       </div>
     </Fragment>,

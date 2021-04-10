@@ -4,8 +4,7 @@ import Cell from "./Cell";
 import Data from "./Home/Data";
 
 const Landing = () => {
-  const [data, setData] = useState(Data);
-
+  const [data] = useState(Data);
   return (
     <Fragment>
       <div className="grid">
@@ -13,33 +12,55 @@ const Landing = () => {
           <div className="wrapper1">
             <div className="inner-col-top">
               <div className="title">projects</div>
-              <Cell cellData={data[0]} />
+              <Cell
+                componentName={data[0].componentName}
+                name={data[0].name}
+                tags={data[0].tags}
+              />
             </div>
           </div>
 
           <div className="inner-col-bot">
-            <Cell cellData={data[1]} />
+            <Cell
+              componentName={data[1].componentName}
+              name={data[1].name}
+              tags={data[1].tags}
+            />
           </div>
         </div>
 
         <div className="column-two">
           <div className="inner-col-top">
-            <Cell cellData={data[2]} />
-            <Cell cellData={data[3]} />
+            <Cell
+              componentName={data[2].componentName}
+              name={data[2].name}
+              tags={data[2].tags}
+            />
+            <Cell
+              componentName={data[3].componentName}
+              name={data[3].name}
+              tags={data[3].tags}
+            />
           </div>
-          <div className="inner-col-bot">
-            {/* <Cell cellData={data[5]} /> */}
-          </div>
+          <div className="inner-col-bot"></div>
         </div>
 
         <div className="column-three">
           <div className="wrapper1">
             <div className="inner-col-top">
-              <Cell cellData={data[4]} />
+              <Cell
+                componentName={data[4].componentName}
+                name={data[4].name}
+                tags={data[4].tags}
+              />
             </div>
           </div>
           <div className="inner-col-bot">
-            <Cell cellData={data[5]} style={{ backgroundColour: "grey" }} />
+            <Cell
+              componentName={data[5].componentName}
+              name={data[5].name}
+              tags={data[5].tags}
+            />
           </div>
         </div>
       </div>

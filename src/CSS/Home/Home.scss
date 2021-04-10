@@ -1,305 +1,305 @@
-@font-face {
-  font-family: BebasNeue;
-  src: url(../../assets/fonts/BebasNeue.otf);
-}
+// @font-face {
+//   font-family: BebasNeue;
+//   src: url(../../assets/fonts/BebasNeue.otf);
+// }
 
-// .cell {
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   justify-content: center;
-//   box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
-//   transition: box-shadow 0.3s;
-//   font-size: 15px;
-//   line-height: 10px;
+// // .cell {
+// //   position: relative;
+// //   width: 100%;
+// //   height: 100%;
+// //   display: flex;
+// //   justify-content: center;
+// //   box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
+// //   transition: box-shadow 0.3s;
+// //   font-size: 15px;
+// //   line-height: 10px;
+// //   padding: 20px;
+// // }
+
+// .crop {
+//   margin: auto;
+//   align-self: center;
+//   align-content: center;
+//   width: 90%;
+//   height: 90%;
+//   margin-top: 20px;
+// }
+
+// .area-roy {
+//   grid-template-columns: 1fr 1fr 1fr 1fr !important;
+//   grid-template-areas:
+//     "name     name      name    ."
+//     "des      des       .    ."
+//     "sec1     sec1      .    ."
+//     "sec2     sec2      .    ."
+//     "sec2     sec2      link    link";
+// }
+
+// .area-about {
+//   // grid-template-columns: 1fr 1fr 1fr 1fr !important;
+//   grid-template-areas:
+//     "name     name    name"
+//     "sec1     sec1    sec3"
+//     "sec2     sec2    .";
+// }
+
+// .area-zap {
+//   grid-template-areas:
+//     "name     name      name"
+//     "des      des       des"
+//     "sec1     sec1      sec1"
+//     "tag      link      link";
+// }
+
+// .area-action {
+//   grid-template-areas:
+//     "name     name      name"
+//     "des      des       des"
+//     "sec1     sec1      sec1"
+//     "tag      link      link";
+// }
+
+// .area-education {
+//   grid-template-areas:
+//     "name    name     name"
+//     "VIC     NUS      course"
+//     "CHQ     NZFT     course";
+
+//   .VIC {
+//     grid-area: VIC;
+//     align-self: center;
+//   }
+//   .NUS {
+//     grid-area: NUS;
+//     align-self: center;
+//   }
+//   .CHQ {
+//     grid-area: CHQ;
+//     align-self: center;
+//   }
+//   .NZFT {
+//     grid-area: NZFT;
+//     align-self: center;
+//   }
+// }
+
+// /* Hide scrollbar for Chrome, Safari and Opera */
+// .no-scroll::-webkit-scrollbar {
+//   display: none;
+// }
+
+// /* Hide scrollbar for IE, Edge and Firefox */
+// .no-scroll {
+//   -ms-overflow-style: none; /* IE and Edge */
+//   scrollbar-width: none; /* Firefox */
+// }
+
+// .full-cell-content {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   gap: 20px;
+//   width: calc(100% - 1em);
+//   height: calc(100% - 1em);
+//   background: #ffffff69;
 //   padding: 20px;
-// }
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 20;
+//   font-size: 1.5vw;
+//   line-height: 1.5vw;
+//   overflow: auto;
+//   opacity: 0;
+//   transition: opacity 100ms;
+//   align-self: center;
 
-.crop {
-  margin: auto;
-  align-self: center;
-  align-content: center;
-  width: 90%;
-  height: 90%;
-  margin-top: 20px;
-}
+//   .opacity {
+//     opacity: 1 !important;
+//   }
 
-.area-roy {
-  grid-template-columns: 1fr 1fr 1fr 1fr !important;
-  grid-template-areas:
-    "name     name      name    ."
-    "des      des       .    ."
-    "sec1     sec1      .    ."
-    "sec2     sec2      .    ."
-    "sec2     sec2      link    link";
-}
+//   .name {
+//     grid-area: name;
+//     justify-self: flex-start;
+//     align-self: flex-end;
+//     font-family: BebasNeue;
+//     line-height: clamp(35px, 4vw, 60px);
+//     font-size: clamp(35px, 4vw, 60px);
+//     font-weight: 100;
+//     // line-height: 4vw;
+//     letter-spacing: 2vw;
+//     color: black;
+//   }
 
-.area-about {
-  // grid-template-columns: 1fr 1fr 1fr 1fr !important;
-  grid-template-areas:
-    "name     name    name"
-    "sec1     sec1    sec3"
-    "sec2     sec2    .";
-}
-
-.area-zap {
-  grid-template-areas:
-    "name     name      name"
-    "des      des       des"
-    "sec1     sec1      sec1"
-    "tag      link      link";
-}
-
-.area-action {
-  grid-template-areas:
-    "name     name      name"
-    "des      des       des"
-    "sec1     sec1      sec1"
-    "tag      link      link";
-}
-
-.area-education {
-  grid-template-areas:
-    "name    name     name"
-    "VIC     NUS      course"
-    "CHQ     NZFT     course";
-
-  .VIC {
-    grid-area: VIC;
-    align-self: center;
-  }
-  .NUS {
-    grid-area: NUS;
-    align-self: center;
-  }
-  .CHQ {
-    grid-area: CHQ;
-    align-self: center;
-  }
-  .NZFT {
-    grid-area: NZFT;
-    align-self: center;
-  }
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scroll {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.full-cell-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  width: calc(100% - 1em);
-  height: calc(100% - 1em);
-  background: #ffffff69;
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 20;
-  font-size: 1.5vw;
-  line-height: 1.5vw;
-  overflow: auto;
-  opacity: 0;
-  transition: opacity 100ms;
-  align-self: center;
-
-  .opacity {
-    opacity: 1 !important;
-  }
-
-  .name {
-    grid-area: name;
-    justify-self: flex-start;
-    align-self: flex-end;
-    font-family: BebasNeue;
-    line-height: clamp(35px, 4vw, 60px);
-    font-size: clamp(35px, 4vw, 60px);
-    font-weight: 100;
-    // line-height: 4vw;
-    letter-spacing: 2vw;
-    color: black;
-  }
-
-  .tag {
-    grid-area: tag;
-    display: grid;
-    align-content: center;
-    text-align: center;
-    font-family: BebasNeue;
-    font-weight: 100;
-    font-size: 2vw;
-    line-height: 2vw;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.185);
-    line-height: clamp(20px, 1.7vw, 28px);
-    font-size: clamp(20px, 1.7vw, 28px);
-    // box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);
-    // transition: box-shadow 300ms;
-  }
-
-  .section1 {
-    grid-area: sec1;
-  }
-
-  .section2 {
-    grid-area: sec2;
-  }
-
-  .section3 {
-    grid-area: sec3;
-    .contact-details {
-      display: grid;
-      grid-template-columns: 1f;
-      grid-template-rows: 1fr 1fr;
-      gap: 20px;
-      justify-content: flex-start;
-
-      .flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-
-        .github {
-          width: 50px;
-          height: auto;
-        }
-        .linkedin {
-          width: 50px;
-          height: auto;
-        }
-      }
-    }
-  }
-
-  .title-small {
-    font-family: BebasNeue;
-    font-weight: 100;
-    justify-self: flex-start;
-    align-self: flex-start;
-    letter-spacing: 0.4vw;
-    line-height: clamp(20px, 1.7vw, 28px);
-    font-size: clamp(20px, 1.7vw, 28px);
-    padding-bottom: 10px;
-  }
-
-  .description {
-    grid-area: des;
-    justify-self: flex-start;
-    align-self: flex-start;
-    line-height: clamp(16px, 1.4vw, 30px);
-    font-size: clamp(16px, 1.2vw, 20px);
-    b {
-      font-weight: 500;
-    }
-  }
-
-  .circle {
-    place-self: center;
-    grid-area: circle;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.39);
-  }
-
-  .image {
-    place-self: flex-end;
-    grid-area: image;
-    height: 100%;
-    width: auto;
-  }
-
-  .close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    font-size: 30px;
-    color: #777777;
-    justify-self: flex-end;
-    align-self: start;
-  }
-
-  .link {
-    grid-area: link;
-    display: grid;
-    align-content: center;
-    text-align: center;
-    font-family: BebasNeue;
-    letter-spacing: 1vw;
-    line-height: clamp(35px, 3vw, 50px);
-    font-size: clamp(35px, 3vw, 50px);
-    font-weight: 100;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.534);
-    // box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 300ms;
-  }
-  .link:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .course {
-    grid-area: course;
-    text-justify: auto;
-  }
-}
-
-// .cell-content {
-//   width: 100%;
-//   height: 100%;
-//   overflow: hidden;
-
-//   .name-hash {
+//   .tag {
+//     grid-area: tag;
 //     display: grid;
-//     grid-template-rows: auto auto;
+//     align-content: center;
+//     text-align: center;
+//     font-family: BebasNeue;
+//     font-weight: 100;
+//     font-size: 2vw;
+//     line-height: 2vw;
+//     padding: 20px;
+//     background-color: rgba(255, 255, 255, 0.185);
+//     line-height: clamp(20px, 1.7vw, 28px);
+//     font-size: clamp(20px, 1.7vw, 28px);
+//     // box-shadow: 0px 20px 40px -20px rgba(0, 0, 0, 0.2);
+//     // transition: box-shadow 300ms;
+//   }
+
+//   .section1 {
+//     grid-area: sec1;
+//   }
+
+//   .section2 {
+//     grid-area: sec2;
+//   }
+
+//   .section3 {
+//     grid-area: sec3;
+//     .contact-details {
+//       display: grid;
+//       grid-template-columns: 1f;
+//       grid-template-rows: 1fr 1fr;
+//       gap: 20px;
+//       justify-content: flex-start;
+
+//       .flex {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr;
+//         justify-items: center;
+
+//         .github {
+//           width: 50px;
+//           height: auto;
+//         }
+//         .linkedin {
+//           width: 50px;
+//           height: auto;
+//         }
+//       }
+//     }
+//   }
+
+//   .title-small {
+//     font-family: BebasNeue;
+//     font-weight: 100;
+//     justify-self: flex-start;
+//     align-self: flex-start;
+//     letter-spacing: 0.4vw;
+//     line-height: clamp(20px, 1.7vw, 28px);
+//     font-size: clamp(20px, 1.7vw, 28px);
+//     padding-bottom: 10px;
+//   }
+
+//   .description {
+//     grid-area: des;
+//     justify-self: flex-start;
+//     align-self: flex-start;
+//     line-height: clamp(16px, 1.4vw, 30px);
+//     font-size: clamp(16px, 1.2vw, 20px);
+//     b {
+//       font-weight: 500;
+//     }
+//   }
+
+//   .circle {
+//     place-self: center;
+//     grid-area: circle;
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50%;
+//     box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.39);
+//   }
+
+//   .image {
+//     place-self: flex-end;
+//     grid-area: image;
+//     height: 100%;
+//     width: auto;
+//   }
+
+//   .close {
 //     position: absolute;
-//     top: calc(100% - 25px);
-//     transition: all 500ms ease;
+//     top: 30px;
+//     right: 30px;
+//     font-size: 30px;
+//     color: #777777;
+//     justify-self: flex-end;
+//     align-self: start;
+//   }
 
-//     .cell-name {
-//       font-family: BebasNeue;
-//       font-size: 30px;
-//       line-height: 30px;
-//       letter-spacing: 5px;
-//     }
-//     .cell-tags {
-//       opacity: 0;
-//       font-family: coves-light;
-//       font-size: 20px;
-//       line-height: 30px;
-//       letter-spacing: 1px;
-//       color: rgb(0, 0, 0);
-//       transition: all 500ms ease;
-//     }
+//   .link {
+//     grid-area: link;
+//     display: grid;
+//     align-content: center;
+//     text-align: center;
+//     font-family: BebasNeue;
+//     letter-spacing: 1vw;
+//     line-height: clamp(35px, 3vw, 50px);
+//     font-size: clamp(35px, 3vw, 50px);
+//     font-weight: 100;
+//     padding: 20px;
+//     background-color: rgba(255, 255, 255, 0.534);
+//     // box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.3);
+//     transition: box-shadow 300ms;
+//   }
+//   .link:hover {
+//     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+//   }
+
+//   .course {
+//     grid-area: course;
+//     text-justify: auto;
 //   }
 // }
 
-// .cell:hover {
-//   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-//   .name-hash {
-//     transform: translateY(calc(-100% + 25px));
-//     transition-duration: 300ms;
-//     .cell-tags {
-//       opacity: 1;
-//       transition: opacity 200ms linear;
-//       transition-delay: 200ms;
-//     }
-//   }
+// // .cell-content {
+// //   width: 100%;
+// //   height: 100%;
+// //   overflow: hidden;
+
+// //   .name-hash {
+// //     display: grid;
+// //     grid-template-rows: auto auto;
+// //     position: absolute;
+// //     top: calc(100% - 25px);
+// //     transition: all 500ms ease;
+
+// //     .cell-name {
+// //       font-family: BebasNeue;
+// //       font-size: 30px;
+// //       line-height: 30px;
+// //       letter-spacing: 5px;
+// //     }
+// //     .cell-tags {
+// //       opacity: 0;
+// //       font-family: coves-light;
+// //       font-size: 20px;
+// //       line-height: 30px;
+// //       letter-spacing: 1px;
+// //       color: rgb(0, 0, 0);
+// //       transition: all 500ms ease;
+// //     }
+// //   }
+// // }
+
+// // .cell:hover {
+// //   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+// //   .name-hash {
+// //     transform: translateY(calc(-100% + 25px));
+// //     transition-duration: 300ms;
+// //     .cell-tags {
+// //       opacity: 1;
+// //       transition: opacity 200ms linear;
+// //       transition-delay: 200ms;
+// //     }
+// //   }
+// // }
+
+// .grid {
+//   flex: 1;
 // }
 
-.grid {
-  flex: 1;
-}
-
-.ant-btn-primary {
-  background-color: #f0d5ff !important;
-  border-color: #b2e0ff !important;
-}
+// .ant-btn-primary {
+//   background-color: #f0d5ff !important;
+//   border-color: #b2e0ff !important;
+// }
