@@ -21,8 +21,6 @@ export default function About({ onClose }) {
         <div className="card-split">
           <div className="left">
             <div className="details">Details</div>
-            {/* <div className="corner-left"></div> */}
-            {/* <div className="corner-right"></div> */}
             <div className="row">
               <div className="small-title">Hayden Phillips</div>
               <div className="small-title">Software Developer & Designer</div>

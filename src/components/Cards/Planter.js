@@ -18,8 +18,6 @@ export default function Planter({ onClose }) {
         <div className="card-split">
           <div className="left">
             <div className="details">Details</div>
-            {/* <div className="corner-left"></div> */}
-            {/* <div className="corner-right"></div> */}
             <div className="row">
               <div className="small-title">Overview</div>
               <div className="text">
@@ -60,11 +58,6 @@ export default function Planter({ onClose }) {
                   <div className="title">view project</div>
                 </div>
               </button>
-              {/* <button className="button-1">
-                <div className="inner">
-                  <div className="title">view code</div>
-                </div>
-              </button> */}
             </div>
           </div>
         </div>

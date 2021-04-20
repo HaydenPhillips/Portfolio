@@ -3,19 +3,6 @@
   src: url(../../assets/fonts/BebasNeue.otf);
 }
 
-// * {
-//   -webkit-box-sizing: inherit !important;
-//   box-sizing: inherit !important;
-//   &:after {
-//     -webkit-box-sizing: inherit !important;
-//     box-sizing: inherit !important;
-//   }
-//   &:before {
-//     -webkit-box-sizing: inherit !important;
-//     box-sizing: inherit !important;
-//   }
-// }
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -72,7 +59,6 @@
       padding: 30px 60px 60px 30px;
       background-color: #d9e2f5;
       box-shadow: inset 0px 0px 10px #7a8abc;
-      // clip-path: inset(0% 1% 0% 1%);
     }
     .inner-col-bot {
       display: grid;
@@ -90,7 +76,6 @@
     .wrapper1 {
       display: grid;
       grid-auto-columns: 1fr;
-      // margin-left: -5px;
       padding: 15px 15px 15px 0px;
       background-color: #d9e2f5;
       height: 100%;
@@ -101,7 +86,6 @@
         grid-template-rows: 1fr;
         gap: 30px;
         padding: 15px 45px 45px 0px;
-        // padding: 15px 35px 45px 15px;
         background-color: #d9e2f5;
         z-index: 5;
         box-shadow: 0px 0px 5px 10px #d9e2f5;
@@ -123,9 +107,6 @@
     padding: 15px;
     background-color: rgb(187, 236, 255);
     box-shadow: 1px 1px 10px #7a8abc;
-    // box-shadow: inset -2px -2px 10px rgba(32, 57, 95, 0.479),
-    //   inset 2px 2px 10px rgb(231, 249, 255),
-    //   10px 10px 20px rgba(42, 66, 102, 0.329);
     transition: box-shadow 0.3s;
     position: relative;
     overflow: hidden;
@@ -164,9 +145,6 @@
     &:hover {
       z-index: 100;
       box-shadow: 4px 4px 20px #7a8abc;
-      // box-shadow: inset -2px -2px 10px rgba(25, 54, 99, 0.603),
-      //   inset 2px 2px 10px rgb(231, 249, 255),
-      //   20px 20px 25px rgba(42, 61, 90, 0.349);
       .name-hash {
         transform: translateY(calc(-100% + 25px));
         transition-duration: 300ms;
@@ -223,7 +201,6 @@ button {
     border-radius: 40px;
     width: 100%;
     height: 100%;
-    // transition: box-shadow 0.1s ease;
     .title {
       text-align: center;
       width: auto;
@@ -237,10 +214,6 @@ button {
   &:hover {
     box-shadow: -2px -2px 4px rgb(255, 255, 255),
       2px 2px 4px rgba(25, 55, 99, 0.3);
-    // .inner {
-    //   box-shadow: inset -2px -2px 5px rgb(255, 255, 255),
-    //     inset 2px 2px 5px rgba(25, 55, 99, 0.3);
-    // }
   }
 }
 

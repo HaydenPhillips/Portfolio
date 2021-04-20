@@ -1,5 +1,5 @@
-import "../../CSS/Card/card-full.css";
-import React, { useState, useEffect, useRef, Fragment } from "react";
+import '../../CSS/Card/card-full.css';
+import React, { Fragment } from 'react';
 
 // import CHQ from "../../assets/icons/education/CHQ.svg";
 // import NUS from "../../assets/icons/education/NUS.svg";
@@ -9,49 +9,47 @@ import React, { useState, useEffect, useRef, Fragment } from "react";
 export default function Education({ onClose }) {
   return (
     <Fragment>
-      <div className="project-card">
-        <div className="title-bar">
-          <div className="title">Education</div>
-          <div className="close">
-            <button className="button-1" onClick={onClose}>
-              <div className="inner">
-                <i className="material-icons">close</i>
+      <div className='project-card'>
+        <div className='title-bar'>
+          <div className='title'>Education</div>
+          <div className='close'>
+            <button className='button-1' onClick={onClose}>
+              <div className='inner'>
+                <i className='material-icons'>close</i>
               </div>
             </button>
           </div>
         </div>
-        <div className="card-split">
-          <div className="left">
-            <div className="details">Details</div>
-            {/* <div className="corner-left"></div> */}
-            {/* <div className="corner-right"></div> */}
-            <div className="row">
-              <div className="small-title">
+        <div className='card-split'>
+          <div className='left'>
+            <div className='details'>Details</div>
+            <div className='row'>
+              <div className='small-title'>
                 Victoria University of Wellington
               </div>
-              <div className="text">
+              <div className='text'>
                 Bachelor of Science | Computer Science Major | BSc | 2016 – 2020
               </div>
             </div>
-            <div className="row">
-              <div className="small-title">
+            <div className='row'>
+              <div className='small-title'>
                 National University of Singapore
               </div>
-              <div className="text">
+              <div className='text'>
                 Software Engineering | Top ranked university in Asia | 2018
               </div>
             </div>
-            <div className="row">
-              <div className="small-title">
+            <div className='row'>
+              <div className='small-title'>
                 New Zealand Institute of Fashion
               </div>
-              <div className="text">
+              <div className='text'>
                 Diploma | Garment design | Pattern design | 2013 - 2014
               </div>
             </div>
-            <div className="row">
-              <div className="small-title">papers</div>
-              <div className="text">
+            <div className='row'>
+              <div className='small-title'>papers</div>
+              <div className='text'>
                 Software: Application Development, Software Development,
                 Artificial Intelligence, Machine Learning, Database Systems
                 Engineering, User Interface Design, Computer Graphics, Advanced
@@ -65,25 +63,14 @@ export default function Education({ onClose }) {
               </div>
             </div>
           </div>
-          <div className="right">
-            <div className="image">
+          <div className='right'>
+            <div className='image'>
               <div
-                alt="education-preview"
-                className="image-preview educationPreview"
+                alt='education-preview'
+                className='image-preview educationPreview'
               />
             </div>
-            <div className="clickables">
-              {/* <button className="button-1">
-                <div className="inner">
-                  <div className="title">view project</div>
-                </div>
-              </button>
-              <button className="button-1">
-                <div className="inner">
-                  <div className="title">view code</div>
-                </div>
-              </button> */}
-            </div>
+            <div className='clickables'></div>
           </div>
         </div>
       </div>
