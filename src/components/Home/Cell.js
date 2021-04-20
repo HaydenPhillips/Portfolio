@@ -1,8 +1,8 @@
-import "../CSS/Projects/projects.css";
-import React, { Fragment, useState } from "react";
-import CardFull from "./CardFull";
-import Modal from "./Modal";
-import { useSpring, animated } from "react-spring";
+import '../../CSS/Projects/projects.css';
+import React, { Fragment, useState } from 'react';
+import CardFull from './CardFull';
+import Modal from '../Modal';
+import { useSpring, animated } from 'react-spring';
 
 export default function Cell({ componentName, name, tags }) {
   const calc = (x, y) => {
@@ -33,16 +33,16 @@ export default function Cell({ componentName, name, tags }) {
   return (
     <Fragment>
       <animated.div
-        className="cell"
+        className='cell'
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: props.xys.interpolate(trans) }}
         onClick={() => setIsOpen(true)}
       >
-        <div className="cell-content">
-          <div className="name-hash">
-            <div className="cell-name">{name}</div>
-            <div className="cell-tags">{tags}</div>
+        <div className='cell-content'>
+          <div className='name-hash'>
+            <div className='cell-name'>{name}</div>
+            <div className='cell-tags'>{tags}</div>
           </div>
         </div>
       </animated.div>

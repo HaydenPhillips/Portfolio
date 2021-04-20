@@ -1,9 +1,6 @@
 import '../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
-import { Slug, FadeUp, Fade } from '../Home/Primitives.js';
-
-let tits = false;
-console.log('SU: ' + tits);
+import { Slug, FadeUp, Fade } from '../Animations.js';
 
 export default function Roy({ onClose }) {
   return (
