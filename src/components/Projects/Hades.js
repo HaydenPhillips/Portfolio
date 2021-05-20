@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
+// import ReactDOM from "react-dom";
 import { useSpring, animated } from 'react-spring';
 import '../../CSS/Hades/hades.css';
 
@@ -8,6 +8,8 @@ const trans1 = (x, y) => `translate3d(${x / 40}px, ${y / 40}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 35 - 75}px, ${y / 35}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / 35 - 5}px, ${y / 35 - 15}px,0)`;
 const trans4 = (x, y) => `translate3d(${x / 40 - 30}px, ${y / 40 - 18}px,0)`;
+const trans5 = (x, y) => `translate3d(${x / 25 - 15}px, ${y / 20 - 10}px,0)`;
+const trans6 = (x, y) => `translate3d(${x / 25 - 65}px, ${y / 20 - 0}px,0)`;
 
 // const Hades = () => {
 //   return (
@@ -28,19 +30,31 @@ function Card() {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
     >
       <animated.div
-        class='card1'
+        class='head'
         style={{ transform: props.xy.interpolate(trans1) }}
       />
       <animated.div
-        class='card2'
+        class='left-eye'
         style={{ transform: props.xy.interpolate(trans2) }}
       />
+      {/* <animated.div className='left-eyeball' /> */}
       <animated.div
-        class='card3'
+        className='left-eyeball rotate'
+        style={{ transform: props.xy.interpolate(trans6) }}
+      >
+        +
+      </animated.div>
+      <animated.div
+        className='right-eyeball'
+        style={{ transform: props.xy.interpolate(trans5) }}
+      />
+
+      <animated.div
+        class='right-eye'
         style={{ transform: props.xy.interpolate(trans3) }}
       />
       <animated.div
-        class='card4'
+        class='eyebrow'
         style={{ transform: props.xy.interpolate(trans4) }}
       />
     </div>

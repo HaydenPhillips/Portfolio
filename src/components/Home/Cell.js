@@ -4,7 +4,7 @@ import CardFull from './CardFull';
 import Modal from '../Modal';
 import { useSpring, animated } from 'react-spring';
 
-export default function Cell({ componentName, name, tags }) {
+export default function Cell({ componentName, name, tags, color }) {
   const calc = (x, y) => {
     const winW = window.innerWidth;
     const winH = window.innerHeight;
@@ -23,7 +23,7 @@ export default function Cell({ componentName, name, tags }) {
 
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
-    config: { mass: 5, tension: 300, friction: 60, clamp: true },
+    config: { mass: 20, tension: 300, friction: 200, clamp: true },
   }));
 
   const onClose = () => {
@@ -36,7 +36,10 @@ export default function Cell({ componentName, name, tags }) {
         className='cell'
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
-        style={{ transform: props.xys.interpolate(trans) }}
+        style={{
+          transform: props.xys.interpolate(trans),
+          backgroundColor: color,
+        }}
         onClick={() => setIsOpen(true)}
       >
         <div className='cell-content'>
