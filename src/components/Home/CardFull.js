@@ -1,12 +1,13 @@
-import "../../CSS/Card/card-full.css";
-import React from "react";
-import { useSpring, animated } from "react-spring";
-import Roy from "../Cards/Roy";
-import Zap from "../Cards/Zap";
-import Action from "../Cards/Action";
-import Education from "../Cards/Education";
-import About from "../Cards/About";
-import Planter from "../Cards/Planter";
+import '../../CSS/Card/card-full.css';
+import React from 'react';
+import { useSpring, animated } from 'react-spring';
+import Roy from '../Cards/Roy';
+import Zap from '../Cards/Zap';
+import Action from '../Cards/Action';
+import Education from '../Cards/Education';
+import About from '../Cards/About';
+import Planter from '../Cards/Planter';
+import Hades from '../Cards/Hades';
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
@@ -20,18 +21,20 @@ const trans = (x, y, s) =>
 const CardFull = ({ componentName, onClose }) => {
   const component = (cn) => {
     switch (cn) {
-      case "Roy":
+      case 'Roy':
         return <Roy onClose={onClose} />;
-      case "About":
+      case 'About':
         return <About onClose={onClose} />;
-      case "Zap":
+      case 'Zap':
         return <Zap onClose={onClose} />;
-      case "Education":
+      case 'Education':
         return <Education onClose={onClose} />;
-      case "Action":
+      case 'Action':
         return <Action onClose={onClose} />;
-      case "Planter":
+      case 'Planter':
         return <Planter onClose={onClose} />;
+      case 'Hades':
+        return <Hades onClose={onClose} />;
       default:
         return null;
     }

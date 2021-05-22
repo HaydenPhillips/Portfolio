@@ -68,16 +68,18 @@ export default function About({ onClose }) {
 
               <div className='row'>
                 <div className='small-title'>Me in One Minute</div>
-                {/* <div className='text'>
-                  Ambitiously creative - Software developer - Ui & Ux designer -
-                  Computer Science Major - I build web-apps, design & make
-                  clothing, play chess, take photos, shoot hoops, repetitively
-                  lift heavy objects, ponder life, listen to podcasts,
-                  audiobooks, and music. I am interested in frontend development
-                  because writing code that involves visual aspects is the beez
-                  kneez. I enjoy problem-solving and always try to listen to,
-                  understand, and learn from, the people around me.
-                </div> */}
+                <div className='text'>
+                  Ambitiously creative software developer & designer. I build
+                  screen based interfaces - front and back end. I design & make
+                  clothing, play chess, take photos, shoot hoops, lift heavy
+                  objects, and ponder life. I soak up a wide range of
+                  information through podcasts, audiobooks, music, and the
+                  people around me. I enjoy problem-solving, and am obsessed
+                  with productivity. I hate getting out of bed in the mornings
+                  but, once i'm up, everything is fine and dandy. If you are
+                  what you eat then I am mainly vegetables and partly a snack
+                  lunch up sized to large.
+                </div>
               </div>
             </Slug>
           </div>
@@ -88,7 +90,11 @@ export default function About({ onClose }) {
             <div className='clickables' onClick={toggleClass}>
               <button className='button-1'>
                 {isActive ? (
-                  <div className='inner'>
+                  <div
+                    className='inner'
+                    onClick={copyToClipboard}
+                    style={{ letterSpacing: 0 }}
+                  >
                     <Slug>
                       <div className='email'>
                         <div>hayden.colony@gmail.com</div>

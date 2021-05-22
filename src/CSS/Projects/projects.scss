@@ -70,7 +70,7 @@
   .column-three {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 4fr;
+    grid-template-rows: 3fr 2fr;
     gap: 30px;
 
     .wrapper1 {
@@ -89,6 +89,9 @@
         background-color: #d9e2f5;
         z-index: 5;
         box-shadow: 0px 0px 5px 10px #d9e2f5;
+        &:hover {
+          z-index: 100;
+        }
       }
     }
     .inner-col-bot {
@@ -106,7 +109,7 @@
     height: 100%;
     padding: 15px;
     background-color: rgb(187, 236, 255);
-    box-shadow: 1px 1px 10px #7a8abc;
+    box-shadow: 1px 1px 10px #696d85;
     transition: box-shadow 0.3s;
     position: relative;
     overflow: hidden;
@@ -142,10 +145,8 @@
         }
       }
     }
-
     &:hover {
-      z-index: 100;
-      box-shadow: 4px 4px 20px #7a8abc;
+      box-shadow: 3px 3px 15px #696d85;
       .name-hash {
         transform: translateY(calc(-100% + 25px));
         transition-duration: 300ms;
@@ -191,7 +192,7 @@ button {
   box-shadow: -2px -2px 8px rgb(255, 255, 255),
     2px 2px 8px rgba(25, 55, 99, 0.3);
   background-color: transparent;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
   cursor: pointer;
   overflow: hidden;
 
@@ -204,17 +205,10 @@ button {
     align-items: center;
     text-align: center;
     border-radius: 40px;
-    font-size: 20px;
-    // .title {
-    // text-align: center;
-    // width: auto;
-    // }
-    // .email {
-    // display: flex;
-    // width: 100%;
-    // justify-content: space-between;
-    // color: black;
-    // }
+    font-size: 22px;
+    font-family: BebasNeue;
+    letter-spacing: 5px;
+
     .copy-to-clip {
       width: 30px;
     }

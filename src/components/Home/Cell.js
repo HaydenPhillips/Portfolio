@@ -10,11 +10,11 @@ export default function Cell({ componentName, name, tags, color }) {
     const winH = window.innerHeight;
     const s = winW > 2000 || winH > 1200 ? 20 : 10;
     if (x > winW * 0.66) {
-      return [-(y - winH / 2) / s, (x - winW * 0.33 - winW / 2) / s, 1.03];
+      return [-(y - winH / 2) / s, (x - winW * 0.33 - winW / 2) / s, 1];
     } else if (x < winW * 0.33) {
-      return [-(y - winH / 2) / s, (x + winW * 0.33 - winW / 2) / s, 1.03];
+      return [-(y - winH / 2) / s, (x + winW * 0.33 - winW / 2) / s, 1];
     } else {
-      return [-(y - winH / 2) / s, (x - winW / 2) / s, 1.03];
+      return [-(y - winH / 2) / s, (x - winW / 2) / s, 1];
     }
   };
   const trans = (x, y, s) =>
@@ -38,7 +38,7 @@ export default function Cell({ componentName, name, tags, color }) {
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{
           transform: props.xys.interpolate(trans),
-          backgroundColor: color,
+          backgroundImage: color,
         }}
         onClick={() => setIsOpen(true)}
       >

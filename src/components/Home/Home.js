@@ -59,6 +59,14 @@ const Home = () => {
                 color={data[4].color}
               />
             </div>
+            <div className='inner-col-top'>
+              <Cell
+                componentName={data[6].componentName}
+                name={data[6].name}
+                tags={data[6].tags}
+                color={data[6].color}
+              />
+            </div>
           </div>
           <div className='inner-col-bot'>
             <Cell
