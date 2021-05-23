@@ -138,6 +138,7 @@
 
 .grid-zap .grid-c3-even .mid .text-con {
   width: 165%;
+  max-width: 800px;
 }
 
 .grid-zap .ellipse {

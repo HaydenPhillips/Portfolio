@@ -33,10 +33,10 @@ body {
   background: #f0f0f0;
 }
 
-.card1,
-.card2,
-.card3,
-.card4 {
+.head,
+.left-eye,
+.right-eye,
+.eyebrow {
   position: absolute;
   border-radius: 5px;
   background-size: cover;
@@ -45,28 +45,54 @@ body {
   will-change: transform;
 }
 
-.card1 {
+.head {
   width: 420px;
   height: 600px;
   background-image: url(../../assets/images/Hades/hades_head.svg);
 }
 
-.card2 {
+.left-eye {
   width: 40px;
   height: 40px;
   background-image: url(../../assets/images/Hades/left_eye.svg);
 }
 
-.card3 {
+.right-eye {
   width: 60px;
   height: 50px;
   background-image: url(../../assets/images/Hades/right_eye.svg);
 }
 
-.card4 {
+.left-eyeball {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  background-color: #bd0000;
+  border-radius: 10px;
+  z-index: 100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-eyeball {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.eyebrow {
   width: 120px;
   height: 70px;
   background-image: url(../../assets/images/Hades/top.svg);
+  z-index: 101;
 }
 
 .container {
@@ -81,5 +107,32 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.rotate {
+  -webkit-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
 }
 /*# sourceMappingURL=hades.css.map */

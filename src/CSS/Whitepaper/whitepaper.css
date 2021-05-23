@@ -1,7 +1,12 @@
+#root {
+  overflow: unset !important;
+}
+
 .pdf {
+  display: -ms-grid;
+  display: grid;
   width: 100%;
   height: 100%;
-  background-color: grey;
 }
 
 .pdf img {
