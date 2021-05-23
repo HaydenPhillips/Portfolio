@@ -49,8 +49,6 @@ body {
 .head {
   width: 420px;
   height: 600px;
-  // max-width: 100ch;
-  // max-height: 100ch;
   background-image: url(../../assets/images/Hades/hades_head.svg);
 }
 
@@ -63,21 +61,22 @@ body {
 .right-eye {
   width: 60px;
   height: 50px;
-  // transform: translateX(40px);
   background-image: url(../../assets/images/Hades/right_eye.svg);
 }
 
 .left-eyeball {
+  display: flex;
   width: 15px;
   height: 15px;
-  background-color: red;
+  background-color: rgb(189, 0, 0);
   border-radius: 10px;
   z-index: 100;
-  // transform: rotate(360deg);
-  // animation: rotation 2s infinite linear;
+  justify-content: center;
+  align-items: center;
 }
 .right-eyeball {
   width: 20px;
+
   height: 20px;
   background-color: black;
   border-radius: 10px;

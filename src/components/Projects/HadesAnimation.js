@@ -28,12 +28,11 @@ function HadesAnimation() {
         class='left-eye'
         style={{ transform: props.xy.interpolate(trans2) }}
       />
-      {/* <animated.div className='left-eyeball' /> */}
       <animated.div
-        className='left-eyeball rotate'
+        className='left-eyeball'
         style={{ transform: props.xy.interpolate(trans6) }}
       >
-        +
+        <div className='plus'>+</div>
       </animated.div>
       <animated.div
         className='right-eyeball'

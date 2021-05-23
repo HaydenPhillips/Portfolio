@@ -24,10 +24,9 @@ export default function Hades({ onClose }) {
               <div className='row'>
                 <div className='small-title'>Overview</div>
                 <div className='text'>
-                  I was playing around on Xd and created the svgs for no
-                  particular reason other than 'it looks cool'. I had no clue
-                  what to do with them so I thought i'd mess around with
-                  react-spring (an animation library).
+                  I created the SVGs on Xd for no other reason than 'it looks
+                  cool'. I then messed around with react-spring (an animation
+                  library) making the eyes follow the cursor position.
                 </div>
               </div>
               <div className='row'>
