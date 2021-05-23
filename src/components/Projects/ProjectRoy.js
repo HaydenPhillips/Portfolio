@@ -48,16 +48,15 @@ const ProjectRoy = () => {
   });
 
   const someString =
-    'Motion - a short film following the design and creation of the unique reversible collection.';
+    'The essence of Roy is to convey creative ideas that correlate with an individual via purposeful design. From concept to customer, we strive to produce the highest of quality through all forms of expression.';
 
   return (
     <Fragment>
       <Parallax
-        pages={8}
+        pages={6}
         ref={(ref) => (parallax = ref)}
         style={{
-          display: 'flex',
-          maxWidth: '1920px',
+          display: 'grid',
           margin: 'auto',
         }}
       >
@@ -350,12 +349,12 @@ const ProjectRoy = () => {
               </div>
             </ParallaxLayer>
 
-            <ParallaxLayer
+            {/* <ParallaxLayer
               onClick={() => parallax.scrollTo(3)}
               offset={5.2}
               speed={0.5}
               style={{ backgroundColor: 'lightgrey' }}
-            />
+            /> */}
 
             {/* <ParallaxLayer offset={5.2} speed={0} style={{ backgroundColor: 'pink' }}>
                             <div className='deck'>
