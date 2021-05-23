@@ -1,6 +1,7 @@
 import '../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
 import { Slug } from '../Animations.js';
+import { Link } from 'react-router-dom';
 
 export default function Roy({ onClose }) {
   return (
@@ -58,16 +59,13 @@ export default function Roy({ onClose }) {
               <div alt='roy-preview' className='image-preview royPreview' />
             </div>
             <div className='clickables'>
-              <button className='button-1'>
-                <div className='inner'>
-                  <div className='title'>view project</div>
-                </div>
-              </button>
-              <button className='button-1'>
-                <div className='inner'>
-                  <div className='title'>view code</div>
-                </div>
-              </button>
+              <Link to={`/ProjectRoy`} activeClassName='active'>
+                <button className='button-1'>
+                  <div className='inner'>
+                    <div className='title'>view project</div>
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

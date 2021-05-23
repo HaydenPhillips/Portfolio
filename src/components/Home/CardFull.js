@@ -7,6 +7,7 @@ import Action from '../Cards/Action';
 import Education from '../Cards/Education';
 import About from '../Cards/About';
 import Planter from '../Cards/Planter';
+import Hades from '../Cards/Hades';
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
@@ -32,6 +33,8 @@ const CardFull = ({ componentName, onClose }) => {
         return <Action onClose={onClose} />;
       case 'Planter':
         return <Planter onClose={onClose} />;
+      case 'Hades':
+        return <Hades onClose={onClose} />;
       default:
         return null;
     }
@@ -39,7 +42,7 @@ const CardFull = ({ componentName, onClose }) => {
 
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
-    config: { mass: 10, tension: 50, friction: 60, clamp: true },
+    config: { mass: 100, tension: 30, friction: 100, clamp: true },
   }));
 
   return (

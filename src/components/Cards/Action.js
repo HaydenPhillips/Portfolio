@@ -1,5 +1,7 @@
 import '../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
+import { Slug } from '../Animations';
+import { Link } from 'react-router-dom';
 
 export default function Action({ onClose }) {
   return (
@@ -17,30 +19,29 @@ export default function Action({ onClose }) {
         </div>
         <div className='card-split'>
           <div className='left'>
-            <div className='details'>Details</div>
-            <div className='row'>
-              <div className='small-title'>Overview</div>
-              <div className='text'>
-                This is one of my first websites I built using HTML, CSS, JS,
-                and a little PHP. It is a single page website with elegant
-                navigation accompanied with basic animation and parallax
-                effects.
+            <Slug delay={400}>
+              <div className='details'>Details</div>
+              <div className='row'>
+                <div className='small-title'>Overview</div>
+                <div className='text'>
+                  This is one of my first websites I built using HTML, CSS, JS,
+                  and a little PHP. It is a single page website with elegant
+                  navigation accompanied with basic animation and parallax
+                  effects.
+                </div>
               </div>
-            </div>
-            <div className='row'>
-              <div className='small-title'>Client info</div>
-              <div className='text'>
-                This client is a budding company in the auto mechanics industry,
-                specialising in motorsports racing.
+              <div className='row'>
+                <div className='small-title'>Client info</div>
+                <div className='text'>
+                  This client is a budding company in the auto mechanics
+                  industry, specialising in motorsports racing.
+                </div>
               </div>
-            </div>
-            <div className='row'>
-              <div className='small-title'>Tags</div>
-              <div className='text'>
-                +product-design +graphic-design +clothing +photography
-                +videography
+              <div className='row'>
+                <div className='small-title'>Tags</div>
+                <div className='text'>+web-development +HTML +CSS +JS +PHP</div>
               </div>
-            </div>
+            </Slug>
           </div>
           <div className='right'>
             <div className='image'>
@@ -50,16 +51,17 @@ export default function Action({ onClose }) {
               />
             </div>
             <div className='clickables'>
-              <button className='button-1'>
-                <div className='inner'>
-                  <div className='title'>view project</div>
-                </div>
-              </button>
-              <button className='button-1'>
-                <div className='inner'>
-                  <div className='title'>view code</div>
-                </div>
-              </button>
+              <Link
+                to={{ pathname: 'https://actionmotorsport.co.nz' }}
+                target='_blank'
+                activeClassName='active'
+              >
+                <button className='button-1'>
+                  <div className='inner'>
+                    <div className='title'>view project</div>
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

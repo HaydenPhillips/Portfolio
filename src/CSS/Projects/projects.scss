@@ -70,7 +70,7 @@
   .column-three {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 4fr;
+    grid-template-rows: 3fr 2fr;
     gap: 30px;
 
     .wrapper1 {
@@ -89,6 +89,9 @@
         background-color: #d9e2f5;
         z-index: 5;
         box-shadow: 0px 0px 5px 10px #d9e2f5;
+        &:hover {
+          z-index: 100;
+        }
       }
     }
     .inner-col-bot {
@@ -106,11 +109,12 @@
     height: 100%;
     padding: 15px;
     background-color: rgb(187, 236, 255);
-    box-shadow: 1px 1px 10px #7a8abc;
+    box-shadow: 1px 1px 10px #696d85;
     transition: box-shadow 0.3s;
     position: relative;
     overflow: hidden;
     border-radius: 6px;
+    cursor: pointer;
 
     .cell-content {
       width: 100%;
@@ -141,10 +145,8 @@
         }
       }
     }
-
     &:hover {
-      z-index: 100;
-      box-shadow: 4px 4px 20px #7a8abc;
+      box-shadow: 3px 3px 15px #696d85;
       .name-hash {
         transform: translateY(calc(-100% + 25px));
         transition-duration: 300ms;
@@ -180,8 +182,8 @@ button {
 
 .button-1 {
   display: flex;
-  align-content: center;
-  width: 100%;
+  justify-content: center;
+  width: 70%;
   height: 50px;
   border-radius: 40px;
   text-align: center;
@@ -190,25 +192,37 @@ button {
   box-shadow: -2px -2px 8px rgb(255, 255, 255),
     2px 2px 8px rgba(25, 55, 99, 0.3);
   background-color: transparent;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
   cursor: pointer;
+  overflow: hidden;
 
   .inner {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 40px;
     width: 100%;
     height: 100%;
-    .title {
-      text-align: center;
-      width: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 22px;
+    font-family: BebasNeue;
+    letter-spacing: 5px;
+
+    .copy-to-clip {
+      width: 30px;
     }
+
     &:active {
       box-shadow: inset -2px -2px 5px rgb(255, 255, 255),
         inset 2px 2px 5px rgba(25, 55, 99, 0.3);
     }
+  }
+
+  textarea {
+    height: 0;
+    width: 0;
+    opacity: 0;
   }
 
   &:hover {

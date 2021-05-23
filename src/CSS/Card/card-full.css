@@ -12,9 +12,13 @@
   width: 100%;
   height: 100%;
   min-height: 500px;
+  max-height: 800px;
   background-color: #dbeaf0;
   border-radius: 5px;
-  max-height: 800px;
+  -webkit-animation-name: scaleUp;
+          animation-name: scaleUp;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .project-card .title-bar {
@@ -264,6 +268,32 @@
     -webkit-transform: scale(1) translateY(0px);
             transform: scale(1) translateY(0px);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateY(1000px);
+            transform: scale(0.8) translateY(1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(1) translateY(0px);
+            transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateY(1000px);
+            transform: scale(0.8) translateY(1000px);
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=card-full.css.map */
