@@ -1,0 +1,78 @@
+.landing-page {
+  div {
+    width: 100%;
+    height: 80vh;
+    background-color: aqua;
+  }
+}
+
+.contact-page {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: beige;
+  position: relative;
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-self: center;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    margin: -30% 0 0 -30%;
+
+    input {
+      padding: 15px;
+      border: none;
+      font-size: 30px;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    textarea {
+      padding: 15px;
+      border: none;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    .name {
+      width: 100%;
+      height: 100px;
+      background-color: rgb(255, 255, 255);
+    }
+    .email {
+      width: 100%;
+      height: 100px;
+      background-color: rgb(255, 255, 255);
+    }
+    .message {
+      grid-column: span 2;
+      width: 100%;
+      height: auto;
+      font-size: 30px;
+    }
+  }
+
+  .hades-wrap {
+    position: absolute;
+
+    right: 300;
+    bottom: 300;
+    z-index: 0;
+    display: grid;
+    // justify-items: flex-end;
+    justify-content: flex-end;
+    // justify-self: flex-end;
+    // grid-template-columns: 1fr;
+    // width: 100%;
+    // margin-right: 20%;
+
+    // margin: 30% 0 0 50%;
+  }
+}

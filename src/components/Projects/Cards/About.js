@@ -1,10 +1,10 @@
-import '../../CSS/Card/card-full.css';
+import '../../../CSS/Card/card-full.css';
 import React, { Fragment, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Slug } from '../Animations';
-import github from '../../assets/icons/contact/github.svg';
-import linkedin from '../../assets/icons/contact/linkedin.png';
-import { ReactComponent as CopyToClip } from '../../assets/icons/copy-to-clip.svg';
+import { Slug } from '../../Animations';
+import github from '../../../assets/icons/contact/github.svg';
+import linkedin from '../../../assets/icons/contact/linkedin.png';
+import { ReactComponent as CopyToClip } from '../../../assets/icons/copy-to-clip.svg';
 
 export default function About({ onClose }) {
   const [isActive, setActive] = useState(false);

@@ -1,7 +1,7 @@
-import '../../CSS/Card/card-full.css';
+import '../../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
-import { Slug } from '../Animations.js';
-import HadesAnimation from '../Projects/HadesAnimation';
+import { Slug } from '../../Animations.js';
+import HadesAnimation from '../HadesAnimation';
 
 export default function Hades({ onClose }) {
   return (

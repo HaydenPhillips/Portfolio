@@ -4,30 +4,31 @@
   // width: 300px;
   height: 90vh;
   background-color: rgb(235, 235, 255);
+  // justify-self: flex-end;
 }
 
-html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
+// html,
+// body,
+// #root {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+//   background-color: white;
+// }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  background: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-}
+// body {
+//   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+//     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+//   background: transparent;
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   cursor: default;
+// }
 
 #root {
   overflow: hidden;
@@ -88,6 +89,16 @@ body {
   height: 70px;
   background-image: url(../../assets/images/Hades/top.svg);
   z-index: 101;
+}
+
+.full-screen-mouse-move {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // background-color: #0000008e;
+  z-index: 2000;
 }
 
 .container {

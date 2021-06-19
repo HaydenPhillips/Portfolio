@@ -3,7 +3,7 @@ import '../../CSS/Projects/projects.css';
 import Cell from './Cell';
 import Data from './Data';
 
-const Home = () => {
+const Projects = () => {
   const [data] = useState(Data);
   return (
     <Fragment>
@@ -82,4 +82,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Projects;

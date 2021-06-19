@@ -1,13 +1,13 @@
 import '../../CSS/Card/card-full.css';
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
-import Roy from '../Cards/Roy';
-import Zap from '../Cards/Zap';
-import Action from '../Cards/Action';
-import Education from '../Cards/Education';
-import About from '../Cards/About';
-import Planter from '../Cards/Planter';
-import Hades from '../Cards/Hades';
+import Roy from './Cards/Roy';
+import Zap from './Cards/Zap';
+import Action from './Cards/Action';
+import Education from './Cards/Education';
+import About from './Cards/About';
+import Planter from './Cards/Planter';
+import Hades from './Cards/Hades';
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,

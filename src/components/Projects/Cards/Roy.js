@@ -1,14 +1,14 @@
-import '../../CSS/Card/card-full.css';
+import '../../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
-import { Slug } from '../Animations';
+import { Slug } from '../../Animations.js';
 import { Link } from 'react-router-dom';
 
-export default function Planter({ onClose }) {
+export default function Roy({ onClose }) {
   return (
     <Fragment>
       <div className='project-card'>
         <div className='title-bar'>
-          <div className='title'>Planter</div>
+          <div className='title'>Roy Apparel</div>
           <div className='close'>
             <button className='button-1' onClick={onClose}>
               <div className='inner'>
@@ -24,39 +24,42 @@ export default function Planter({ onClose }) {
               <div className='row'>
                 <div className='small-title'>Overview</div>
                 <div className='text'>
-                  Planting trees to offset carbon emissions is not a new idea,
-                  but creating an autonomous organisation to make that happen
-                  is. Planter Project is a whitepaper that addresses issues and
-                  explains how to solve them. Written during a summer trimester
-                  at vic, the intention of this project was to explore and
-                  understand the intricacies of a Decentralised Autonomous
-                  Organisation (DAO), and present them in a palatable manner.
+                  Roy Apparel is a menswear brand that was owned and operated by
+                  myself between 2014 & 2017 in Wellington NZ. Good times were
+                  had, many lessons learnt, quality garments and digital content
+                  was made.
                 </div>
               </div>
               <div className='row'>
-                <div className='small-title'>More Info</div>
+                <div className='small-title'>Roles & Responsibilities</div>
                 <div className='text'>
-                  Planter Project aids in environmental sustainability via
-                  forestation of land. It is a platform which encourages
-                  landowners, companies, and consumers to collaborate as a
-                  community to offset carbon emissions.
+                  - Design and manufacture clothing from concept to final
+                  product
+                  <br />
+                  - Produce digital content e.g. product photography,
+                  videography, animations, lookbooks
+                  <br />
+                  - Coordinated all activities required to bring the product to
+                  market
+                  <br />- Generated sales through online and boutique clothing
+                  stores across the nation.
                 </div>
               </div>
               <div className='row'>
                 <div className='small-title'>Tags</div>
-                <div className='text'>+Blockchain +DAO</div>
+                <div className='text'>
+                  +product-design +graphic-design +clothing +photography
+                  +videography
+                </div>
               </div>
             </Slug>
           </div>
           <div className='right'>
             <div className='image'>
-              <div
-                alt='planter-preview'
-                className='image-preview planterPreview'
-              />
+              <div alt='roy-preview' className='image-preview royPreview' />
             </div>
             <div className='clickables'>
-              <Link to={'/whitepaper'} target='_blank' activeClassName='active'>
+              <Link to={`/ProjectRoy`} activeClassName='active'>
                 <button className='button-1'>
                   <div className='inner'>
                     <div className='title'>view project</div>

@@ -1,14 +1,14 @@
-import '../../CSS/Card/card-full.css';
+import '../../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
-import { Slug } from '../Animations.js';
+import { Slug } from '../../Animations';
 import { Link } from 'react-router-dom';
 
-export default function Roy({ onClose }) {
+export default function Zap({ onClose }) {
   return (
     <Fragment>
       <div className='project-card'>
         <div className='title-bar'>
-          <div className='title'>Roy Apparel</div>
+          <div className='title'>Zap</div>
           <div className='close'>
             <button className='button-1' onClick={onClose}>
               <div className='inner'>
@@ -21,45 +21,42 @@ export default function Roy({ onClose }) {
           <div className='left'>
             <Slug delay={400}>
               <div className='details'>Details</div>
+              {/* <div className="corner-left"></div> */}
+              {/* <div className="corner-right"></div> */}
               <div className='row'>
                 <div className='small-title'>Overview</div>
                 <div className='text'>
-                  Roy Apparel is a menswear brand that was owned and operated by
-                  myself between 2014 & 2017 in Wellington NZ. Good times were
-                  had, many lessons learnt, quality garments and digital content
-                  was made.
+                  Zap is a way to send and receive payments seamlessly. It
+                  allows the ability to split payments between friends, and
+                  eliminates delay.
                 </div>
               </div>
               <div className='row'>
                 <div className='small-title'>Roles & Responsibilities</div>
                 <div className='text'>
-                  - Design and manufacture clothing from concept to final
-                  product
-                  <br />
-                  - Produce digital content e.g. product photography,
-                  videography, animations, lookbooks
-                  <br />
-                  - Coordinated all activities required to bring the product to
-                  market
-                  <br />- Generated sales through online and boutique clothing
-                  stores across the nation.
+                  A mobile application prototype built by myself and two others,
+                  Liam Malone and Chris Corbett, in 2020. Leveraging similar
+                  services like Venmo and The-Cash-App, I was able to refined
+                  and develope from pre-existing apps to create an effective Ui.
+                  This prototype was pieced together using figma. The
+                  presentation displayed on this website was done so using
+                  React. --Work in progress.--
                 </div>
               </div>
               <div className='row'>
                 <div className='small-title'>Tags</div>
                 <div className='text'>
-                  +product-design +graphic-design +clothing +photography
-                  +videography
+                  +prototyping +figma +ui +ux +mobile-appication
                 </div>
               </div>
             </Slug>
           </div>
           <div className='right'>
             <div className='image'>
-              <div alt='roy-preview' className='image-preview royPreview' />
+              <div alt='zap-preview' className='image-preview zapPreview' />
             </div>
             <div className='clickables'>
-              <Link to={`/ProjectRoy`} activeClassName='active'>
+              <Link to={'/projectzap'} target='_blank' activeClassName='active'>
                 <button className='button-1'>
                   <div className='inner'>
                     <div className='title'>view project</div>

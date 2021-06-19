@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useSpring, animated } from 'react-spring';
 import '../../CSS/Hades/hades.css';
 
@@ -16,44 +16,47 @@ function HadesAnimation() {
     config: { mass: 10, tension: 300, friction: 100 },
   }));
   return (
-    <div
-      class='container'
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
-    >
-      <animated.div
-        class='head'
-        style={{ transform: props.xy.interpolate(trans1) }}
-        alt='head'
-      />
-      <animated.div
-        class='left-eye'
-        style={{ transform: props.xy.interpolate(trans2) }}
-        alt='left-eye'
-      />
-      <animated.div
-        className='left-eyeball'
-        style={{ transform: props.xy.interpolate(trans6) }}
-        alt='left-eyeball'
-      >
-        <div className='plus'>+</div>
-      </animated.div>
-      <animated.div
-        className='right-eyeball'
-        style={{ transform: props.xy.interpolate(trans5) }}
-        alt='right-eyeball'
-      />
+    <Fragment>
+      <div class='container'>
+        <animated.div
+          class='head'
+          style={{ transform: props.xy.interpolate(trans1) }}
+          alt='head'
+        />
+        <animated.div
+          class='left-eye'
+          style={{ transform: props.xy.interpolate(trans2) }}
+          alt='left-eye'
+        />
+        <animated.div
+          className='left-eyeball'
+          style={{ transform: props.xy.interpolate(trans6) }}
+          alt='left-eyeball'
+        >
+          <div className='plus'>+</div>
+        </animated.div>
+        <animated.div
+          className='right-eyeball'
+          style={{ transform: props.xy.interpolate(trans5) }}
+          alt='right-eyeball'
+        />
 
-      <animated.div
-        class='right-eye'
-        style={{ transform: props.xy.interpolate(trans3) }}
-        alt='right-eye'
-      />
-      <animated.div
-        class='eyebrow'
-        style={{ transform: props.xy.interpolate(trans4) }}
-        alt='eyebrow'
-      />
-    </div>
+        <animated.div
+          class='right-eye'
+          style={{ transform: props.xy.interpolate(trans3) }}
+          alt='right-eye'
+        />
+        <animated.div
+          class='eyebrow'
+          style={{ transform: props.xy.interpolate(trans4) }}
+          alt='eyebrow'
+        />
+      </div>
+      <div
+        className='full-screen-mouse-move'
+        onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
+      ></div>
+    </Fragment>
   );
 }
 
