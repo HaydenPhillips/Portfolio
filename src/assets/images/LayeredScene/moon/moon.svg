@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2175" height="2175" viewBox="0 0 2175 2175">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #dcdcdc;
+      }
+
+      .cls-3 {
+        fill: #eaeaea;
+      }
+
+      .cls-4 {
+        fill: #f1f1f1;
+      }
+
+      .cls-5 {
+        fill: #f6f6f6;
+      }
+    </style>
+  </defs>
+  <g id="moon" transform="translate(-5285 -2355)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-1" cx="1087.5" cy="1087.5" r="1087.5" transform="translate(5285 2355)"/>
+    <g id="moon_crator" data-name="moon crator" transform="translate(2697)">
+      <circle id="Ellipse_15" data-name="Ellipse 15" class="cls-2" cx="140.5" cy="140.5" r="140.5" transform="translate(3127 3057)"/>
+      <circle id="Ellipse_16" data-name="Ellipse 16" class="cls-3" cx="194.5" cy="194.5" r="194.5" transform="translate(3286 2543)"/>
+      <circle id="Ellipse_17" data-name="Ellipse 17" class="cls-3" cx="124.5" cy="124.5" r="124.5" transform="translate(2851 2825)"/>
+      <circle id="Ellipse_18" data-name="Ellipse 18" class="cls-4" cx="113" cy="113" r="113" transform="translate(4290 3001)"/>
+      <circle id="Ellipse_19" data-name="Ellipse 19" class="cls-5" cx="261.5" cy="261.5" r="261.5" transform="translate(3675 3766)"/>
+    </g>
+  </g>
+</svg>

@@ -1,8 +1,237 @@
+body {
+  h2 {
+    font-size: 80px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
 .landing-page {
-  div {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  padding: 0 90px;
+  // justify-content: center;
+  background-color: #161b3a;
+  position: relative;
+  overflow: hidden;
+  color: white;
+
+  .moon-scene {
+    .layers {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      .stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
+        // background-size: contain;
+        // background-repeat: no-repeat;
+      }
+      .stars-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100vh;
+        background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
+        background-size: cover;
+        // background-repeat: no-repeat;
+      }
+      .moon-and-light {
+        .moon {
+          position: absolute;
+          width: 300px;
+          top: calc(50% - 150px);
+          left: calc(70% - 150px);
+          height: 300px;
+          background-image: url(../../assets/images/LayeredScene/moon/moon.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .moonlight {
+          border-radius: 500px;
+          background-color: #ffffff1a;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          opacity: 0.6;
+          transition: all 0s ease;
+          // transition-delay: 0s;
+          &.m-1 {
+            top: calc(50% - 200px);
+            left: calc(70% - 200px);
+            width: 400px;
+            height: 400px;
+            transition-duration: 0.1s;
+          }
+          &.m-2 {
+            top: calc(50% - 250px);
+            left: calc(70% - 250px);
+            width: 500px;
+            height: 500px;
+            transition-duration: 0.3s;
+          }
+          &.m-3 {
+            top: calc(50% - 300px);
+            left: calc(70% - 300px);
+            width: 600px;
+            height: 600px;
+            transition-duration: 0.4s;
+          }
+          &.m-4 {
+            top: calc(50% - 350px);
+            left: calc(70% - 350px);
+            width: 700px;
+            height: 700px;
+            transition-duration: 0.5s;
+          }
+        }
+        &:hover {
+          .moonlight {
+            opacity: 1;
+          }
+        }
+      }
+
+      .cloud {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.c-1 {
+          top: 20%;
+          left: 45%;
+          background-image: url(../../assets/images/LayeredScene/moon/cloud_1.svg);
+        }
+        &.c-2 {
+          top: 20%;
+          left: 80%;
+          background-image: url(../../assets/images/LayeredScene/moon/cloud_2.svg);
+        }
+        &.c-3 {
+          top: 60%;
+          left: 55%;
+          background-image: url(../../assets/images/LayeredScene/moon/cloud_3.svg);
+        }
+        &.c-4 {
+          top: 50%;
+          left: 75%;
+          background-image: url(../../assets/images/LayeredScene/moon/cloud_4.svg);
+        }
+      }
+    }
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 500px;
+
+    z-index: 1;
+    .hero-title {
+      font-weight: lighter;
+      line-height: 1.2;
+    }
+
+    .description {
+      width: 500px;
+      font-weight: light;
+    }
+
+    .water-svg {
+      // position: absolute;
+      display: flex;
+      z-index: 100;
+      .water-svg-size {
+        width: 300px;
+      }
+    }
+  }
+
+  .layered-photo {
     width: 100%;
-    height: 80vh;
-    background-color: aqua;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.205);
+    // position: relative;
+
+    .container {
+      width: 100%;
+      height: 100%;
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // bottom: 0;
+      // left: 0;
+    }
+
+    .sky {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../assets/images/LayeredScene/singapore/sky.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .roofs {
+      position: absolute;
+      right: 0;
+      bottom: -150px;
+      width: 1000px;
+      height: 1000px;
+      background-image: url(../../assets/images/LayeredScene/singapore/orange_roofs.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .ferriswheel {
+      position: absolute;
+      top: 20%;
+      left: 30%;
+      width: 800px;
+      height: 800px;
+      background-image: url(../../assets/images/LayeredScene/singapore/ferriswheel.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .bush {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 1200px;
+      height: 400px;
+      background-image: url(../../assets/images/LayeredScene/singapore/bush.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .building {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../assets/images/LayeredScene/singapore/front_building.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 }
 
@@ -24,6 +253,7 @@
     height: auto;
     padding: 30px;
     margin: -30% 0 0 -30%;
+    z-index: 20;
 
     input {
       padding: 15px;
@@ -61,18 +291,15 @@
 
   .hades-wrap {
     position: absolute;
-
-    right: 300;
-    bottom: 300;
-    z-index: 0;
     display: grid;
-    // justify-items: flex-end;
     justify-content: flex-end;
-    // justify-self: flex-end;
-    // grid-template-columns: 1fr;
-    // width: 100%;
-    // margin-right: 20%;
-
-    // margin: 30% 0 0 50%;
+    align-content: flex-end;
+    align-self: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+    padding-right: 400px;
+    // margin-bottom: 100px;
   }
 }

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import HadesAnimation from '../../Projects/HadesAnimation';
+import '../../../CSS/Pages/pages.css';
 
 const ContactPage = () => {
   return (

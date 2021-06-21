@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1943.676" height="1662" viewBox="0 0 1943.676 1662">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="cloud_2" class="cls-1" transform="translate(-8109 15839.784)">
+    <ellipse id="Ellipse_28" data-name="Ellipse 28" class="cls-2" cx="641.5" cy="641" rx="641.5" ry="641" transform="translate(8109 -15839.784)"/>
+    <ellipse id="Ellipse_29" data-name="Ellipse 29" class="cls-2" cx="425.5" cy="425" rx="425.5" ry="425" transform="translate(8824 -15027.784)"/>
+    <ellipse id="Ellipse_37" data-name="Ellipse 37" class="cls-2" cx="423.838" cy="423.5" rx="423.838" ry="423.5" transform="translate(9205 -15237.784)"/>
+  </g>
+</svg>
