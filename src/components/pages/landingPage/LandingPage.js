@@ -15,13 +15,15 @@ const LandingPage = () => {
           <div className='water-svg'>
             <WaterAnimation />
           </div>
-          <Slug delay={1200}>
-            <h3 className='hero-title'>I help ideas become digital reality.</h3>
+          <Slug delay={1400}>
+            <h3 className='hero-title'>
+              Have an idea you want launched into digital space?
+            </h3>
             <p className='description'>
-              I'm a fullstack developer who loves building exceptional screen
-              based experiences, specialising in web applications.
+              I'm a software developer building exceptional screen based
+              experiences, specialising in fullstack web applications.
             </p>
-            <h4 className='hero-title'>Hayden Phillips</h4>
+            {/* <h4 className='hero-title'>Hayden Phillips</h4> */}
           </Slug>
         </div>
       </section>

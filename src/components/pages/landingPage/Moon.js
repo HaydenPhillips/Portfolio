@@ -20,54 +20,49 @@ function Moon() {
   return (
     <Fragment>
       <div
-        class='layers'
+        className='layers'
         onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
       >
         <animated.div
-          class='stars'
-          style={{ transform: props.xy.interpolate(trans1) }}
-          alt='stars'
-        />
-        <animated.div
-          class='stars-2'
+          className='stars-2'
           style={{ transform: props.xy.interpolate(trans2) }}
           alt='stars'
         />
         <div className='moon-and-light'>
           <animated.div
-            class='moonlight m-1'
+            className='moonlight m-1'
             style={{ transform: props.xy.interpolate(trans5) }}
             alt='moonlight 1'
           />
           <animated.div
-            class='moonlight m-2'
+            className='moonlight m-2'
             style={{ transform: props.xy.interpolate(trans5) }}
             alt='moonlight 2'
           />
           <animated.div
-            class='moonlight m-3'
+            className='moonlight m-3'
             style={{ transform: props.xy.interpolate(trans5) }}
             alt='moonlight 3'
           />
           <animated.div
-            class='moonlight m-4'
+            className='moonlight m-4'
             style={{ transform: props.xy.interpolate(trans5) }}
             alt='moonlight 4'
           />
           <animated.div
-            class='moon'
+            className='moon'
             style={{ transform: props.xy.interpolate(trans5) }}
             alt='moon'
           />
         </div>
 
         <animated.div
-          class='cloud c-1'
-          style={{ transform: props.xy.interpolate(trans3) }}
+          className='cloud c-1'
+          style={{ transform: props.xy.interpolate(trans4) }}
           alt='cloud-1'
         />
         <animated.div
-          class='cloud c-2'
+          className='cloud c-2'
           style={{ transform: props.xy.interpolate(trans3) }}
           alt='cloud-2'
         />

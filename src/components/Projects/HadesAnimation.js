@@ -18,14 +18,14 @@ function HadesAnimation() {
   }));
   return (
     <Fragment>
-      <div class='container'>
+      <div className='container'>
         <animated.div
-          class='head'
+          className='head'
           style={{ transform: props.xy.interpolate(trans1) }}
           alt='head'
         />
         <animated.div
-          class='left-eye'
+          className='left-eye'
           style={{ transform: props.xy.interpolate(trans2) }}
           alt='left-eye'
         />
@@ -43,12 +43,12 @@ function HadesAnimation() {
         />
 
         <animated.div
-          class='right-eye'
+          className='right-eye'
           style={{ transform: props.xy.interpolate(trans3) }}
           alt='right-eye'
         />
         <animated.div
-          class='eyebrow'
+          className='eyebrow'
           style={{ transform: props.xy.interpolate(trans4) }}
           alt='eyebrow'
         />

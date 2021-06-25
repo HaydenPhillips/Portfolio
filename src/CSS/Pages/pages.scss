@@ -1,13 +1,30 @@
 body {
   h2 {
     font-size: 80px;
+    margin: 0;
   }
   h3 {
     font-size: 50px;
+    margin: 0;
   }
   p {
     font-size: 20px;
+    margin: 0;
   }
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(../../assets/fonts/BebasNeue.otf);
+}
+
+.background-stars {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #161b3a;
+  background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
 }
 
 .landing-page {
@@ -17,8 +34,6 @@ body {
   align-items: center;
   align-content: center;
   padding: 0 90px;
-  // justify-content: center;
-  background-color: #161b3a;
   position: relative;
   overflow: hidden;
   color: white;
@@ -37,18 +52,15 @@ body {
         width: 100%;
         height: 100vh;
         background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
-        // background-size: contain;
-        // background-repeat: no-repeat;
       }
       .stars-2 {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 200%;
-        height: 100vh;
+        top: -200px;
+        left: -850px;
+        width: 250%;
+        height: 150vh;
         background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
         background-size: cover;
-        // background-repeat: no-repeat;
       }
       .moon-and-light {
         .moon {
@@ -101,7 +113,7 @@ body {
         }
         &:hover {
           .moonlight {
-            opacity: 1;
+            opacity: 0.8;
           }
         }
       }
@@ -139,6 +151,7 @@ body {
   .hero {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 30px;
     width: 500px;
 
     z-index: 1;
@@ -235,12 +248,51 @@ body {
   }
 }
 
+.services-page {
+  position: relative;
+  width: 100%;
+  // height: 100vh;
+  .service {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    color: white;
+    .service-title {
+      font-family: BebasNeue;
+      font-size: 70px;
+    }
+    .service-description {
+    }
+  }
+  .development {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+  }
+  .design {
+    position: absolute;
+    left: 10%;
+  }
+  .strategy {
+    position: absolute;
+    left: 70%;
+  }
+}
+
+.projects-page {
+  width: 100%;
+  margin: auto;
+}
+
 .contact-page {
   display: grid;
-  justify-items: center;
-  width: 100%;
+  grid-template-columns: 1fr;
+  justify-items: flex-start;
+  align-content: center;
+  align-items: center;
   height: 100vh;
-  background-color: beige;
+  padding: 90px;
   position: relative;
 
   .contact-form {
@@ -251,13 +303,21 @@ body {
     align-self: center;
     width: 50%;
     height: auto;
-    padding: 30px;
-    margin: -30% 0 0 -30%;
-    z-index: 20;
+    max-width: 800px;
+    z-index: 1;
+    color: white;
+
+    .form-title {
+      grid-column: span 2;
+      justify-self: flex-start;
+      font-family: BebasNeue;
+      letter-spacing: 12px;
+    }
 
     input {
       padding: 15px;
       border: none;
+      border-radius: 5px;
       font-size: 30px;
       &:focus-visible {
         outline: none;
@@ -266,6 +326,7 @@ body {
     textarea {
       padding: 15px;
       border: none;
+      border-radius: 5px;
       &:focus-visible {
         outline: none;
       }
@@ -273,12 +334,12 @@ body {
 
     .name {
       width: 100%;
-      height: 100px;
+      height: 50px;
       background-color: rgb(255, 255, 255);
     }
     .email {
       width: 100%;
-      height: 100px;
+      height: 50px;
       background-color: rgb(255, 255, 255);
     }
     .message {
@@ -291,6 +352,8 @@ body {
 
   .hades-wrap {
     position: absolute;
+    right: 250px;
+    bottom: 50px;
     display: grid;
     justify-content: flex-end;
     align-content: flex-end;
@@ -298,8 +361,30 @@ body {
     align-items: flex-end;
     width: 100%;
     height: 100vh;
-    margin-top: 200px;
-    padding-right: 400px;
-    // margin-bottom: 100px;
+  }
+}
+
+.development {
+  position: unset;
+  top: unset;
+  left: unset;
+}
+// .test-astroid {
+//   z-index: 1000;
+//   width: 100px;
+//   height: 500px;
+// }
+// .sevice-wrap {}
+.service {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 30px;
+  width: 300px;
+  color: white;
+  .service-title {
+    font-family: BebasNeue;
+    font-size: 70px;
+  }
+  .service-description {
   }
 }

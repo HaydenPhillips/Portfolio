@@ -47,8 +47,9 @@ const ProjectRoy = () => {
     // rootMargin: '400px 0px -200px 0px'
   });
 
-  const someString =
-    'The essence of Roy is to convey creative ideas that correlate with an individual via purposeful design. From concept to customer, we strive to produce the highest of quality through all forms of expression.';
+  const someString = `The essence of Roy is to convey creative ideas that correlate 
+    with an individual via purposeful design. From concept to customer, 
+    we strive to produce the highest of quality through all forms of expression.`;
 
   return (
     <Fragment>
