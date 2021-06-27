@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import LayeredPhotoMouseAnimation from './LayeredPhotoMouseAnimation';
+// import LayeredPhotoMouseAnimation from './LayeredPhotoMouseAnimation';
 import WaterAnimation from '../../WaterAnimation';
 import Moon from './Moon';
 import { Slug } from '../../Animations';

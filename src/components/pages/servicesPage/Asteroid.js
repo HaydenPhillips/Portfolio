@@ -9,23 +9,27 @@ let winH = window.innerHeight;
 export const Asteroid1 = () => {
   const props = useSpring({
     to: {
-      transform: `translate3d(-300px, 800px, 0) scale(1)`,
+      transform: `translate3d(-300px, 600px, 0) scale(1)`,
     },
     from: {
-      transform: `translate3d(${winW * 1.7}px, ${winH * 1.8}px,0) scale(3)`,
+      transform: `translate3d(${winW * 1.5}px, ${winH}px,0) scale(3)`,
     },
     config: {
       mass: 40,
-      tension: 70,
+      tension: 80,
       friction: 200,
       duration: 8000,
-      easing: easings.easeQuadOut,
+      // easing: easings.easeQuadOut,
     },
   });
 
   return (
     <animated.div style={props}>
-      <img src={asteroid} style={{ width: '200px', height: '200px' }} />
+      <img
+        src={asteroid}
+        alt='asteroid'
+        style={{ width: '200px', height: '200px', position: 'absolute' }}
+      />
     </animated.div>
   );
 };
@@ -36,20 +40,24 @@ export const Asteroid2 = () => {
       transform: `translate3d(-400px, 200px, 0) scale(0.8)`,
     },
     from: {
-      transform: `translate3d(${winW * 1.3}px, ${winH * 1.6}px,0) scale(2)`,
+      transform: `translate3d(${winW * 1.7}px, ${winH * 0.6}px,0) scale(2)`,
     },
     config: {
       mass: 40,
       tension: 70,
-      friction: 250,
-      duration: 10000,
-      easing: easings.easeQuadOut,
+      friction: 200,
+      duration: 10100,
+      // easing: easings.easeQuadOut,
     },
   });
 
   return (
     <animated.div style={props}>
-      <img src={asteroid} style={{ width: '200px', height: '200px' }} />
+      <img
+        src={asteroid}
+        alt='asteroid'
+        style={{ width: '200px', height: '200px', position: 'absolute' }}
+      />
     </animated.div>
   );
 };
@@ -57,23 +65,27 @@ export const Asteroid2 = () => {
 export const Asteroid3 = () => {
   const props = useSpring({
     to: {
-      transform: `translate3d(-300px, 400px, 0) scale(0.3)`,
+      transform: `translate3d(-1000px, 300px, 0) scale(0.3)`,
     },
     from: {
-      transform: `translate3d(${winW * 1.5}px, ${winH * 1.8}px,0) scale(1.5)`,
+      transform: `translate3d(${winW}px, ${winH}px,0) scale(1.5)`,
     },
     config: {
       mass: 40,
-      tension: 70,
-      friction: 200,
-      duration: 10500,
-      easing: easings.easeQuadOut,
+      tension: 50,
+      friction: 220,
+      duration: 10400,
+      // easing: easings.easeQuadOut,
     },
   });
 
   return (
     <animated.div style={props}>
-      <img src={asteroid} style={{ width: '200px', height: '200px' }} />
+      <img
+        src={asteroid}
+        alt='asteroid'
+        style={{ width: '200px', height: '200px' }}
+      />
     </animated.div>
   );
 };

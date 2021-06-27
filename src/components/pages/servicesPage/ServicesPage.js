@@ -1,23 +1,43 @@
 import React, { Fragment } from 'react';
 import '../../../CSS/Pages/pages.css';
-import { Diagonal, Dia } from '../../Animations';
-// import { Slug } from '../../Animations';
+import Dev from '../servicesPage/Development';
+import Des from '../servicesPage/Design';
+import Strategy from '../servicesPage/Strategy';
+import { ParallaxLayer } from 'react-spring/renderprops-addons';
+import { useInView } from 'react-intersection-observer';
+import { Asteroid1, Asteroid2, Asteroid3 } from './Asteroid';
+
+// function inMotion() {
+//     return (
+//     <Asteroid1 />,
+//     <Asteroid2 />,
+//     <Asteroid3 />
+//     )
+// }
 
 const ServicesPage = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.9,
+  });
+
+  let isInMotion = false;
   return (
     <Fragment>
-      {/* <section className='landing-page'> */}
-      {/* <div className='hero'> */}
-      <Dia>
-        <h3 className='hero-title'>
-          adxvl hida' viposadp'b vijsd'pbjh'spdo digital space?
-        </h3>
-        <p className='description'>
-          sdfbpaeuj'as fp'o bj['pfb oj'p;fsoj b[pdfojabpojfsdpoj]].
-        </p>
-      </Dia>
-      {/* </div> */}
-      {/* </section> */}
+      <section className='services-page' ref={ref}>
+        <ParallaxLayer offset={0.7} speed={1.2}>
+          <Dev />
+        </ParallaxLayer>
+        <ParallaxLayer offset={0.6} speed={1}>
+          <Des />
+        </ParallaxLayer>
+        <ParallaxLayer offset={0.5} speed={0.8}>
+          <Strategy />
+        </ParallaxLayer>
+
+        {inView ? <Asteroid1 /> : console.log(inView)}
+        {inView ? <Asteroid2 /> : console.log(inView)}
+        {inView ? <Asteroid3 /> : console.log(inView)}
+      </section>
     </Fragment>
   );
 };

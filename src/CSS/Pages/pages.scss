@@ -28,13 +28,13 @@ body {
 }
 
 .landing-page {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   height: 100vh;
   align-items: center;
   align-content: center;
   padding: 0 90px;
-  position: relative;
   overflow: hidden;
   color: white;
 
@@ -58,7 +58,7 @@ body {
         top: -200px;
         left: -850px;
         width: 250%;
-        height: 150vh;
+        height: 100vh;
         background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
         background-size: cover;
       }
@@ -251,7 +251,7 @@ body {
 .services-page {
   position: relative;
   width: 100%;
-  // height: 100vh;
+  height: 100vh;
   .service {
     display: flex;
     flex-direction: column;
@@ -268,7 +268,7 @@ body {
   .development {
     position: absolute;
     top: 0%;
-    left: 40%;
+    left: calc(50% - 150px);
   }
   .design {
     position: absolute;
@@ -288,7 +288,7 @@ body {
 .contact-page {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: flex-start;
+  justify-items: center;
   align-content: center;
   align-items: center;
   height: 100vh;
@@ -303,7 +303,7 @@ body {
     align-self: center;
     width: 50%;
     height: auto;
-    max-width: 800px;
+    max-width: 600px;
     z-index: 1;
     color: white;
 
@@ -318,7 +318,7 @@ body {
       padding: 15px;
       border: none;
       border-radius: 5px;
-      font-size: 30px;
+      font-size: 20px;
       &:focus-visible {
         outline: none;
       }
@@ -327,6 +327,7 @@ body {
       padding: 15px;
       border: none;
       border-radius: 5px;
+      overflow: hidden;
       &:focus-visible {
         outline: none;
       }
@@ -335,18 +336,49 @@ body {
     .name {
       width: 100%;
       height: 50px;
-      background-color: rgb(255, 255, 255);
+      // background-color: rgb(255, 255, 255);
     }
     .email {
       width: 100%;
       height: 50px;
-      background-color: rgb(255, 255, 255);
+      // background-color: rgb(255, 255, 255);
     }
     .message {
       grid-column: span 2;
       width: 100%;
-      height: auto;
-      font-size: 30px;
+      font-size: 20px;
+      overflow: scroll;
+    }
+    .submit {
+      cursor: pointer;
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+  }
+
+  .satellite {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 800px;
+    height: 800px;
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .earth {
+    position: absolute;
+    right: -200px;
+    bottom: -200px;
+    width: 800px;
+    height: 800px;
+    img {
+      width: 800px;
+      height: 800px;
     }
   }
 
@@ -361,30 +393,5 @@ body {
     align-items: flex-end;
     width: 100%;
     height: 100vh;
-  }
-}
-
-.development {
-  position: unset;
-  top: unset;
-  left: unset;
-}
-// .test-astroid {
-//   z-index: 1000;
-//   width: 100px;
-//   height: 500px;
-// }
-// .sevice-wrap {}
-.service {
-  // display: flex;
-  // flex-direction: column;
-  // gap: 30px;
-  width: 300px;
-  color: white;
-  .service-title {
-    font-family: BebasNeue;
-    font-size: 70px;
-  }
-  .service-description {
   }
 }

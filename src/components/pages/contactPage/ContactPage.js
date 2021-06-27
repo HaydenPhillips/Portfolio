@@ -1,24 +1,25 @@
 import React, { Fragment } from 'react';
-import HadesAnimation from '../../Projects/HadesAnimation';
+import ContactForm from './ContactForm';
+// import HadesAnimation from '../../Projects/HadesAnimation';
 import '../../../CSS/Pages/pages.css';
+import earth from '../../../assets/icons/earth.svg';
+import satellite from '../../../assets/images/LayeredScene/moon/satellite.svg';
 
 const ContactPage = () => {
   return (
     <Fragment>
       <section className='contact-page'>
-        <div className='hades-wrap'>
+        {/* <div className='hades-wrap'>
           <HadesAnimation></HadesAnimation>
+        </div> */}
+
+        <ContactForm />
+
+        <div className='satellite'>
+          <img src={satellite} alt='satellite' />
         </div>
-        <div className='contact-form'>
-          {/* <h2 className='form-title'>i'm listening</h2> */}
-          <input className='name' type='text' placeholder='Name'></input>
-          <input className='email' type='text' placeholder='Email'></input>
-          <textarea
-            className='message'
-            type='text'
-            placeholder='Message'
-            rows='3'
-          ></textarea>
+        <div className='earth' alt='earth'>
+          <img src={earth} alt='earth' />
         </div>
       </section>
     </Fragment>

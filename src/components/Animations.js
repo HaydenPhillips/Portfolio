@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Transition, Trail, animated } from 'react-spring/renderprops';
-import { config } from 'react-spring';
+// import { config } from 'react-spring';
 import { useSpring } from 'react-spring';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 // import '../../../CSS/Pages/pages.css';
 

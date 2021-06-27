@@ -3,43 +3,26 @@ import { Fragment } from 'react';
 import Projects from '../Projects/Projects';
 import LandingPage from '../pages/landingPage/LandingPage';
 import ContactPage from '../pages/contactPage/ContactPage';
-import Development from '../pages/servicesPage/Development';
-import Asteroid, {
-  Asteroid1,
-  Asteroid2,
-  Asteroid3,
-} from '../pages/servicesPage/Asteroid';
-// import Asteroid2 from '../pages/servicesPage/Asteroid';
-// import Asteroid3 from '../pages/servicesPage/Asteroid';
-import Design from '../pages/servicesPage/Design';
-import Strategy from '../pages/servicesPage/Strategy';
+import ServicesPage from '../pages/servicesPage/ServicesPage';
+// import {
+//   Asteroid1,
+//   Asteroid2,
+//   Asteroid3,
+// } from '../pages/servicesPage/Asteroid';
 import '../../CSS/Pages/pages.css';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import stars from '../../assets/images/LayeredScene/moon/stars.svg';
-// import satellite from '../../assets/images/LayeredScene/moon/satellite.svg';
-// import { useSpring, animated } from 'react-spring';
-// import { Slug } from '../Animations';
-// import { Dia } from '../Animations';
-// import ServicesPage from '../pages/servicesPage/ServicesPage';
-import { useInView } from 'react-intersection-observer';
-
-// const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
-// const trans2 = (x, y) => `translate3d(${x / 200}px, ${y / 200}px,0)`;
+// import { useInView } from 'react-intersection-observer';
 
 const Pages = () => {
   let parallax;
 
-  const [ref, inView] = useInView({
-    threshold: 0,
-  });
-  // const [props, set] = useSpring(() => ({
-  //   xy: [0, 0],
-  //   config: { mass: 10, tension: 300, friction: 100 },
-  // }));
+  // const [ref, inView] = useInView({
+  //   threshold: 0,
+  // });
 
   return (
     <Fragment>
-      {/* <ServicesPage></ServicesPage> */}
       <Parallax
         pages={4}
         ref={(ref) => (parallax = ref)}
@@ -79,22 +62,16 @@ const Pages = () => {
           <LandingPage></LandingPage>
         </ParallaxLayer>
 
-        <div className='services-page'>
-          <div inView={inView}>
-            {/* <Development /> */}
-            <ParallaxLayer offset={1.2} speed={1}>
-              <div ref={ref}>
-                <Design />
-              </div>
-            </ParallaxLayer>
-            {inView ? <Asteroid1 /> : console.log(inView)}
-            {inView ? <Asteroid2 /> : console.log(inView)}
-            {inView ? <Asteroid3 /> : console.log(inView)}
-          </div>
-          <ParallaxLayer offset={1.2} speed={1.2}>
-            <Strategy />
-          </ParallaxLayer>
-        </div>
+        {/* <div className='in-view' inView={inView}>
+          <div className='ref' ref={ref}> */}
+        <ParallaxLayer offset={1} speed={0}>
+          <ServicesPage />
+          {/* {inView ? <Asteroid1 /> : console.log(inView)}
+          {inView ? <Asteroid2 /> : console.log(inView)}
+          {inView ? <Asteroid3 /> : console.log(inView)} */}
+        </ParallaxLayer>
+        {/* </div>
+        </div> */}
 
         <ParallaxLayer offset={2} speed={0.3}>
           <div className='projects-page'>
@@ -106,9 +83,6 @@ const Pages = () => {
           <ContactPage></ContactPage>
         </ParallaxLayer>
       </Parallax>
-      {/* <div className='test-astroid'> */}
-
-      {/* </div> */}
     </Fragment>
   );
 };
