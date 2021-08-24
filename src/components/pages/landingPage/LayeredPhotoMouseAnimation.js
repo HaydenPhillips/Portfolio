@@ -8,7 +8,7 @@ const trans2 = (x, y) => `translate3d(${x / 80}px, ${y / 35}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / 55}px, ${y / 35}px,0)`;
 const trans4 = (x, y) => `translate3d(${x / 45}px, ${y / 40}px,0)`;
 const trans5 = (x, y) => `translate3d(${x / 25}px, ${y / 20}px,0)`;
-const trans6 = (x, y) => `translate3d(${x / 15}px, ${y / 20}px,0)`;
+// const trans6 = (x, y) => `translate3d(${x / 15}px, ${y / 20}px,0)`;
 
 function LayeredPhotoMouseAnimation() {
   const [props, set] = useSpring(() => ({

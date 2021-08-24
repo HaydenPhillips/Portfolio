@@ -7,17 +7,9 @@ import { ParallaxLayer } from 'react-spring/renderprops-addons';
 import { useInView } from 'react-intersection-observer';
 import { Asteroid1, Asteroid2, Asteroid3 } from './Asteroid';
 
-// function inMotion() {
-//     return (
-//     <Asteroid1 />,
-//     <Asteroid2 />,
-//     <Asteroid3 />
-//     )
-// }
-
 const ServicesPage = () => {
   const [ref, inView] = useInView({
-    threshold: 0.9,
+    threshold: 0.5,
   });
 
   let isInMotion = false;
