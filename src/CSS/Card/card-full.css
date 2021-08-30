@@ -19,6 +19,7 @@
           animation-name: scaleUp;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
+  color: black;
 }
 
 .project-card .title-bar {

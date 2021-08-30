@@ -1,6 +1,8 @@
 body {
+	color: white;
 	h1 {
-		font-size: 100px;
+		font-family: neue-haas-bold;
+		font-size: 90px;
 		margin: 0;
 		line-height: 1;
 	}
@@ -10,18 +12,106 @@ body {
 		line-height: 1;
 	}
 	h3 {
+		font-family: neue-haas-thin;
 		font-size: 50px;
 		margin: 0;
 	}
-	p {
-		font-size: 20px;
+	h5 {
+		font-family: garamond-bold;
+		font-size: 35px;
 		margin: 0;
 	}
-}
+	h6 {
+		font-family: neue-haas-thin;
+		font-size: 25px;
+		margin: 0;
+	}
+	p {
+		font-family: garamond-regular;
+		font-size: 20px;
+		margin: 0;
+		font-weight: 500;
+		font-style: normal;
+	}
 
+	// ul {
+	// 	margin: 0;
+	// 	li {
+	// 		display: flex;
+	// 		text-decoration: none;
+	// 	}
+	// }
+
+	button {
+		padding: 0;
+	}
+}
 @font-face {
 	font-family: BebasNeue;
 	src: url(../../assets/fonts/BebasNeue.otf);
+}
+@font-face {
+	font-family: neue-haas-thin;
+	src: url(../../assets/fonts/neue-haas/NeueHaasDisplayThin.ttf);
+}
+@font-face {
+	font-family: neue-haas-bold;
+	src: url(../../assets/fonts/neue-haas/NeueHaasDisplayBold.ttf);
+}
+@font-face {
+	font-family: garamond-regular;
+	src: url(../../assets/fonts/garamond-premier-pro/garamond-premier-pro-regular.ttf);
+}
+@font-face {
+	font-family: garamond-bold;
+	src: url(../../assets/fonts/garamond-premier-pro/garamond-premier-pro-bold.otf);
+}
+@font-face {
+	font-family: garamond-italic;
+	src: url(../../assets/fonts/garamond-premier-pro/garamond-premier-pro-italic-display.otf);
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	width: 100%;
+	position: fixed;
+	z-index: 300;
+	background-color: #343e74;
+	justify-items: flex-end;
+	box-shadow: black 4px 0 10px;
+	.navbar {
+		display: flex;
+		gap: 10px;
+		padding: 10px;
+
+		.nav-button {
+			display: flex;
+			align-items: center;
+			padding: 2px;
+			font-size: 25px;
+			border-radius: 25px;
+			color: #cccedd;
+			background-color: transparent;
+			transition: all 0.2s ease;
+			box-shadow: -2px -2px 6px #48539b, 2px 2px 6px #00000080;
+			cursor: pointer;
+
+			.inner {
+				padding: 8px 15px;
+				border-radius: 25px;
+				&:active {
+					box-shadow: inset -2px -2px 5px #48539b, inset 2px 2px 5px #00000080;
+				}
+			}
+
+			&:hover {
+				color: #e4e5ee;
+				box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+			}
+		}
+	}
 }
 
 .background-stars {
@@ -33,390 +123,357 @@ body {
 	background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
 }
 
-.landing-page {
-	position: relative;
+.page-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	height: 100vh;
-	align-items: center;
-	align-content: center;
-	padding: 0 90px;
-	overflow: hidden;
-	color: white;
+	grid-template-rows: 100%;
+	gap: 100px;
 
-	.moon-scene {
-		.layers {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			height: 100vh;
-			.stars {
+	.landing-page {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr;
+		height: 100vh;
+		align-items: center;
+		align-content: center;
+		padding: 0 90px;
+		overflow: hidden;
+		color: white;
+
+		.moon-scene {
+			.layers {
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 100%;
+				right: 0;
 				height: 100vh;
-				background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
-			}
-			.stars-2 {
-				position: absolute;
-				top: -200px;
-				left: -850px;
-				width: 250%;
-				height: 100vh;
-				background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
-				background-size: cover;
-			}
-			.moon-and-light {
-				.moon {
+				.stars {
 					position: absolute;
-					width: 300px;
-					top: calc(50% - 150px);
-					left: calc(70% - 150px);
-					height: 300px;
-					background-image: url(../../assets/images/LayeredScene/moon/moon.svg);
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100vh;
+					background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
+				}
+				.stars-2 {
+					position: absolute;
+					top: -200px;
+					left: -850px;
+					width: 250%;
+					height: 100vh;
+					background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
+					background-size: cover;
+				}
+				.moon-and-light {
+					.moon {
+						position: absolute;
+						width: 300px;
+						top: calc(50% - 150px);
+						left: calc(70% - 150px);
+						height: 300px;
+						background-image: url(../../assets/images/LayeredScene/moon/moon.svg);
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+					.moonlight {
+						border-radius: 500px;
+						background-color: #ffffff1a;
+						position: absolute;
+						width: 300px;
+						height: 300px;
+						opacity: 0.6;
+						transition: all 0s ease;
+						// transition-delay: 0s;
+						&.m-1 {
+							top: calc(50% - 200px);
+							left: calc(70% - 200px);
+							width: 400px;
+							height: 400px;
+							transition-duration: 0.1s;
+						}
+						&.m-2 {
+							top: calc(50% - 250px);
+							left: calc(70% - 250px);
+							width: 500px;
+							height: 500px;
+							transition-duration: 0.3s;
+						}
+						&.m-3 {
+							top: calc(50% - 300px);
+							left: calc(70% - 300px);
+							width: 600px;
+							height: 600px;
+							transition-duration: 0.4s;
+						}
+						&.m-4 {
+							top: calc(50% - 350px);
+							left: calc(70% - 350px);
+							width: 700px;
+							height: 700px;
+							transition-duration: 0.5s;
+						}
+					}
+					&:hover {
+						.moonlight {
+							opacity: 0.8;
+						}
+					}
+				}
+
+				.cloud {
+					position: absolute;
+					width: 100%;
+					height: 200px;
 					background-size: contain;
 					background-repeat: no-repeat;
-				}
-				.moonlight {
-					border-radius: 500px;
-					background-color: #ffffff1a;
-					position: absolute;
-					width: 300px;
-					height: 300px;
-					opacity: 0.6;
-					transition: all 0s ease;
-					// transition-delay: 0s;
-					&.m-1 {
-						top: calc(50% - 200px);
-						left: calc(70% - 200px);
-						width: 400px;
-						height: 400px;
-						transition-duration: 0.1s;
+					&.c-1 {
+						top: 20%;
+						left: 45%;
+						background-image: url(../../assets/images/LayeredScene/moon/cloud_1.svg);
 					}
-					&.m-2 {
-						top: calc(50% - 250px);
-						left: calc(70% - 250px);
-						width: 500px;
-						height: 500px;
-						transition-duration: 0.3s;
+					&.c-2 {
+						top: 20%;
+						left: 80%;
+						background-image: url(../../assets/images/LayeredScene/moon/cloud_2.svg);
 					}
-					&.m-3 {
-						top: calc(50% - 300px);
-						left: calc(70% - 300px);
-						width: 600px;
-						height: 600px;
-						transition-duration: 0.4s;
+					&.c-3 {
+						top: 60%;
+						left: 55%;
+						background-image: url(../../assets/images/LayeredScene/moon/cloud_3.svg);
 					}
-					&.m-4 {
-						top: calc(50% - 350px);
-						left: calc(70% - 350px);
-						width: 700px;
-						height: 700px;
-						transition-duration: 0.5s;
-					}
-				}
-				&:hover {
-					.moonlight {
-						opacity: 0.8;
+					&.c-4 {
+						top: 50%;
+						left: 75%;
+						background-image: url(../../assets/images/LayeredScene/moon/cloud_4.svg);
 					}
 				}
 			}
+		}
 
-			.cloud {
-				position: absolute;
-				width: 100%;
-				height: 200px;
-				background-size: contain;
-				background-repeat: no-repeat;
-				&.c-1 {
-					top: 20%;
-					left: 45%;
-					background-image: url(../../assets/images/LayeredScene/moon/cloud_1.svg);
+		.hero {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 30px;
+			max-width: 500px;
+			z-index: 1;
+
+			.water-svg {
+				display: flex;
+				z-index: 100;
+				.water-svg-size {
+					width: 300px;
 				}
-				&.c-2 {
-					top: 20%;
-					left: 80%;
-					background-image: url(../../assets/images/LayeredScene/moon/cloud_2.svg);
-				}
-				&.c-3 {
-					top: 60%;
-					left: 55%;
-					background-image: url(../../assets/images/LayeredScene/moon/cloud_3.svg);
-				}
-				&.c-4 {
-					top: 50%;
-					left: 75%;
-					background-image: url(../../assets/images/LayeredScene/moon/cloud_4.svg);
-				}
+			}
+			.hero-title {
+				line-height: 1.2;
+			}
+
+			.description {
+				max-width: 350px;
 			}
 		}
 	}
 
-	.hero {
+	.about-page {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 30px;
-		width: 500px;
+		justify-items: center;
+		// height: calc(200vh - 180px - 65px);
+		padding: 90px 10%;
 
-		z-index: 1;
-		.hero-title {
-			font-weight: lighter;
-			line-height: 1.2;
-		}
+		.page-wrap {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 90px;
+			max-width: 1000px;
 
-		.description {
-			width: 500px;
-			font-weight: light;
-		}
+			.section {
+				display: grid;
+				grid-template-columns: 1fr auto;
+				gap: 60px;
 
-		.water-svg {
-			// position: absolute;
-			display: flex;
-			z-index: 100;
-			.water-svg-size {
-				width: 300px;
+				.title {
+					justify-self: flex-end;
+				}
+				.details {
+					display: flex;
+					flex-direction: column;
+					gap: 60px;
+					justify-self: flex-start;
+					max-width: 600px;
+					// overflow: scroll;
+
+					.subtitle {
+						margin-bottom: -40px;
+					}
+				}
 			}
 		}
 	}
 
-	.layered-photo {
-		width: 100%;
-		height: 100vh;
-		background-color: rgba(0, 255, 255, 0.205);
-		// position: relative;
-
-		.container {
-			width: 100%;
-			height: 100%;
-			// position: absolute;
-			// top: 0;
-			// right: 0;
-			// bottom: 0;
-			// left: 0;
-		}
-
-		.sky {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-image: url(../../assets/images/LayeredScene/singapore/sky.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-		}
-
-		.roofs {
-			position: absolute;
-			right: 0;
-			bottom: -150px;
-			width: 1000px;
-			height: 1000px;
-			background-image: url(../../assets/images/LayeredScene/singapore/orange_roofs.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-		}
-
-		.ferriswheel {
-			position: absolute;
-			top: 20%;
-			left: 30%;
-			width: 800px;
-			height: 800px;
-			background-image: url(../../assets/images/LayeredScene/singapore/ferriswheel.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-		}
-		.bush {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			width: 1200px;
-			height: 400px;
-			background-image: url(../../assets/images/LayeredScene/singapore/bush.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-		}
-		.building {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-image: url(../../assets/images/LayeredScene/singapore/front_building.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-		}
-	}
-}
-
-.about-page {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	gap: 30px;
-	background-color: rgba(255, 255, 255, 0.383);
-	color: white;
-	padding: 0 10%;
-
-	h1 {
-		padding-bottom: 30px;
-	}
-
-	p {
-		max-width: 800px;
-	}
-}
-
-.services-page {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	.service {
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-		width: 300px;
-		color: white;
-		.service-title {
-			font-family: BebasNeue;
-			font-size: 70px;
-		}
-		.service-description {
-		}
-	}
-	.development {
-		position: absolute;
-		top: 0%;
-		left: calc(50% - 150px);
-	}
-	.design {
-		position: absolute;
-		left: 10%;
-	}
-	.strategy {
-		position: absolute;
-		left: 70%;
-	}
-}
-
-.projects-page {
-	width: 100%;
-	max-width: 1200px;
-	margin: auto;
-}
-
-.contact-page {
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
-	align-content: center;
-	align-items: center;
-	height: 100vh;
-	padding: 90px;
-	position: relative;
-
-	.contact-form {
+	.services-page {
+		position: relative;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		// height: calc(200vh - 180px - 65px);
+		padding: 90px 10%;
+
+		.services-wrap {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 90px;
+			max-width: 1000px;
+
+			.service {
+				display: grid;
+				grid-template-columns: 1fr auto;
+				gap: 60px;
+
+				.title {
+					justify-self: flex-end;
+				}
+				.details {
+					display: flex;
+					flex-direction: column;
+					gap: 60px;
+					justify-self: flex-start;
+					max-width: 600px;
+
+					.subtitle {
+						margin-bottom: -40px;
+					}
+				}
+			}
+		}
+	}
+
+	.projects-page {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
 		gap: 30px;
 		justify-items: center;
-		align-self: center;
-		width: 50%;
-		height: auto;
-		max-width: 600px;
-		z-index: 1;
-		color: white;
-
-		.form-title {
-			grid-column: span 2;
-			justify-self: flex-start;
-			font-family: BebasNeue;
-			letter-spacing: 12px;
-		}
-
-		input {
-			padding: 15px;
-			border: none;
-			border-radius: 5px;
-			font-size: 20px;
-			&:focus-visible {
-				outline: none;
-			}
-		}
-		textarea {
-			padding: 15px;
-			border: none;
-			border-radius: 5px;
-			overflow: hidden;
-			&:focus-visible {
-				outline: none;
-			}
-		}
-
-		.name {
-			width: 100%;
-			height: 50px;
-			// background-color: rgb(255, 255, 255);
-		}
-		.email {
-			width: 100%;
-			height: 50px;
-			// background-color: rgb(255, 255, 255);
-		}
-		.message {
-			grid-column: span 2;
-			width: 100%;
-			font-size: 20px;
-			overflow: scroll;
-		}
-		.submit {
-			cursor: pointer;
-			width: 100%;
-			height: 50px;
-			border-radius: 5px;
-			font-size: 20px;
+		align-content: center;
+		height: calc(100vh - 180px - 65px);
+		padding: 90px 10%;
+		.page-wrap {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 30px;
+			height: 100%;
+			align-content: center;
 		}
 	}
 
-	.satellite {
-		position: absolute;
-		left: 100px;
-		top: 100px;
-		width: 800px;
-		height: 800px;
-		img {
-			width: 400px;
-			height: 400px;
-		}
-	}
+	.contact-page {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-content: center;
+		align-items: center;
+		height: 100vh;
+		padding: 90px;
+		position: relative;
 
-	.earth {
-		position: absolute;
-		right: -200px;
-		bottom: -200px;
-		width: 800px;
-		height: 800px;
-		img {
+		.contact-form {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 30px;
+			justify-items: center;
+			align-self: center;
+			width: 50%;
+			height: auto;
+			max-width: 600px;
+			z-index: 1;
+			color: white;
+
+			.form-title {
+				grid-column: span 2;
+				justify-self: flex-start;
+				font-family: BebasNeue;
+				letter-spacing: 12px;
+			}
+
+			input {
+				padding: 15px;
+				border: none;
+				border-radius: 5px;
+				font-size: 20px;
+				&:focus-visible {
+					outline: none;
+				}
+			}
+			textarea {
+				padding: 15px;
+				border: none;
+				border-radius: 5px;
+				overflow: hidden;
+				&:focus-visible {
+					outline: none;
+				}
+			}
+
+			.name {
+				width: 100%;
+				height: 50px;
+				// background-color: rgb(255, 255, 255);
+			}
+			.email {
+				width: 100%;
+				height: 50px;
+				// background-color: rgb(255, 255, 255);
+			}
+			.message {
+				grid-column: span 2;
+				width: 100%;
+				font-size: 20px;
+				overflow: scroll;
+			}
+			.submit {
+				cursor: pointer;
+				width: 100%;
+				height: 50px;
+				border-radius: 5px;
+				font-size: 20px;
+			}
+		}
+
+		.satellite {
+			position: absolute;
+			left: 100px;
+			top: 100px;
 			width: 800px;
 			height: 800px;
+			img {
+				width: 400px;
+				height: 400px;
+			}
 		}
-	}
 
-	.hades-wrap {
-		position: absolute;
-		right: 250px;
-		bottom: 50px;
-		display: grid;
-		justify-content: flex-end;
-		align-content: flex-end;
-		align-self: flex-end;
-		align-items: flex-end;
-		width: 100%;
-		height: 100vh;
+		.earth {
+			position: absolute;
+			right: -200px;
+			bottom: -200px;
+			width: 800px;
+			height: 800px;
+			img {
+				width: 800px;
+				height: 800px;
+			}
+		}
+
+		.hades-wrap {
+			position: absolute;
+			right: 250px;
+			bottom: 50px;
+			display: grid;
+			justify-content: flex-end;
+			align-content: flex-end;
+			align-self: flex-end;
+			align-items: flex-end;
+			width: 100%;
+			height: 100vh;
+		}
 	}
 }

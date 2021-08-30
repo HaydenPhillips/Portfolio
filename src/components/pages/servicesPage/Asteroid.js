@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import asteroid from '../../../assets/icons/asteroid.svg';
-import * as easings from 'd3-ease';
+// import * as easings from 'd3-ease';
 
 let winW = window.innerWidth;
 let winH = window.innerHeight;
