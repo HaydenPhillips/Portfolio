@@ -2,37 +2,42 @@
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   width: 100%;
-  height: 100%;
-  min-height: 500px;
-  max-height: 800px;
   background-color: #dbeaf0;
   border-radius: 5px;
   -webkit-animation-name: scaleUp;
           animation-name: scaleUp;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
+  color: black;
+  overflow-y: scroll;
 }
 
 .project-card .title-bar {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  width: calc(100vw - 140px);
+  max-width: 1500px;
   height: 90px;
-  -ms-grid-columns: 1fr auto;
-      grid-template-columns: 1fr auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #acc5eb;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  position: fixed;
+  z-index: 3;
 }
 
 .project-card .title-bar .title {
@@ -79,7 +84,7 @@
       grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding: 30px;
-  overflow-y: scroll;
+  margin-top: 90px;
 }
 
 .project-card .card-split .left {
@@ -88,8 +93,6 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
   height: 100%;
 }
 
@@ -132,6 +135,7 @@
 .project-card .card-split .left .row .text {
   width: 100%;
   font-size: 14px;
+  max-width: 600px;
 }
 
 .project-card .card-split .left .row .icons {
@@ -190,6 +194,7 @@
   transition: box-shadow 0.2s ease;
   transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
   max-height: 400px;
+  min-height: 350px;
 }
 
 .project-card .card-split .right .image .image-preview {
@@ -247,6 +252,76 @@
 
 .project-card .card-split .right .clickables a .button-1 {
   width: 100%;
+  height: 50px;
+}
+
+.project-card .card-split#slider {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  gap: 50px;
+}
+
+.project-card .card-split#slider .right {
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 0;
+  justify-items: center;
+}
+
+.project-card .card-split#slider .right .image-slider {
+  position: relative;
+  width: 80%;
+}
+
+.project-card .card-split#slider .right .image-slider img {
+  width: 100%;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+.project-card .card-split#slider .right .image-slider .flickity-page-dots {
+  bottom: -20px;
+  text-align: right;
+}
+
+.project-card .card-split#slider .right .image-slider .flickity-button {
+  background: none;
+}
+
+.project-card .card-split#slider .right .image-slider .flickity-viewport {
+  border-radius: 5px;
+}
+
+.project-card .card-split#slider .right .image-slider .flickity-prev-next-button.previous {
+  left: -60px;
+}
+
+.project-card .card-split#slider .right .image-slider .flickity-prev-next-button.next {
+  right: -60px;
+}
+
+.project-card .card-split#slider .left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-flex-line-pack: unset;
+      align-content: unset;
+}
+
+.project-card .card-split#slider .left .clickables {
+  display: -ms-grid;
+  display: grid;
+}
+
+.project-card .card-split#slider .left .clickables a {
+  text-decoration: none;
+}
+
+.project-card .card-split#slider .left .clickables a .button-1 {
+  width: 300px;
   height: 50px;
 }
 

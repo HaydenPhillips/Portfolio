@@ -1,0 +1,620 @@
+body {
+  color: white;
+}
+
+body h1 {
+  font-family: neue-haas-bold;
+  font-size: 90px;
+  margin: 0;
+  line-height: 1;
+}
+
+body h2 {
+  font-size: 80px;
+  margin: 0;
+  line-height: 1;
+}
+
+body h3 {
+  font-family: neue-haas-thin;
+  font-size: 50px;
+  margin: 0;
+}
+
+body h5 {
+  font-family: garamond-bold;
+  font-size: 35px;
+  margin: 0;
+}
+
+body h6 {
+  font-family: neue-haas-thin;
+  font-size: 25px;
+  margin: 0;
+}
+
+body p {
+  font-family: garamond-regular;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body button {
+  padding: 0;
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(../../assets/fonts/BebasNeue.otf);
+}
+
+@font-face {
+  font-family: neue-haas-thin;
+  src: url(../../assets/fonts/neue-haas/NeueHaasDisplayThin.ttf);
+}
+
+@font-face {
+  font-family: neue-haas-bold;
+  src: url(../../assets/fonts/neue-haas/NeueHaasDisplayBold.ttf);
+}
+
+@font-face {
+  font-family: garamond-regular;
+  src: url(../../assets/fonts/garamond-premier-pro/garamond-premier-pro-regular.ttf);
+}
+
+@font-face {
+  font-family: garamond-bold;
+  src: url(../../assets/fonts/garamond-premier-pro/garamond-premier-pro-bold.otf);
+}
+
+@font-face {
+  font-family: garamond-italic;
+  src: url(../../assets/fonts/garamond-premier-pro/garamond-premier-pro-italic-display.otf);
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  width: 100%;
+  position: fixed;
+  z-index: 300;
+  background-color: #293264;
+  justify-items: flex-end;
+  -webkit-box-shadow: black 4px 0 10px;
+          box-shadow: black 4px 0 10px;
+}
+
+nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+nav .navbar .nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+  font-size: 25px;
+  border-radius: 25px;
+  color: #cccedd;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: -2px -2px 6px #48539b, 2px 2px 6px #00000080;
+          box-shadow: -2px -2px 6px #48539b, 2px 2px 6px #00000080;
+  cursor: pointer;
+}
+
+nav .navbar .nav-button .inner {
+  padding: 8px 15px;
+  border-radius: 25px;
+}
+
+nav .navbar .nav-button .inner:active {
+  -webkit-box-shadow: inset -2px -2px 5px #48539b, inset 2px 2px 5px #00000080;
+          box-shadow: inset -2px -2px 5px #48539b, inset 2px 2px 5px #00000080;
+}
+
+nav .navbar .nav-button:hover {
+  color: #e4e5ee;
+  -webkit-box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+          box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+}
+
+nav .navbar .nav-button.active {
+  color: white;
+  -webkit-box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+          box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+  background-color: #0000001c;
+}
+
+.background-stars {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #161b3a;
+  background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
+}
+
+.page-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  gap: 100px;
+}
+
+.page-grid .landing-page {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 90px;
+  overflow: hidden;
+  color: white;
+}
+
+.page-grid .landing-page .moon-scene .layers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.page-grid .landing-page .moon-scene .layers .stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
+}
+
+.page-grid .landing-page .moon-scene .layers .stars-2 {
+  position: absolute;
+  top: -100px;
+  left: -850px;
+  width: 250%;
+  height: calc(100vh + 100px);
+  background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
+  background-size: cover;
+}
+
+.page-grid .landing-page .moon-scene .layers .moon-and-light .moon {
+  position: absolute;
+  width: 300px;
+  top: calc(50% - 150px);
+  left: calc(70% - 150px);
+  height: 300px;
+  background-image: url(../../assets/images/LayeredScene/moon/moon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page-grid .landing-page .moon-scene .layers .moon-and-light .moonlight {
+  border-radius: 500px;
+  background-color: #ffffff1a;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0.6;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+.page-grid .landing-page .moon-scene .layers .moon-and-light .moonlight.m-1 {
+  top: calc(50% - 200px);
+  left: calc(70% - 200px);
+  width: 400px;
+  height: 400px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.page-grid .landing-page .moon-scene .layers .moon-and-light .moonlight.m-2 {
+  top: calc(50% - 250px);
+  left: calc(70% - 250px);
+  width: 500px;
+  height: 500px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.page-grid .landing-page .moon-scene .layers .moon-and-light .moonlight.m-3 {
+  top: calc(50% - 300px);
+  left: calc(70% - 300px);
+  width: 600px;
+  height: 600px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.page-grid .landing-page .moon-scene .layers .moon-and-light .moonlight.m-4 {
+  top: calc(50% - 350px);
+  left: calc(70% - 350px);
+  width: 700px;
+  height: 700px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.page-grid .landing-page .moon-scene .layers .moon-and-light:hover .moonlight {
+  opacity: 0.8;
+}
+
+.page-grid .landing-page .moon-scene .layers .cloud {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page-grid .landing-page .moon-scene .layers .cloud.c-1 {
+  top: 20%;
+  left: 45%;
+  background-image: url(../../assets/images/LayeredScene/moon/cloud_1.svg);
+}
+
+.page-grid .landing-page .moon-scene .layers .cloud.c-2 {
+  top: 20%;
+  left: 80%;
+  background-image: url(../../assets/images/LayeredScene/moon/cloud_2.svg);
+}
+
+.page-grid .landing-page .moon-scene .layers .cloud.c-3 {
+  top: 60%;
+  left: 55%;
+  background-image: url(../../assets/images/LayeredScene/moon/cloud_3.svg);
+}
+
+.page-grid .landing-page .moon-scene .layers .cloud.c-4 {
+  top: 50%;
+  left: 75%;
+  background-image: url(../../assets/images/LayeredScene/moon/cloud_4.svg);
+}
+
+.page-grid .landing-page .hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.page-grid .landing-page .hero .water-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+.page-grid .landing-page .hero .water-svg .water-svg-size {
+  width: 300px;
+}
+
+.page-grid .landing-page .hero .hero-title {
+  line-height: 1.2;
+}
+
+.page-grid .landing-page .hero .description {
+  max-width: 350px;
+}
+
+.page-grid .about-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 90px 10%;
+}
+
+.page-grid .about-page .page-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 60px;
+  max-width: 1000px;
+}
+
+.page-grid .about-page .page-wrap .section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  gap: 60px;
+}
+
+.page-grid .about-page .page-wrap .section .title {
+  justify-self: flex-end;
+}
+
+.page-grid .about-page .page-wrap .section .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  justify-self: flex-start;
+  max-width: 600px;
+}
+
+.page-grid .about-page .page-wrap .section .details .subtitle {
+  font-size: 50px;
+  margin-bottom: -20px;
+}
+
+.page-grid .about-page .page-wrap .section .details .detail-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.page-grid .about-page .page-wrap .section .details .detail-item .sub-subtitle {
+  font-size: 25px;
+}
+
+.page-grid .about-page .page-wrap .section .details .detail-item p {
+  margin-left: 30px;
+}
+
+.page-grid .services-page {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 90px 10%;
+}
+
+.page-grid .services-page .page-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 60px;
+  max-width: 1000px;
+}
+
+.page-grid .services-page .page-wrap .service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  gap: 60px;
+}
+
+.page-grid .services-page .page-wrap .service .title {
+  justify-self: flex-end;
+}
+
+.page-grid .services-page .page-wrap .service .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  justify-self: flex-start;
+  max-width: 600px;
+}
+
+.page-grid .services-page .page-wrap .service .details .subtitle {
+  font-size: 50px;
+}
+
+.page-grid .services-page .page-wrap .service .details .detail-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.page-grid .services-page .page-wrap .service .details .detail-item .sub-subtitle {
+  font-size: 25px;
+}
+
+.page-grid .services-page .page-wrap .service .details .detail-item p {
+  margin-left: 30px;
+}
+
+.page-grid .projects-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 30px;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 90px 10%;
+}
+
+.page-grid .projects-page .page-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 30px;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.page-grid .contact-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 90px;
+  position: relative;
+}
+
+.page-grid .contact-page .contact-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  width: 50%;
+  height: auto;
+  max-width: 600px;
+  z-index: 1;
+  color: white;
+}
+
+.page-grid .contact-page .contact-form .form-title {
+  grid-column: span 2;
+  justify-self: flex-start;
+  font-family: BebasNeue;
+  letter-spacing: 12px;
+}
+
+.page-grid .contact-page .contact-form input {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.page-grid .contact-page .contact-form input:focus-visible {
+  outline: none;
+}
+
+.page-grid .contact-page .contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.page-grid .contact-page .contact-form textarea:focus-visible {
+  outline: none;
+}
+
+.page-grid .contact-page .contact-form .name {
+  width: 100%;
+  height: 50px;
+}
+
+.page-grid .contact-page .contact-form .email {
+  width: 100%;
+  height: 50px;
+}
+
+.page-grid .contact-page .contact-form .message {
+  grid-column: span 2;
+  width: 100%;
+  font-size: 20px;
+  overflow: scroll;
+}
+
+.page-grid .contact-page .contact-form .submit {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.page-grid .contact-page .satellite {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  width: 800px;
+  height: 800px;
+}
+
+.page-grid .contact-page .satellite img {
+  width: 400px;
+  height: 400px;
+}
+
+.page-grid .contact-page .earth {
+  position: absolute;
+  right: -200px;
+  bottom: -200px;
+  width: 800px;
+  height: 800px;
+}
+
+.page-grid .contact-page .earth img {
+  width: 800px;
+  height: 800px;
+}
+
+.page-grid .contact-page .hades-wrap {
+  position: absolute;
+  right: 250px;
+  bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  align-self: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100vh;
+}
+/*# sourceMappingURL=pages.css.map */
