@@ -85,7 +85,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 300;
-  background-color: #343e74;
+  background-color: #293264;
   justify-items: flex-end;
   -webkit-box-shadow: black 4px 0 10px;
           box-shadow: black 4px 0 10px;
@@ -132,6 +132,13 @@ nav .navbar .nav-button:hover {
   color: #e4e5ee;
   -webkit-box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
           box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+}
+
+nav .navbar .nav-button.active {
+  color: white;
+  -webkit-box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+          box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+  background-color: #0000001c;
 }
 
 .background-stars {
@@ -189,10 +196,10 @@ nav .navbar .nav-button:hover {
 
 .page-grid .landing-page .moon-scene .layers .stars-2 {
   position: absolute;
-  top: -200px;
+  top: -100px;
   left: -850px;
   width: 250%;
-  height: 100vh;
+  height: calc(100vh + 100px);
   background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
   background-size: cover;
 }
@@ -334,7 +341,7 @@ nav .navbar .nav-button:hover {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 90px;
+  gap: 60px;
   max-width: 1000px;
 }
 
@@ -358,13 +365,33 @@ nav .navbar .nav-button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 60px;
+  gap: 50px;
   justify-self: flex-start;
   max-width: 600px;
 }
 
 .page-grid .about-page .page-wrap .section .details .subtitle {
-  margin-bottom: -40px;
+  font-size: 50px;
+  margin-bottom: -20px;
+}
+
+.page-grid .about-page .page-wrap .section .details .detail-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.page-grid .about-page .page-wrap .section .details .detail-item .sub-subtitle {
+  font-size: 25px;
+}
+
+.page-grid .about-page .page-wrap .section .details .detail-item p {
+  margin-left: 30px;
 }
 
 .page-grid .services-page {
@@ -377,16 +404,16 @@ nav .navbar .nav-button:hover {
   padding: 90px 10%;
 }
 
-.page-grid .services-page .services-wrap {
+.page-grid .services-page .page-wrap {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 90px;
+  gap: 60px;
   max-width: 1000px;
 }
 
-.page-grid .services-page .services-wrap .service {
+.page-grid .services-page .page-wrap .service {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr auto;
@@ -394,11 +421,11 @@ nav .navbar .nav-button:hover {
   gap: 60px;
 }
 
-.page-grid .services-page .services-wrap .service .title {
+.page-grid .services-page .page-wrap .service .title {
   justify-self: flex-end;
 }
 
-.page-grid .services-page .services-wrap .service .details {
+.page-grid .services-page .page-wrap .service .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,13 +433,33 @@ nav .navbar .nav-button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 60px;
+  gap: 30px;
   justify-self: flex-start;
   max-width: 600px;
 }
 
-.page-grid .services-page .services-wrap .service .details .subtitle {
-  margin-bottom: -40px;
+.page-grid .services-page .page-wrap .service .details .subtitle {
+  font-size: 50px;
+}
+
+.page-grid .services-page .page-wrap .service .details .detail-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.page-grid .services-page .page-wrap .service .details .detail-item .sub-subtitle {
+  font-size: 25px;
+}
+
+.page-grid .services-page .page-wrap .service .details .detail-item p {
+  margin-left: 30px;
 }
 
 .page-grid .projects-page {
@@ -426,7 +473,6 @@ nav .navbar .nav-button:hover {
   justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: calc(100vh - 180px - 65px);
   padding: 90px 10%;
 }
 

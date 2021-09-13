@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Navbar = ({ handleClick }) => {
+const Navbar = ({ handleClick, isActive }) => {
 	return (
 		<nav>
 			<div className='navbar'>
 				<button
-					className='nav-button'
+					className={`nav-button ${isActive === 'about' && 'active'}`}
 					onClick={() => {
 						handleClick('about');
 					}}
@@ -16,7 +16,7 @@ const Navbar = ({ handleClick }) => {
 				</button>
 
 				<button
-					className='nav-button'
+					className={`nav-button ${isActive === 'services' && 'active'}`}
 					onClick={() => {
 						handleClick('services');
 					}}
@@ -27,7 +27,7 @@ const Navbar = ({ handleClick }) => {
 				</button>
 
 				<button
-					className='nav-button'
+					className={`nav-button ${isActive === 'projects' && 'active'}`}
 					onClick={() => {
 						handleClick('projects');
 					}}
@@ -38,7 +38,7 @@ const Navbar = ({ handleClick }) => {
 				</button>
 
 				<button
-					className='nav-button'
+					className={`nav-button ${isActive === 'contact' && 'active'}`}
 					onClick={() => {
 						handleClick('contact');
 					}}

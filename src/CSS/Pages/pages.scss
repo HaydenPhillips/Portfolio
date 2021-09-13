@@ -78,7 +78,7 @@ nav {
 	width: 100%;
 	position: fixed;
 	z-index: 300;
-	background-color: #343e74;
+	background-color: #293264;
 	justify-items: flex-end;
 	box-shadow: black 4px 0 10px;
 	.navbar {
@@ -109,6 +109,11 @@ nav {
 			&:hover {
 				color: #e4e5ee;
 				box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+			}
+			&.active {
+				color: white;
+				box-shadow: -2px -2px 3px #48539b, 2px 2px 3px #00000080;
+				background-color: #0000001c;
 			}
 		}
 	}
@@ -157,10 +162,10 @@ nav {
 				}
 				.stars-2 {
 					position: absolute;
-					top: -200px;
+					top: -100px;
 					left: -850px;
 					width: 250%;
-					height: 100vh;
+					height: calc(100vh + 100px);
 					background-image: url(../../assets/images/LayeredScene/moon/stars.svg);
 					background-size: cover;
 				}
@@ -284,7 +289,7 @@ nav {
 		.page-wrap {
 			display: grid;
 			grid-template-columns: 1fr;
-			gap: 90px;
+			gap: 60px;
 			max-width: 1000px;
 
 			.section {
@@ -298,13 +303,25 @@ nav {
 				.details {
 					display: flex;
 					flex-direction: column;
-					gap: 60px;
+					gap: 50px;
 					justify-self: flex-start;
 					max-width: 600px;
-					// overflow: scroll;
 
 					.subtitle {
-						margin-bottom: -40px;
+						font-size: 50px;
+						margin-bottom: -20px;
+					}
+					.detail-item {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+						// margin-left: 30px;
+						.sub-subtitle {
+							font-size: 25px;
+						}
+						p {
+							margin-left: 30px;
+						}
 					}
 				}
 			}
@@ -319,10 +336,10 @@ nav {
 		// height: calc(200vh - 180px - 65px);
 		padding: 90px 10%;
 
-		.services-wrap {
+		.page-wrap {
 			display: grid;
 			grid-template-columns: 1fr;
-			gap: 90px;
+			gap: 60px;
 			max-width: 1000px;
 
 			.service {
@@ -336,12 +353,24 @@ nav {
 				.details {
 					display: flex;
 					flex-direction: column;
-					gap: 60px;
+					gap: 30px;
 					justify-self: flex-start;
 					max-width: 600px;
 
 					.subtitle {
-						margin-bottom: -40px;
+						font-size: 50px;
+					}
+					.detail-item {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+						margin-left: 30px;
+						.sub-subtitle {
+							font-size: 25px;
+						}
+						p {
+							margin-left: 30px;
+						}
 					}
 				}
 			}
@@ -355,7 +384,7 @@ nav {
 		gap: 30px;
 		justify-items: center;
 		align-content: center;
-		height: calc(100vh - 180px - 65px);
+		// height: calc(100vh - 180px);
 		padding: 90px 10%;
 		.page-wrap {
 			display: grid;

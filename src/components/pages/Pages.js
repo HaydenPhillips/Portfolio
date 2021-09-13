@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Fragment, useRef } from 'react';
 import Projects from '../Projects/Projects';
 import LandingPage from '../pages/landingPage/LandingPage';
@@ -9,29 +9,30 @@ import '../../CSS/Pages/pages.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import stars from '../../assets/images/LayeredScene/moon/stars.svg';
 import Navbar from '../Navbar';
+import { InView } from 'react-intersection-observer';
 
 const Pages = () => {
-	const ref = useRef(null);
+	const [isActive, setIsActive] = useState('');
+	const pageRef = useRef(null);
 
 	function handleClick(section) {
-		console.log('section: ', section);
 		if (section === 'about') {
-			ref.current.scrollTo(1);
+			pageRef.current.scrollTo(1);
 		} else if (section === 'services') {
-			ref.current.scrollTo(2);
+			pageRef.current.scrollTo(3);
 		} else if (section === 'projects') {
-			ref.current.scrollTo(3);
+			pageRef.current.scrollTo(5.3);
 		} else if (section === 'contact') {
-			ref.current.scrollTo(4);
+			pageRef.current.scrollTo(7);
 		}
 	}
 
 	return (
 		<Fragment>
-			<Navbar handleClick={handleClick} />
+			<Navbar handleClick={handleClick} isActive={isActive} />
 			<Parallax
-				pages={5}
-				ref={ref}
+				pages={8}
+				ref={pageRef}
 				style={{
 					display: 'grid',
 					margin: 'auto',
@@ -39,7 +40,6 @@ const Pages = () => {
 					backgroundColor: '#161b3a',
 					width: '100%',
 					height: '100%',
-					minHeight: '1100px',
 				}}
 			>
 				<ParallaxLayer
@@ -49,10 +49,12 @@ const Pages = () => {
 						backgroundImage: `url(${stars})`,
 						backgroundRepeat: 'repeat',
 						backgroundSize: 'cover',
-						width: '100%',
+						width: 'unset',
 						height: '120%',
 						opacity: '0.5',
+						left: '-500px',
 					}}
+					id='stars-120'
 				/>
 				<ParallaxLayer
 					offset={0}
@@ -61,9 +63,11 @@ const Pages = () => {
 						backgroundImage: `url(${stars})`,
 						backgroundRepeat: 'repeat',
 						backgroundSize: 'cover',
-						width: '100%',
+						width: 'unset',
 						height: '200%',
+						left: '-500px',
 					}}
+					id='stars-200'
 				/>
 				<div className='page-grid'>
 					<div id='landing'>
@@ -72,31 +76,43 @@ const Pages = () => {
 						</ParallaxLayer>
 					</div>
 
-					<div id='about'>
-						<ParallaxLayer offset={1} speed={0.6} style={{ height: '120vh' }}>
+					<ParallaxLayer offset={1} speed={0.6}>
+						<InView
+							onChange={(inView) => inView && setIsActive('about')}
+							id='about'
+						>
 							<AboutPage></AboutPage>
-						</ParallaxLayer>
-					</div>
+						</InView>
+					</ParallaxLayer>
 
-					<div id='services'>
-						<ParallaxLayer offset={2} speed={0.6}>
+					<ParallaxLayer offset={3} speed={0.6}>
+						<InView
+							onChange={(inView) => inView && setIsActive('services')}
+							id='services'
+						>
 							<ServicesPage />
-						</ParallaxLayer>
-					</div>
+						</InView>
+					</ParallaxLayer>
 
-					<div id='projects'>
-						<ParallaxLayer offset={3} speed={0.6}>
+					<ParallaxLayer offset={5.5} speed={0.6} className='modal-bg-actions'>
+						<InView
+							onChange={(inView) => inView && setIsActive('projects')}
+							id='projects'
+						>
 							<div className='projects-page'>
 								<Projects></Projects>
 							</div>
-						</ParallaxLayer>
-					</div>
+						</InView>
+					</ParallaxLayer>
 
-					<div id='contact'>
-						<ParallaxLayer offset={4} speed={1}>
+					<ParallaxLayer offset={7} speed={1}>
+						<InView
+							onChange={(inView) => inView && setIsActive('contact')}
+							id='contact'
+						>
 							<ContactPage></ContactPage>
-						</ParallaxLayer>
-					</div>
+						</InView>
+					</ParallaxLayer>
 				</div>
 			</Parallax>
 		</Fragment>
