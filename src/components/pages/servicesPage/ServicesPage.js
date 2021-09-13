@@ -1,55 +1,95 @@
 import React, { Fragment } from 'react';
 import '../../../CSS/Pages/pages.css';
-// import Dev from '../servicesPage/Development';
-// import Des from '../servicesPage/Design';
-// import Strategy from '../servicesPage/Strategy';
-// import { ParallaxLayer } from 'react-spring/renderprops-addons';
 import { useInView } from 'react-intersection-observer';
 import { Asteroid1, Asteroid2, Asteroid3 } from './Asteroid';
 
 const ServicesPage = () => {
 	const [ref, inView] = useInView({
-		threshold: 0.5,
+		threshold: 0,
 		triggerOnce: true,
 	});
 
 	return (
 		<Fragment>
-			<section className='services-page' ref={ref}>
-				<div className='services-wrap'>
-					<h1>services</h1>
+			<section className='services-page'>
+				<div className='page-wrap'>
+					<h1>Services</h1>
 					<div className='service' id='development'>
 						<h3 className='title'>development</h3>
 						<div className='details'>
 							<p>
-								Making use of my experience with modern software tools, I build
-								fullstack web applications. I aim to produce highly performant
-								and secure solutions, without hindering code readability or
-								maintainability.
+								I aim to produce highly performant and secure software
+								solutions, with a focus on great code readability and
+								maintainability. I have been programming for five years, three
+								of which in the web space. Making use of my experience with
+								modern software tools, I am able to design and build full stack
+								web applications, from concept to launch.
 							</p>
-							<h5 className='subtitle'>languages</h5>
-							<p>
-								JavaScript: Vanilla, React, React-Spring, Node, Express, JQuery,
-								Grunt, Material-UI, GSAP, p5, Processing, Flickity, Phaser,
-								Three.js, Video.js <br />
-								CSS: SASS (scss), Materialize, Bootstrap, pure
-							</p>
-							<h5 className='subtitle'>web app stacks</h5>
-							<p>
-								Static Site Generator (SSG): Gatsby, React, GraphQL with Strapi
-								headless CMS <br />
-								Single Page Application (SPA): Mongodb, Express, React, and Node
-								(MERN stack).
-							</p>
-							<h5 className='subtitle'>tools</h5>
-							<p>
-								VisualStudio-code editor
-								<br />
-								GitHub and GitLab version control
-								<br />
-								Chrome DevTools <br />
-								JavaScript ES6 and above
-							</p>
+							<h1 className='subtitle'>programming tools & language</h1>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>JavaScript</h5>
+								<p>
+									Most of the code I write is modern JavaScript (ES6+) using the
+									React library, hooks in particular.
+								</p>
+							</div>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>CSS</h5>
+								<p>
+									I style components using SCSS, a CSS pre-processor, that
+									reduces code repetition, and promotes cleaner, more
+									maintainable code.
+								</p>
+							</div>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>Java</h5>
+								<p>
+									My foundations of programming started with Java. Predominantly
+									use throughout university.
+								</p>
+							</div>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>jQuery</h5>
+								<p>
+									Working with the DOM directly means it's easy to use and
+									reasonable effective for basic websites, however, I believe
+									tools that utilise state management in a virtual DOM is the
+									way forward.
+								</p>
+							</div>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>Python</h5>
+								<p>
+									Implemented four machine learning programs, a basic data file
+									reader, and small command line games.
+								</p>
+							</div>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>Web animation</h5>
+								<p>
+									Experience with React-Spring and Gsap. Exposure to threeJS and
+									Phaser.
+								</p>
+							</div>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>General</h5>
+								<p>
+									Well versed in git version control, VisualStudio-code IDE,
+									Chrome DevTools
+								</p>
+							</div>
+
+							<h1 className='subtitle' ref={ref}>
+								application stacks
+							</h1>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>Static Site Generator (SSG)</h5>
+								<p>Gatsby, React, GraphQL with Strapi headless CMS</p>
+							</div>
+							<div className='detail-item'>
+								<h5 className='sub-subtitle'>Single Page Application (SPA)</h5>
+								<p>Mongodb, Express, React, and Node (MERN stack).</p>
+							</div>
 						</div>
 					</div>
 					<div className='service' id='design'>
@@ -59,24 +99,24 @@ const ServicesPage = () => {
 								Purposeful, refined and user focused. Visual interactions with
 								intention.
 							</p>
-							<h5 className='subtitle'>wireframing</h5>
-							<p>
-								The art of wireframing is not in the details. Rather, wireframes
-								serve as the foundation of a website or app’s visual design. The
-								main focus is the prioritisation of content, arranging elements
-								on a page in a manner that’s clear to the target audience. I
-								have experience with both Adobe Xd and Figma.
-							</p>
-							<h5 className='subtitle'>Prototyping</h5>
-							<p>
-								A prototype should represent the necessary parts of an app as
-								close to the final product as possible. From here you can
-								demonstrate and validate, with real users, using real devices,
-								the complete functionality of the design by adding events,
-								animations, variables and advanced interactions. Thankfully I
-								know modern css like the back of my hand, so I am able to
-								swiftly create complex interactions.
-							</p>
+							<div className='detail-item'>
+								<h1 className='subtitle'>wireframing</h1>
+								<p>
+									The art of wireframing is not in the small details. Rather, I
+									focus on the prioritisation of content and arranging elements
+									on a page in a manner that’s clear to the target audience.
+								</p>
+							</div>
+							<div className='detail-item'>
+								<h1 className='subtitle'>Prototyping</h1>
+								<p>
+									A prototype should represent the necessary parts of an app as
+									close to the final product as possible. From here you can
+									demonstrate and validate, with real users, using real devices,
+									the complete functionality of the design by adding events,
+									animations, variables and interactions.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -90,15 +130,3 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
-
-{
-	/* <ParallaxLayer offset={0.7} speed={1.2}>
-					<Dev />
-				</ParallaxLayer>
-				<ParallaxLayer offset={0.6} speed={1}>
-					<Des />
-				</ParallaxLayer>
-				<ParallaxLayer offset={0.5} speed={0.8}>
-					<Strategy />
-				</ParallaxLayer> */
-}
