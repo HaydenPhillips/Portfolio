@@ -14,7 +14,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 500px;
+  width: 80vw;
+  max-width: 1200px;
   color: black;
 }
 
@@ -24,85 +25,113 @@
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 30px;
+  height: 80vh;
 }
 
 .projects-grid .col.one {
-  height: 50%;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
 }
 
 .projects-grid .col.two {
-  -ms-grid-rows: 2fr 1fr;
-      grid-template-rows: 2fr 1fr;
+  height: 90%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
 }
 
 .projects-grid .col.three {
-  height: 60%;
-  -ms-grid-rows: 1fr 2fr;
-      grid-template-rows: 1fr 2fr;
+  -ms-grid-rows: 2fr 2fr 3fr 3fr;
+      grid-template-rows: 2fr 2fr 3fr 3fr;
 }
 
-.projects-grid .cell {
+.projects-grid .col .card-wrap {
+  position: relative;
+  height: 100%;
+  min-height: 150px;
+  border-radius: 20px;
+  background: transparent;
+}
+
+.projects-grid .col .card-wrap .card-main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-grid .col .card-wrap .card-main .playful-card {
+  width: 80%;
+  height: 70%;
+  background: hotpink;
+  border-radius: 5px;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  will-change: transform;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   padding: 15px;
-  background-color: #bbecff;
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  position: relative;
-  overflow: hidden;
-  border-radius: 6px;
+  background-color: #7ad9ff;
   cursor: pointer;
 }
 
-.projects-grid .cell .cell-content {
+.projects-grid .col .card-wrap .card-main .playful-card .cell-content {
   width: 100%;
   height: 100%;
 }
 
-.projects-grid .cell .cell-content .name-hash {
+.projects-grid .col .card-wrap .card-main .playful-card .cell-content .name-hash {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   position: absolute;
   top: calc(100% - 40px);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   padding-right: 10px;
 }
 
-.projects-grid .cell .cell-content .name-hash .cell-name {
+.projects-grid .col .card-wrap .card-main .playful-card .cell-content .name-hash .cell-name {
   font-family: BebasNeue;
   font-size: 25px;
   line-height: 30px;
   letter-spacing: 5px;
 }
 
-.projects-grid .cell .cell-content .name-hash .cell-tags {
+.projects-grid .col .card-wrap .card-main .playful-card .cell-content .name-hash .cell-tags {
   opacity: 0;
   font-family: coves-light;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 1px;
   color: black;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-.projects-grid .cell:hover .name-hash {
+.projects-grid .col .card-wrap .card-main .playful-card:hover {
+  z-index: 100;
+}
+
+.projects-grid .col .card-wrap .card-main .playful-card:hover .name-hash {
   -webkit-transform: translateY(calc(-100% + 25px));
           transform: translateY(calc(-100% + 25px));
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
 }
 
-.projects-grid .cell:hover .name-hash .cell-tags {
+.projects-grid .col .card-wrap .card-main .playful-card:hover .name-hash .cell-tags {
   opacity: 1;
   -webkit-transition: opacity 200ms linear;
   transition: opacity 200ms linear;
@@ -197,5 +226,10 @@ button:focus {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.projects-section-wrap {
+  width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=projects.css.map */

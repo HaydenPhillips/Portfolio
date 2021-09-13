@@ -9,16 +9,16 @@ let winH = window.innerHeight;
 export const Asteroid1 = () => {
 	const props = useSpring({
 		to: {
-			transform: `translate3d(-300px, 0px, 0) scale(1)`,
+			transform: `translate3d(-${winW}px, 1000px, 0) scale(1)`,
 		},
 		from: {
-			transform: `translate3d(${winW * 1.5}px, ${winH}px,0) scale(3)`,
+			transform: `translate3d(${winW * 1}px, -${winH}px,0) scale(3)`,
 		},
 		config: {
 			mass: 40,
 			tension: 80,
 			friction: 200,
-			duration: 5000,
+			duration: 7000,
 			// easing: easings.easeQuadOut,
 		},
 	});
@@ -32,7 +32,7 @@ export const Asteroid1 = () => {
 					width: '200px',
 					height: '200px',
 					position: 'absolute',
-					transform: 'rotate(8deg)',
+					transform: 'rotate(300deg)',
 				}}
 			/>
 		</animated.div>
@@ -42,10 +42,10 @@ export const Asteroid1 = () => {
 export const Asteroid2 = () => {
 	const props = useSpring({
 		to: {
-			transform: `translate3d(-400px, 100px, 0) scale(0.8)`,
+			transform: `translate3d(-${winW}px, 1000px, 0) scale(0.8)`,
 		},
 		from: {
-			transform: `translate3d(${winW * 1.7}px, ${winH * 0.6}px,0) scale(2)`,
+			transform: `translate3d(${winW}px, -${winH * 0.6}px,0) scale(2)`,
 		},
 		config: {
 			mass: 40,
@@ -61,7 +61,12 @@ export const Asteroid2 = () => {
 			<img
 				src={asteroid}
 				alt='asteroid'
-				style={{ width: '200px', height: '200px', position: 'absolute' }}
+				style={{
+					width: '200px',
+					height: '200px',
+					position: 'absolute',
+					transform: 'rotate(300deg)',
+				}}
 			/>
 		</animated.div>
 	);
@@ -70,16 +75,16 @@ export const Asteroid2 = () => {
 export const Asteroid3 = () => {
 	const props = useSpring({
 		to: {
-			transform: `translate3d(-1000px, 0px, 0) scale(0.3)`,
+			transform: `translate3d(-${winW}px, 1000px, 0) scale(0.3)`,
 		},
 		from: {
-			transform: `translate3d(${winW}px, ${winH}px,0) scale(1.5)`,
+			transform: `translate3d(${winW}px, -${winH}px,0) scale(1.5)`,
 		},
 		config: {
 			mass: 40,
 			tension: 50,
 			friction: 220,
-			duration: 8400,
+			duration: 9000,
 			// easing: easings.easeQuadOut,
 		},
 	});
@@ -89,7 +94,7 @@ export const Asteroid3 = () => {
 			<img
 				src={asteroid}
 				alt='asteroid'
-				style={{ width: '200px', height: '200px' }}
+				style={{ width: '200px', height: '200px', transform: 'rotate(300deg)' }}
 			/>
 		</animated.div>
 	);

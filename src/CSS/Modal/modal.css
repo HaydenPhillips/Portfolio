@@ -22,14 +22,11 @@
   width: calc(100% - 140px);
   -ms-flex-line-pack: center;
       align-content: center;
-  height: calc(100% - 100px);
   margin-top: 50px;
   align-content: center;
   position: relative;
-}
-
-.overflow {
   overflow-y: scroll;
+  border-radius: 5px;
 }
 
 @-webkit-keyframes scaleUp {
