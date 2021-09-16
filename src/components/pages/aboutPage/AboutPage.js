@@ -11,10 +11,11 @@ const AboutPage = () => {
 					<div className='details'>
 						<h1 className='subtitle'>this website</h1>
 						<p>
-							Consider it something inbetween a portfolio and resume, with the
-							intention to reveal where I may bring value to your
-							team/organisation. It show-cases a few projects I have worked on,
-							and dips into my professional background and abilities.
+							Consider this something in between a portfolio and resume.
+							Hopefully, you, as a potential employer, discover where I may
+							bring value to your team/organisation. The site show-cases a few
+							projects I have worked on, and dips into my professional
+							background and abilities.
 						</p>
 
 						<h1 className='subtitle'>me in one minute</h1>
@@ -23,9 +24,7 @@ const AboutPage = () => {
 							developer. For the past two years I have been working freelance
 							with an interactive digital studio, Vanishing Point. Typically, my
 							days consist of collaborating with fellow developers and designers
-							to build cool products for the web. My responsibilities range from
-							project planning, to liaising with clients, to writing complex
-							code.
+							to build cool products for the web.
 						</p>
 						<p>
 							In my spare time, I mess around playing basketball, table tennis,

@@ -10,6 +10,7 @@ import Hades from './Cards/Hades';
 import Emma from './Cards/Emma';
 import Armani from './Cards/Armani';
 import Edgar from './Cards/Edgar';
+import Empower from './Cards/Empower';
 
 const CardFull = ({ componentName, onClose }) => {
 	const component = (cn) => {
@@ -34,6 +35,8 @@ const CardFull = ({ componentName, onClose }) => {
 				return <Armani onClose={onClose} />;
 			case 'Edgar':
 				return <Edgar onClose={onClose} />;
+			case 'Empower':
+				return <Empower onClose={onClose} />;
 			default:
 				return null;
 		}

@@ -18,12 +18,12 @@ const ServicesPage = () => {
 						<h3 className='title'>development</h3>
 						<div className='details'>
 							<p>
-								I aim to produce highly performant and secure software
-								solutions, with a focus on great code readability and
-								maintainability. I have been programming for five years, three
-								of which in the web space. Making use of my experience with
-								modern software tools, I am able to design and build full stack
-								web applications, from concept to launch.
+								I aim to produce highly performant and secure software solutions
+								with great code readability and maintainability. I have been
+								programming for five years, three of which in the web space.
+								Making use of my experience with modern software tools, I am
+								able to design and build full stack web applications, from
+								concept to launch.
 							</p>
 							<h1 className='subtitle'>programming tools & language</h1>
 							<div className='detail-item'>
@@ -52,9 +52,9 @@ const ServicesPage = () => {
 								<h5 className='sub-subtitle'>jQuery</h5>
 								<p>
 									Working with the DOM directly means it's easy to use and
-									reasonable effective for basic websites, however, I believe
-									tools that utilise state management in a virtual DOM is the
-									way forward.
+									reasonable effective for basic websites, however, I prefer to
+									use tools that utilise state management in a virtual DOM in
+									most cases.
 								</p>
 							</div>
 							<div className='detail-item'>
@@ -83,11 +83,13 @@ const ServicesPage = () => {
 								application stacks
 							</h1>
 							<div className='detail-item'>
-								<h5 className='sub-subtitle'>Static Site Generator (SSG)</h5>
+								<h5 className='sub-subtitle'>
+									Jamstack - Static Site Generator
+								</h5>
 								<p>Gatsby, React, GraphQL with Strapi headless CMS</p>
 							</div>
 							<div className='detail-item'>
-								<h5 className='sub-subtitle'>Single Page Application (SPA)</h5>
+								<h5 className='sub-subtitle'>Single Page Application</h5>
 								<p>Mongodb, Express, React, and Node (MERN stack).</p>
 							</div>
 						</div>
@@ -102,19 +104,22 @@ const ServicesPage = () => {
 							<div className='detail-item'>
 								<h1 className='subtitle'>wireframing</h1>
 								<p>
-									The art of wireframing is not in the small details. Rather, I
-									focus on the prioritisation of content and arranging elements
-									on a page in a manner that’s clear to the target audience.
+									When building wireframes, I focus on building intuitive
+									navigational structure, prioritisation of content, and
+									arranging elements in a manner that’s clear and effective.
 								</p>
 							</div>
 							<div className='detail-item'>
-								<h1 className='subtitle'>Prototyping</h1>
+								<h1 className='subtitle'>
+									user interface design & prototyping
+								</h1>
 								<p>
-									A prototype should represent the necessary parts of an app as
-									close to the final product as possible. From here you can
-									demonstrate and validate, with real users, using real devices,
-									the complete functionality of the design by adding events,
-									animations, variables and interactions.
+									I have experience creating user and system flow diagrams that
+									visually map the step by step experience of the user as well
+									as the system logic at play. I also have exposure to personas
+									and usability testing methodology. For fast and effective user
+									demonstrations and validation, I tend towards Figma or Xd's
+									prototyping functionality.
 								</p>
 							</div>
 						</div>

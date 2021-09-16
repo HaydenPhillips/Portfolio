@@ -1,345 +1,217 @@
 @font-face {
-  font-family: BebasNeue;
-  src: url(../../assets/fonts/BebasNeue.otf);
+	font-family: BebasNeue;
+	src: url(../../assets/fonts/BebasNeue.otf);
 }
 
 @font-face {
-  font-family: Equal-Sans-Demo;
-  src: url(../../assets/fonts/EqualSans_Demo.ttf);
+	font-family: Equal-Sans-Demo;
+	src: url(../../assets/fonts/EqualSans_Demo.ttf);
 }
 
 @font-face {
-  font-family: NeutraText-Book;
-  src: url(../../assets/fonts/NeutraText-Book.otf);
+	font-family: NeutraText-Book;
+	src: url(../../assets/fonts/NeutraText-Book.otf);
 }
 
 @font-face {
-  font-family: coves-light;
-  src: url(../../assets/fonts/Coves_Light.otf);
+	font-family: coves-light;
+	src: url(../../assets/fonts/Coves_Light.otf);
 }
 @font-face {
-  font-family: coves-bold;
-  src: url(../../assets/fonts/Coves_Bold.otf);
+	font-family: coves-bold;
+	src: url(../../assets/fonts/Coves_Bold.otf);
 }
 
-// .grid-roy {
-//     display: grid;
-//     grid-template-columns: repeat(6, 1fr);
-//     width: 100%;
-//     height: auto;
+.roy-project {
+	.fullscreen_video {
+		position: relative;
+		display: grid;
+		// grid-template-columns: 1fr;
+		// grid-template-rows: 1fr 1fr 1fr;
+		width: 100%;
+		height: 100vh;
+	}
 
-//     .gcs1 {
-//         grid-column: span 1;
-//     }
-//     .gcs2 {
-//         grid-column: span 2;
-//     }
-//     .gcs3 {
-//         grid-column: span 3;
-//     }
-//     .gcs4 {
-//         grid-column: span 4;
-//     }
-//     .gcs5 {
-//         grid-column: span 5;
-//     }
-//     .gcs6 {
-//         grid-column: span 6;
-//     }
-//     .grs1 {
-//         grid-row: span 1;
-//     }
-//     .grs2 {
-//         grid-row: span 2;
-//     }
-//     .grs3 {
-//         grid-row: span 3;
-//     }
-//     .grs4 {
-//         grid-row: span 4;
-//     }
-//     .grs5 {
-//         grid-row: span 5;
-//     }
-//     .grs6 {
-//         grid-row: span 6;
-//     }
+	.wrapper {
+		position: relative;
+	}
 
-// img {
-//     display: grid;
-//     // width: 100%;
-//     height: 100%;
-// }
+	.pad {
+		padding: 20px;
+	}
 
-.fullscreen_video {
-  position: relative;
-  display: grid;
-  // grid-template-columns: 1fr;
-  // grid-template-rows: 1fr 1fr 1fr;
-  width: 100%;
-  height: 100vh;
+	.player {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.image {
+		display: block;
+		width: 32.5%;
+	}
+
+	.overlay {
+		display: grid;
+		position: absolute;
+		// top: 0;
+		// left: 0;
+		width: 100%;
+		height: 100vh;
+		justify-items: center;
+		align-items: center;
+		z-index: 3;
+		// background-image: url();
+	}
+
+	.logo-small {
+		display: block;
+		width: 150px;
+		height: 150px;
+		justify-self: flex-end;
+		// -webkit-filter: drop-shadow(5px 5px 5px rgb(255, 0, 0));
+		filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+	}
+
+	.title {
+		display: grid;
+		justify-content: center;
+		h1 {
+			font-family: BebasNeue;
+			font-size: 65pt;
+			color: white;
+			text-shadow: 4px 4px 15px rgb(0, 0, 0);
+			letter-spacing: 25px;
+			// text-align: center;
+		}
+	}
+
+	.sub-title {
+		display: block;
+		justify-items: center;
+
+		p {
+			font-family: coves-light;
+			font-size: x-large;
+			color: white;
+			text-shadow: 4px 4px 15px rgb(0, 0, 0);
+			letter-spacing: 2px;
+			line-height: 1.6;
+		}
+	}
+
+	.header {
+		display: grid;
+		margin-left: 55%;
+		// width: 100%;
+		// justify-items: end;
+		h1 {
+			font-family: BebasNeue;
+			font-size: 5vw;
+			color: rgb(0, 0, 0);
+			// text-shadow: 4px 4px 15px rgb(0, 0, 0);
+			letter-spacing: 20px;
+			// text-align: center;
+		}
+	}
+	.text-30 {
+		display: block;
+		width: 30%;
+		margin-right: 3%;
+
+		p {
+			font-family: coves-light;
+			font-size: x-large;
+			color: white;
+			text-shadow: 2px 2px 10px rgb(0, 0, 0);
+			letter-spacing: 2px;
+			line-height: 1.6;
+		}
+	}
+
+	.text-50 {
+		display: block;
+		margin-left: 55%;
+		margin-right: 3%;
+		align-content: center;
+
+		p {
+			font-family: coves-light;
+			font-size: x-large;
+			color: black;
+			// text-shadow: 2px 2px 10px rgb(0, 0, 0);
+			letter-spacing: 2px;
+			line-height: 1.6;
+		}
+	}
+
+	.text {
+		margin: auto;
+		width: 80%;
+
+		p {
+			font-family: coves-bold;
+			font-size: x-large;
+			color: rgb(255, 255, 255);
+			text-shadow: 2px 2px 10px rgb(0, 0, 0);
+			letter-spacing: 2px;
+			line-height: 1.6;
+			// text-align: center;
+		}
+	}
+	.aline-center {
+		// display: grid;
+		align-content: center;
+		align-items: center;
+	}
+
+	.care {
+		width: 20%;
+	}
+
+	.description {
+		width: '500px';
+	}
+
+	#roy-title {
+		color: black;
+		text-shadow: 1px 1px 8px #ffffff;
+	}
+	#roy-logo {
+		height: 100%;
+		align-self: start;
+	}
+
+	.video_clip {
+		display: grid;
+		grid-template-columns: minmax(auto, 900px);
+		width: 100%;
+		justify-items: left;
+		height: auto;
+		padding: 20px;
+		// background-color: rgb(237, 210, 255);
+	}
+
+	.video_text_container {
+		display: grid;
+		gap: 20;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+		place-content: center;
+		// justify-items: left;
+		height: 400px;
+		padding: 20px;
+		background-color: rgb(255, 255, 255);
+	}
+
+	.video_clip_small {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-self: start;
+		background-color: rgb(255, 255, 255);
+	}
+
+	.five_swingtag {
+		width: 100%;
+	}
 }
-
-.wrapper {
-  position: relative;
-}
-
-.pad {
-  padding: 20px;
-}
-
-.player {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.image {
-  display: block;
-  width: 32.5%;
-}
-
-.overlay {
-  display: grid;
-  position: absolute;
-  // top: 0;
-  // left: 0;
-  width: 100%;
-  height: 100vh;
-  justify-items: center;
-  align-items: center;
-  z-index: 3;
-  // background-image: url();
-}
-
-.logo-small {
-  display: block;
-  width: 150px;
-  height: 150px;
-  justify-self: flex-end;
-  // -webkit-filter: drop-shadow(5px 5px 5px rgb(255, 0, 0));
-  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
-}
-
-.title {
-  display: grid;
-  justify-content: center;
-  h1 {
-    font-family: BebasNeue;
-    font-size: 65pt;
-    color: white;
-    text-shadow: 4px 4px 15px rgb(0, 0, 0);
-    letter-spacing: 25px;
-    // text-align: center;
-  }
-}
-
-.sub-title {
-  display: block;
-  justify-items: center;
-
-  p {
-    font-family: coves-light;
-    font-size: x-large;
-    color: white;
-    text-shadow: 4px 4px 15px rgb(0, 0, 0);
-    letter-spacing: 2px;
-    line-height: 1.6;
-  }
-}
-
-.header {
-  display: grid;
-  margin-left: 55%;
-  // width: 100%;
-  // justify-items: end;
-  h1 {
-    font-family: BebasNeue;
-    font-size: 5vw;
-    color: rgb(0, 0, 0);
-    // text-shadow: 4px 4px 15px rgb(0, 0, 0);
-    letter-spacing: 20px;
-    // text-align: center;
-  }
-}
-.text-30 {
-  display: block;
-  width: 30%;
-  margin-right: 3%;
-
-  p {
-    font-family: coves-light;
-    font-size: x-large;
-    color: white;
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);
-    letter-spacing: 2px;
-    line-height: 1.6;
-  }
-}
-
-.text-50 {
-  display: block;
-  margin-left: 55%;
-  margin-right: 3%;
-  align-content: center;
-
-  p {
-    font-family: coves-light;
-    font-size: x-large;
-    color: black;
-    // text-shadow: 2px 2px 10px rgb(0, 0, 0);
-    letter-spacing: 2px;
-    line-height: 1.6;
-  }
-}
-
-.text {
-  margin: auto;
-  width: 80%;
-
-  p {
-    font-family: coves-bold;
-    font-size: x-large;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);
-    letter-spacing: 2px;
-    line-height: 1.6;
-    // text-align: center;
-  }
-}
-.aline-center {
-  // display: grid;
-  align-content: center;
-  align-items: center;
-}
-
-.care {
-  width: 20%;
-}
-
-.description {
-  width: '500px';
-}
-
-#roy-title {
-  color: black;
-  text-shadow: 1px 1px 8px #ffffff;
-}
-#roy-logo {
-  height: 100%;
-  align-self: start;
-}
-
-.video_clip {
-  display: grid;
-  grid-template-columns: minmax(auto, 900px);
-  width: 100%;
-  justify-items: left;
-  height: auto;
-  padding: 20px;
-  // background-color: rgb(237, 210, 255);
-}
-
-.video_text_container {
-  display: grid;
-  gap: 20;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  place-content: center;
-  // justify-items: left;
-  height: 400px;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-}
-
-.video_clip_small {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-self: start;
-  background-color: rgb(255, 255, 255);
-}
-
-.five_swingtag {
-  width: 100%;
-}
-
-// .image_6 {
-//     display: grid;
-//     grid-template-columns: repeat(6, 1fr);
-//     grid-template-rows: minmax(100px, 300px);
-//     width: 100%;
-//     place-items: center;
-//     overflow: hidden;
-
-//     img {
-//         display: flex;
-//         width: 100%;
-//     }
-// }
-
-// .image_wide {
-//     display: grid;
-//     width: 100%;
-//     height: 300px;
-//     place-items: center;
-//     background-image: url("../../assets/images/project_roy/five_swingtag_wide.jpg");
-//     background-position: center;
-//     background-size: cover;
-//     img {
-//         display: inline-block;
-//         width: auto !important;
-//         height: 100% !important;
-//         justify-self: center;
-//     }
-// }
-// .image_high {
-//     display: grid;
-//     width: 100%;
-//     place-items: center;
-//     img {
-//         display: inline-block;
-//         width: 100% !important;
-//         height: auto !important;
-//     }
-//     .care {
-//         width: 82% !important;
-//     }
-// }
-
-// .box {
-//     display: grid;
-//     width: 100%;
-//     // height: 400px;
-//     background-color: rgb(255, 126, 205);
-// }
-// }
-
-// .gif-container {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     gap: 20px;
-//     width: 100%;
-
-//     .image {
-//         display: block;
-//         width: 30%;
-
-//         img {
-
-//             width: 100%;
-//             height: 100%;
-//         }
-//     }
-// }
-
-// position: absolute;
-//     background-size: auto;
-//     background-repeat: no-repeat;
-//     will-change: transform;
-//     width: 100%;
-//     height: 1052px;
-//     transform: translate3d(0px, 2630px, 0px);
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     pointer-events: none;

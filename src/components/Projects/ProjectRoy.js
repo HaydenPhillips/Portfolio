@@ -34,421 +34,332 @@ import Fade from '../fade';
 // import Deck from './Deck';
 
 const ProjectRoy = () => {
-  let parallax;
+	let parallax;
 
-  // const fade = useSpring({
-  //     from: { opacity: 0 },
-  //     to: { opacity: 1 },
-  //     config: { duration: 4000 }
-  // });
+	// const fade = useSpring({
+	//     from: { opacity: 0 },
+	//     to: { opacity: 1 },
+	//     config: { duration: 4000 }
+	// });
 
-  const [ref, inView] = useInView({
-    // threshold: 0,
-    // rootMargin: '400px 0px -200px 0px'
-  });
+	const [ref, inView] = useInView({
+		// threshold: 0,
+		// rootMargin: '400px 0px -200px 0px'
+	});
 
-  const someString = `The essence of Roy is to convey creative ideas that correlate 
+	const someString = `The essence of Roy is to convey creative ideas that correlate 
     with an individual via purposeful design. From concept to customer, 
     we strive to produce the highest of quality through all forms of expression.`;
 
-  return (
-    <Fragment>
-      <Parallax
-        pages={6}
-        ref={(ref) => (parallax = ref)}
-        style={{
-          display: 'grid',
-          margin: 'auto',
-        }}
-      >
-        <ParallaxLayer
-          offset={1}
-          speed={-0.3}
-          style={{
-            backgroundImage: `url(${leaves_back})`,
-            backgroundRepeat: 'repeat-y',
-            backgroundSize: 'contain',
-            height: '100%',
-          }}
-        />
+	return (
+		<Fragment>
+			<div className='roy-project'>
+				<Parallax
+					pages={6}
+					ref={(ref) => (parallax = ref)}
+					style={{
+						display: 'grid',
+						margin: 'auto',
+					}}
+				>
+					<ParallaxLayer
+						offset={1}
+						speed={-0.3}
+						style={{
+							backgroundImage: `url(${leaves_back})`,
+							backgroundRepeat: 'repeat-y',
+							backgroundSize: 'contain',
+							height: '100%',
+						}}
+					/>
 
-        <ParallaxLayer
-          offset={1}
-          speed={-0.1}
-          style={{
-            backgroundImage: `url(${falling_leaves})`,
-            backgroundRepeat: 'repeat-y',
-            backgroundSize: 'contain',
-            height: '100%',
-          }}
-        />
-        <div className='wrapper'>
-          {/* <ParallaxLayer onClick={() => parallax.scrollTo(2)} offset={1.4} speed={-0.2} style={{ backgroundImage: `url(${machine_attachments})`, backgroundSize: 'cover', backgroundPosition: 'center' }} /> */}
-          {/* <ParallaxLayer
+					<ParallaxLayer
+						offset={1}
+						speed={-0.1}
+						style={{
+							backgroundImage: `url(${falling_leaves})`,
+							backgroundRepeat: 'repeat-y',
+							backgroundSize: 'contain',
+							height: '100%',
+						}}
+					/>
+					<div className='wrapper'>
+						{/* <ParallaxLayer onClick={() => parallax.scrollTo(2)} offset={1.4} speed={-0.2} style={{ backgroundImage: `url(${machine_attachments})`, backgroundSize: 'cover', backgroundPosition: 'center' }} /> */}
+						{/* <ParallaxLayer
                         onClick={() => parallax.scrollTo(2)}
                         offset={2.45}
                         speed={-0.2}
                         style={{ backgroundImage: `url(${five_swingtag})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                     /> */}
-          <ParallaxLayer
-            onClick={() => parallax.scrollTo(1)}
-            offset={0}
-            speed={-0.2}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <ReactPlayer
-              volume={0}
-              className='player'
-              url={eva_st}
-              playing={true}
-              loop={true}
-              width='100%'
-              height='auto'
-              playbackRate={2}
-            />
-          </ParallaxLayer>
+						<ParallaxLayer
+							onClick={() => parallax.scrollTo(1)}
+							offset={0}
+							speed={-0.2}
+							style={{
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
+							}}
+						>
+							<ReactPlayer
+								volume={0}
+								className='player'
+								url={eva_st}
+								playing={true}
+								loop={true}
+								width='100%'
+								height='auto'
+								playbackRate={2}
+							/>
+						</ParallaxLayer>
 
-          <ParallaxLayer
-            onClick={() => parallax.scrollTo(2)}
-            offset={1.1}
-            speed={0.5}
-            style={{ backgroundColor: 'transparent' }}
-          />
+						<ParallaxLayer
+							onClick={() => parallax.scrollTo(2)}
+							offset={1.1}
+							speed={0.5}
+							style={{ backgroundColor: 'transparent' }}
+						/>
 
-          <ParallaxLayer
-            onClick={() => parallax.scrollTo(3)}
-            offset={2.1}
-            speed={0.5}
-            style={{ backgroundColor: 'lightgrey' }}
-          />
+						<ParallaxLayer
+							onClick={() => parallax.scrollTo(3)}
+							offset={2.1}
+							speed={0.5}
+							style={{ backgroundColor: 'lightgrey' }}
+						/>
 
-          <ParallaxLayer
-            onClick={() => parallax.scrollTo(5)}
-            offset={3}
-            speed={0.5}
-            style={{
-              backgroundPosition: 'center',
-              backgroundColor: 'rgb(244, 244, 244)',
-            }}
-          />
-          <ParallaxLayer
-            onClick={() => parallax.scrollTo(5)}
-            offset={3}
-            speed={0.5}
-            style={{
-              backgroundImage: `url(${LS_navy_background})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundColor: 'rgb(247, 247, 247)',
-              width: '110%',
-              marginLeft: '-15%',
-            }}
-          />
+						<ParallaxLayer
+							onClick={() => parallax.scrollTo(5)}
+							offset={3}
+							speed={0.5}
+							style={{
+								backgroundPosition: 'center',
+								backgroundColor: 'rgb(244, 244, 244)',
+							}}
+						/>
+						<ParallaxLayer
+							onClick={() => parallax.scrollTo(5)}
+							offset={3}
+							speed={0.5}
+							style={{
+								backgroundImage: `url(${LS_navy_background})`,
+								backgroundSize: 'cover',
+								backgroundPosition: 'center',
+								backgroundColor: 'rgb(247, 247, 247)',
+								width: '110%',
+								marginLeft: '-15%',
+							}}
+						/>
 
-          <ParallaxLayer
-            offset={4.2}
-            speed={0.5}
-            style={{
-              backgroundImage: `url(${chiffon_macro})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
+						<ParallaxLayer
+							offset={4.2}
+							speed={0.5}
+							style={{
+								backgroundImage: `url(${chiffon_macro})`,
+								backgroundSize: 'cover',
+								backgroundPosition: 'center',
+							}}
+						/>
 
-          <div className='pad'>
-            <ParallaxLayer
-              offset={0.0}
-              speed={1}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <div className='title'>
-                <h1>ROY APPAREL</h1>
-              </div>
-            </ParallaxLayer>
+						<div className='pad'>
+							<ParallaxLayer
+								offset={0.0}
+								speed={1}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+								}}
+							>
+								<div className='title'>
+									<h1>ROY APPAREL</h1>
+								</div>
+							</ParallaxLayer>
 
-            <ParallaxLayer
-              offset={0.1}
-              speed={0.8}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <div className='sub-title'>
-                <p>Designed & Manufactured in New Zealand</p>
-              </div>
-            </ParallaxLayer>
-            <ParallaxLayer
-              offset={0.3}
-              speed={0.3}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <img src={roy_logo_white} className='logo-small' alt='roy_logo' />
-            </ParallaxLayer>
+							<ParallaxLayer
+								offset={0.1}
+								speed={0.8}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+								}}
+							>
+								<div className='sub-title'>
+									<p>Designed & Manufactured in New Zealand</p>
+								</div>
+							</ParallaxLayer>
+							<ParallaxLayer
+								offset={0.3}
+								speed={0.3}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+								}}
+							>
+								<img
+									src={roy_logo_white}
+									className='logo-small'
+									alt='roy_logo'
+								/>
+							</ParallaxLayer>
 
-            <ParallaxLayer
-              offset={1}
-              speed={0.7}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'flex-start',
-              }}
-            >
-              <img className='image' src={SS_front_blue} alt='' />
-            </ParallaxLayer>
-            <ParallaxLayer
-              offset={1}
-              speed={1}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <img className='image' src={pyramid} alt='' />
-            </ParallaxLayer>
-            <ParallaxLayer
-              offset={1}
-              speed={0.6}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'flex-end',
-              }}
-            >
-              <img className='image' src={gif1} alt='' />
-            </ParallaxLayer>
+							<ParallaxLayer
+								offset={1}
+								speed={0.7}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'flex-start',
+								}}
+							>
+								<img className='image' src={SS_front_blue} alt='' />
+							</ParallaxLayer>
+							<ParallaxLayer
+								offset={1}
+								speed={1}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+								}}
+							>
+								<img className='image' src={pyramid} alt='' />
+							</ParallaxLayer>
+							<ParallaxLayer
+								offset={1}
+								speed={0.6}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'flex-end',
+								}}
+							>
+								<img className='image' src={gif1} alt='' />
+							</ParallaxLayer>
 
-            <ParallaxLayer
-              offset={2.05}
-              speed={0.8}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                marginLeft: '5%',
-              }}
-            >
-              <ReactPlayer
-                volume={0}
-                url={swinging_tag}
-                playing={true}
-                loop={true}
-                width='60%'
-                height='auto'
-              />
-            </ParallaxLayer>
+							<ParallaxLayer
+								offset={2.05}
+								speed={0.8}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+									marginLeft: '5%',
+								}}
+							>
+								<ReactPlayer
+									volume={0}
+									url={swinging_tag}
+									playing={true}
+									loop={true}
+									width='60%'
+									height='auto'
+								/>
+							</ParallaxLayer>
 
-            <ParallaxLayer
-              offset={2}
-              speed={0.6}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'flex-end',
-                justifyItems: 'flex-end',
-                marginRight: '5%',
-              }}
-            >
-              <div className='text-30' ref={ref}>
-                {inView ? (
-                  <Fade tagline={someString} />
-                ) : (
-                  <div className='empty' />
-                )}
-              </div>
-            </ParallaxLayer>
+							<ParallaxLayer
+								offset={2}
+								speed={0.6}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'flex-end',
+									justifyItems: 'flex-end',
+									marginRight: '5%',
+								}}
+							>
+								<div className='text-30' ref={ref}>
+									{inView ? (
+										<Fade tagline={someString} />
+									) : (
+										<div className='empty' />
+									)}
+								</div>
+							</ParallaxLayer>
 
-            <ParallaxLayer
-              offset={2.2}
-              speed={1.2}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              <img
-                className='care'
-                src={care_instructions}
-                alt='care_instructions'
-              />
-            </ParallaxLayer>
+							<ParallaxLayer
+								offset={2.2}
+								speed={1.2}
+								style={{
+									display: 'flex',
+									alignItems: 'center',
+								}}
+							>
+								<img
+									className='care'
+									src={care_instructions}
+									alt='care_instructions'
+								/>
+							</ParallaxLayer>
 
-            <div className='aline-center'>
-              <ParallaxLayer
-                offset={3.1}
-                speed={1}
-                style={{
-                  position: 'static',
-                  display: 'flex',
-                  alignItems: 'center',
-                  height: 'auto',
-                }}
-              >
-                <div className='header'>
-                  <h1>
-                    NAVY LS
-                    <br /> REVERSIBLE
-                  </h1>
-                </div>
-              </ParallaxLayer>
-              <ParallaxLayer
-                offset={3.1}
-                speed={0.8}
-                style={{
-                  position: 'static',
-                  display: 'flex',
-                  alignItems: 'center',
-                  height: 'auto',
-                }}
-              >
-                <div className='text-50'>
-                  <p>
-                    A completely reversible shirt designed with wearability and
-                    functionality in mind. Crafted by masters of the trade,
-                    using complex construction methods with precise symmetry.
-                    This provides an easy care shirt that is resistant to
-                    creasing, fast drying, while maintaining a soft lightweight
-                    feel.
-                  </p>
-                </div>
-              </ParallaxLayer>
-            </div>
+							<div className='aline-center'>
+								<ParallaxLayer
+									offset={3.1}
+									speed={1}
+									style={{
+										position: 'static',
+										display: 'flex',
+										alignItems: 'center',
+										height: 'auto',
+									}}
+								>
+									<div className='header'>
+										<h1>
+											NAVY LS
+											<br /> REVERSIBLE
+										</h1>
+									</div>
+								</ParallaxLayer>
+								<ParallaxLayer
+									offset={3.1}
+									speed={0.8}
+									style={{
+										position: 'static',
+										display: 'flex',
+										alignItems: 'center',
+										height: 'auto',
+									}}
+								>
+									<div className='text-50'>
+										<p>
+											A completely reversible shirt designed with wearability
+											and functionality in mind. Crafted by masters of the
+											trade, using complex construction methods with precise
+											symmetry. This provides an easy care shirt that is
+											resistant to creasing, fast drying, while maintaining a
+											soft lightweight feel.
+										</p>
+									</div>
+								</ParallaxLayer>
+							</div>
 
-            <ParallaxLayer
-              offset={4}
-              speed={0.8}
-              style={{
-                position: 'static',
-                display: 'flex',
-                alignContent: 'center',
-                height: 'auto',
-              }}
-            >
-              <div className='text'>
-                <p>
-                  The weave of the fabric is key to its many benefits, the
-                  highly twisted polyester yarn gives the material a slight
-                  spring, that aids in making the shirt very resistent to
-                  creasing. The naturally hydrophobic qualities of polyester
-                  means it is resistent to water, resulting in a very fast
-                  drying shirt.
-                </p>
-              </div>
-            </ParallaxLayer>
-
-            {/* <ParallaxLayer
-              onClick={() => parallax.scrollTo(3)}
-              offset={5.2}
-              speed={0.5}
-              style={{ backgroundColor: 'lightgrey' }}
-            /> */}
-
-            {/* <ParallaxLayer offset={5.2} speed={0} style={{ backgroundColor: 'pink' }}>
-                            <div className='deck'>
-                                <div className='shmody'>
-                                    <div className='shmoot'>
-                                        <div>
-                                            <div>
-                                                <Deck />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </ParallaxLayer> */}
-          </div>
-        </div>
-      </Parallax>
-    </Fragment>
-  );
+							<ParallaxLayer
+								offset={4}
+								speed={0.8}
+								style={{
+									position: 'static',
+									display: 'flex',
+									alignContent: 'center',
+									height: 'auto',
+								}}
+							>
+								<div className='text'>
+									<p>
+										The weave of the fabric is key to its many benefits, the
+										highly twisted polyester yarn gives the material a slight
+										spring, that aids in making the shirt very resistent to
+										creasing. The naturally hydrophobic qualities of polyester
+										means it is resistent to water, resulting in a very fast
+										drying shirt.
+									</p>
+								</div>
+							</ParallaxLayer>
+						</div>
+					</div>
+				</Parallax>
+			</div>
+		</Fragment>
+	);
 };
 
 export default ProjectRoy;
-
-/*{
-
-<div className="image_6 gcs6">
-<img src={LSR_1} alt="shirt_1" />
-<img src={LSR_2} alt="shirt_2" />
-<img src={LSR_3} alt="shirt_3" />
-<img src={LSR_4} alt="shirt_4" />
-<img src={LSR_5} alt="shirt_5" />
-<img src={LSR_6} alt="shirt_6" />
-</div>
-
-
-
-
-<div className="video_clip gcs4">
-<ReactPlayer
-    url={wheel_1}
-    playing={true}
-    loop={true}
-    width="100%"
-    height="100%"
-    volume={0}
-/>
-</div>
-
-<div className="box gcs2"></div>
-
-
-<div className="box gcs2"></div>
-
-<div className="video_clip gcs4">
-<ReactPlayer
-    url={wheel_2}
-    playing={true}
-    loop={true}
-    width="100%"
-    height="100%"
-    volume={0}
-/>
-</div>
-
-
-<div className="video_clip gcs4">
-<ReactPlayer
-    url={wheel_3}
-    playing={true}
-    loop={true}
-    width="100%"
-    height="100%"
-    volume={0}
-/>
-</div>
-<div className="box gcs2"></div>
-
-
-<div className="box gcs2"></div>
-
-<div className="video_clip gcs4">
-<ReactPlayer
-    url={package_insert}
-    playing={true}
-    loop={true}
-    width="100%"
-    height="100%"
-    volume={0}
-/>
-</div>
-
-<div className="box gcs2"></div> */
-
-//<div id="placeholder" className="video_clip gcs4">
-//{/* <iframe src="https://drive.google.com/file/d/1Er6MLu7Urgyd6swxhnXK_c9j1CYL7pJc/preview" width="100%" height="480"></iframe> */}
-//</div>
