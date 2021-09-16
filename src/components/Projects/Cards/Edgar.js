@@ -67,7 +67,8 @@ export default function Edgar({ onClose }) {
 							<div className='row'>
 								<div className='clickables'>
 									<Link
-										href='http://edgarsmission.kinsta.cloud/'
+										to={{ pathname: 'http://edgarsmission.kinsta.cloud/' }}
+										target='_blank'
 										activeClassName='active'
 									>
 										<button className='button-1'>

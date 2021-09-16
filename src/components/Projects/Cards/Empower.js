@@ -1,6 +1,7 @@
 import '../../../CSS/Card/card-full.css';
 import '../../../CSS/flickity.css';
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import { Slug } from '../../Animations.js';
 import Flickity from 'react-flickity-component';
 import menuScroll from '../../../assets/images/project_screenshots/empower/menu_scroll.jpg';
@@ -61,8 +62,8 @@ const Empower = ({ onClose }) => {
 							</div>
 							<div className='row'>
 								<div className='clickables'>
-									<a
-										href='https://www.empowermm.com/'
+									<Link
+										to={{ pathname: 'https://www.empowermm.com/' }}
 										target='_blank'
 										activeClassName='active'
 									>
@@ -71,7 +72,7 @@ const Empower = ({ onClose }) => {
 												<div className='title'>view site</div>
 											</div>
 										</button>
-									</a>
+									</Link>
 								</div>
 							</div>
 						</Slug>
