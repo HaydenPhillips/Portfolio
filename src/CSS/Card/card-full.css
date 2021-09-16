@@ -43,7 +43,7 @@
 .project-card .title-bar .title {
   font-size: 40px;
   font-family: BebasNeue;
-  letter-spacing: 30px;
+  letter-spacing: 25px;
   justify-self: flex-start;
   line-height: 1;
   margin: 0;
@@ -133,9 +133,24 @@
 }
 
 .project-card .card-split .left .row .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
   width: 100%;
   font-size: 14px;
   max-width: 600px;
+}
+
+.project-card .card-split .left .row .text p {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 20px;
 }
 
 .project-card .card-split .left .row .icons {

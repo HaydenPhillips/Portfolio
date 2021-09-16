@@ -2,7 +2,6 @@ import '../../../CSS/Card/card-full.css';
 import '../../../CSS/flickity.css';
 import React, { Fragment } from 'react';
 import { Slug } from '../../Animations.js';
-import { Link } from 'react-router-dom';
 import Flickity from 'react-flickity-component';
 import begin from '../../../assets/images/project_screenshots/emma/emma_vp_begin.jpg';
 import chihachevo from '../../../assets/images/project_screenshots/emma/emma_vp_chihachevo.jpg';
@@ -85,8 +84,9 @@ export default function Emma({ onClose }) {
 							</div>
 							<div className='row'>
 								<div className='clickables'>
-									<Link
+									<a
 										href='https://interactives.stuff.co.nz/2020/11/emma-search-for-birth-family-russia/'
+										target='_blank'
 										activeClassName='active'
 									>
 										<button className='button-1'>
@@ -94,7 +94,7 @@ export default function Emma({ onClose }) {
 												<div className='title'>view site</div>
 											</div>
 										</button>
-									</Link>
+									</a>
 								</div>
 							</div>
 						</Slug>

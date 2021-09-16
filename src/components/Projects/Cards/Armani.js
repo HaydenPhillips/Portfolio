@@ -22,7 +22,7 @@ const Armani = ({ onClose }) => {
 		<Fragment>
 			<div className='project-card'>
 				<div className='title-bar'>
-					<div className='title'>Armani</div>
+					<div className='title'>Giorgio Armani Digital Event</div>
 					<div className='close'>
 						<button className='button-1' onClick={onClose}>
 							<div className='inner'>
@@ -48,35 +48,42 @@ const Armani = ({ onClose }) => {
 						<Slug delay={400}>
 							<div className='row'>
 								<div className='details'>Details</div>
-								<div className='small-title'>Overview</div>
-								<div className='text'>Overview text</div>
+								<div className='text'>
+									<p>This project was a virtual Launch Event</p>
+									<p>
+										We worked with Moving Image & Content and DotDot to create a
+										digital event site for Giorgio Armani’s Lip Power lipstick.
+										The event was attended by their VIP community on National
+										Lipstick Day.
+									</p>
+									<p>
+										Attendees tuned into a live event complete with ASMR videos,
+										a live make up tutorial, an AR lipstick try on experience, a
+										dance film, and an a guest speaker panel.
+									</p>
+									<p>
+										Attendees could make decisions during the event to go down
+										different pathways of content based on thematic prompts.
+									</p>
+								</div>
 							</div>
 							<div className='row'>
 								<div className='small-title'>Roles & Responsibilities</div>
 								<div className='text'>
-									- react development, phaser scene setting
-									<br />- Coordinated all activities required to bring the
-									product to market
+									- react development
+									<br />
+									- live chat set-up
+									<br />
+									- Modiface augmented reality integration
+									<br />
 								</div>
 							</div>
+							<div className='row'></div>
 							<div className='row'>
 								<div className='small-title'>Tags</div>
 								<div className='text'>
-									+interactive-documentary +react +phaser
-								</div>
-							</div>
-							<div className='row'>
-								<div className='clickables'>
-									<Link
-										href='https://interactives.stuff.co.nz/2020/11/emma-search-for-birth-family-russia/'
-										activeClassName='active'
-									>
-										<button className='button-1'>
-											<div className='inner'>
-												<div className='title'>view site</div>
-											</div>
-										</button>
-									</Link>
+									+interactive-event +product-release +react +modi-face
+									+augmented-reality
 								</div>
 							</div>
 						</Slug>

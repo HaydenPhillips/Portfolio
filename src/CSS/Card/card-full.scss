@@ -34,12 +34,11 @@
 		.title {
 			font-size: 40px;
 			font-family: BebasNeue;
-			letter-spacing: 30px;
+			letter-spacing: 25px;
 			justify-self: flex-start;
 			line-height: 1;
 			margin: 0;
 			margin-left: 30px;
-			// width: 100%;
 		}
 
 		.close {
@@ -109,9 +108,18 @@
 					line-height: 1;
 				}
 				.text {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
 					width: 100%;
 					font-size: 14px;
 					max-width: 600px;
+					p {
+						font-family: 'Helvetica', 'Arial', sans-serif;
+						font-size: 14px;
+						font-weight: 400px;
+						line-height: 20px;
+					}
 				}
 
 				.icons {

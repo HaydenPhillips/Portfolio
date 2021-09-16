@@ -2,13 +2,12 @@ import '../../../CSS/Card/card-full.css';
 import '../../../CSS/flickity.css';
 import React, { Fragment } from 'react';
 import { Slug } from '../../Animations.js';
-import { Link } from 'react-router-dom';
 import Flickity from 'react-flickity-component';
-import kindness from '../../../assets/images/project_screenshots/edgar/kindness.jpg';
-import tickets from '../../../assets/images/project_screenshots/edgar/tickets.jpg';
-import gallery from '../../../assets/images/project_screenshots/edgar/gallery.jpg';
+import menuScroll from '../../../assets/images/project_screenshots/empower/menu_scroll.jpg';
+import ourValues from '../../../assets/images/project_screenshots/empower/our_value.jpg';
+import videoJS from '../../../assets/images/project_screenshots/empower/video.jpg';
 
-export default function Edgar({ onClose }) {
+const Empower = ({ onClose }) => {
 	const flickityOptions = {
 		wrapAround: true,
 		contain: true,
@@ -19,7 +18,7 @@ export default function Edgar({ onClose }) {
 		<Fragment>
 			<div className='project-card'>
 				<div className='title-bar'>
-					<div className='title'>Edgar's Mission</div>
+					<div className='title'>Empower</div>
 					<div className='close'>
 						<button className='button-1' onClick={onClose}>
 							<div className='inner'>
@@ -32,9 +31,9 @@ export default function Edgar({ onClose }) {
 					<div className='right'>
 						<div className='image-slider'>
 							<Flickity options={flickityOptions}>
-								<img src={kindness} alt='edgar-home' />
-								<img src={tickets} alt='book-tickets' />
-								<img src={gallery} alt='gallery' />
+								<img src={menuScroll} alt='menu-scroll' />
+								<img src={ourValues} alt='our-values' />
+								<img src={videoJS} alt='video-js' />
 							</Flickity>
 						</div>
 					</div>
@@ -42,32 +41,29 @@ export default function Edgar({ onClose }) {
 						<Slug delay={400}>
 							<div className='row'>
 								<div className='details'>Details</div>
+								<div className='small-title'>Overview</div>
 								<div className='text'>
-									Edgar’s Mission is a not for profit sanctuary for rescued
-									farmed animals that seeks to create a humane and just world
-									for humans and non-humans. Home to over 400 rescued animals in
-									Victoria, Australia.
+									Empower is an advertising and marketing agency headquartered
+									in Cincinnati, Ohio.
 								</div>
 							</div>
 							<div className='row'>
 								<div className='small-title'>Roles & Responsibilities</div>
 								<div className='text'>
-									I contributed to the build of this site using JavaScript,
-									JQuery, php, html, css, and Wordpress. I engaged with overseas
-									clients and designers via video meetings as well as working
-									tight knit with in-house devs at Vanishing Point .
+									- Website development including animations, card sliders, and
+									a custom video player. <br />- Built using JQuery, HTML, CSS,
+									flickity, and video.js.
 								</div>
 							</div>
 							<div className='row'>
 								<div className='small-title'>Tags</div>
-								<div className='text'>
-									+animal-sanctuary +jquery +php +word-press +scss
-								</div>
+								<div className='text'>+marketing-agency +scss +video-js</div>
 							</div>
 							<div className='row'>
 								<div className='clickables'>
-									<Link
-										href='http://edgarsmission.kinsta.cloud/'
+									<a
+										href='https://www.empowermm.com/'
+										target='_blank'
 										activeClassName='active'
 									>
 										<button className='button-1'>
@@ -75,7 +71,7 @@ export default function Edgar({ onClose }) {
 												<div className='title'>view site</div>
 											</div>
 										</button>
-									</Link>
+									</a>
 								</div>
 							</div>
 						</Slug>
@@ -84,4 +80,6 @@ export default function Edgar({ onClose }) {
 			</div>
 		</Fragment>
 	);
-}
+};
+
+export default Empower;

@@ -7,7 +7,7 @@ export default [
 	},
 	{
 		componentName: 'Armani',
-		name: 'Armani',
+		name: 'Giorgio Armani',
 		tags: '+interactive-event +product-release +react +modi-face +augmented-reality',
 		color: 'linear-gradient(#acb8ff, #c08fee)',
 	},
