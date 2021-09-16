@@ -2,7 +2,6 @@ import '../../../CSS/Card/card-full.css';
 import '../../../CSS/flickity.css';
 import React, { Fragment } from 'react';
 import { Slug } from '../../Animations.js';
-import { Link } from 'react-router-dom';
 import Flickity from 'react-flickity-component';
 import begin from '../../../assets/images/project_screenshots/armani/armani_begin.jpg';
 import intro from '../../../assets/images/project_screenshots/armani/armani_intro.jpg';
