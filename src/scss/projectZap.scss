@@ -1,0 +1,154 @@
+.grid-zap {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+	overflow: hidden;
+	background-color: rgb(239, 205, 255);
+
+	.empty {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1200px;
+		grid-template-rows: minmax(800px, auto);
+		justify-items: center;
+		margin: auto;
+		left: -110px;
+	}
+
+	.prototype_collection {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1200px;
+		grid-template-rows: minmax(800px, auto);
+		justify-items: center;
+		margin: auto;
+		left: -110px;
+
+		.line {
+			z-index: 10;
+			width: 100%;
+			height: 4px;
+			border-bottom: solid black;
+			background-color: black;
+		}
+
+		.png {
+			display: grid;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	#phone_main {
+		position: absolute;
+		z-index: 3;
+		top: 120px;
+		left: 0px;
+		width: 80%;
+	}
+
+	#phone_home_screen {
+		z-index: 4;
+		position: absolute;
+		top: 374px;
+		left: -90px;
+		width: 45%;
+	}
+
+	#contact_dropdown {
+		position: absolute;
+		z-index: 2;
+		top: 130;
+		left: 560px;
+		width: 80%;
+		overflow: hidden;
+	}
+
+	#recipient_selected {
+		position: absolute;
+		z-index: 1;
+		top: -10;
+		left: 815px;
+		width: 35%;
+	}
+
+	.grid-c3 {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		place-items: center;
+		width: 100%;
+		gap: 20px;
+	}
+
+	.con {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.grid-c3-even {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		grid-template-rows: repeat(3, auto);
+		height: auto;
+		width: 100%;
+		place-items: center;
+
+		.left {
+			grid-row: span 3;
+			justify-self: flex-start;
+			margin-left: -20px;
+		}
+		.right {
+			grid-row: span 3;
+			justify-self: flex-end;
+			margin-right: -20px;
+			margin-top: -100px;
+		}
+		.mid {
+			grid-row: span 3;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 50px;
+			justify-items: center;
+			.text-con {
+				width: 165%;
+				max-width: 800px;
+			}
+		}
+	}
+
+	.ellipse {
+		display: grid;
+		width: 300px;
+		height: 300px;
+		background-color: rgb(188, 72, 211);
+		border-radius: 50%;
+		padding: 50px;
+		place-items: center;
+		box-shadow: 10px 10px 30px rgb(103, 33, 112);
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.box {
+		display: grid;
+		place-items: center;
+		width: 300px;
+		height: 200px;
+		padding: 20px;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.text-box {
+		display: grid;
+		justify-self: center;
+		width: 400px;
+		height: auto;
+		padding: 10px;
+	}
+}

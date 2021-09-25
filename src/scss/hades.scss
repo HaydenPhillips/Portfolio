@@ -1,0 +1,96 @@
+.hades {
+	display: grid;
+	grid-template-columns: 1fr;
+	height: 90vh;
+	background-color: rgb(235, 235, 255);
+}
+
+#root {
+	overflow: hidden;
+	background: #f0f0f0;
+}
+
+.head,
+.left-eye,
+.right-eye,
+.eyebrow {
+	position: absolute;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	will-change: transform;
+}
+
+.head {
+	width: 420px;
+	height: 600px;
+	background-image: url(../assets/images/Hades/hades_head.svg);
+}
+
+.left-eye {
+	width: 40px;
+	height: 40px;
+	background-image: url(../assets/images/Hades/left_eye.svg);
+}
+
+.right-eye {
+	width: 60px;
+	height: 50px;
+	background-image: url(../assets/images/Hades/right_eye.svg);
+}
+
+.left-eyeball {
+	display: flex;
+	width: 15px;
+	height: 15px;
+	background-color: rgb(189, 0, 0);
+	border-radius: 10px;
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+}
+.right-eyeball {
+	width: 20px;
+
+	height: 20px;
+	background-color: black;
+	border-radius: 10px;
+	z-index: 10;
+}
+
+.eyebrow {
+	width: 120px;
+	height: 70px;
+	background-image: url(../assets/images/Hades/top.svg);
+	z-index: 11;
+}
+
+.full-screen-mouse-move {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rotate {
+	animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}

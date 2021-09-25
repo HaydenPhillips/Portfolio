@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import '../../../CSS/Pages/pages.css';
 import { useInView } from 'react-intersection-observer';
 import { Asteroid1, Asteroid2, Asteroid3 } from './Asteroid';
 
@@ -23,14 +22,14 @@ const ServicesPage = () => {
 								programming for five years, three of which in the web space.
 								Making use of my experience with modern software tools, I am
 								able to design and build full stack web applications, from
-								concept to launch.
+								conception to launch.
 							</p>
 							<h1 className='subtitle'>programming tools & language</h1>
 							<div className='detail-item'>
-								<h5 className='sub-subtitle'>JavaScript</h5>
+								<h5 className='sub-subtitle'>JavaScript & React</h5>
 								<p>
-									Most of the code I write is modern JavaScript (ES6+) using the
-									React library, hooks in particular.
+									The majority of the code I write is in JavaScript (ES6+) using
+									the React library, hooks in particular.
 								</p>
 							</div>
 							<div className='detail-item'>
@@ -75,7 +74,7 @@ const ServicesPage = () => {
 								<h5 className='sub-subtitle'>General</h5>
 								<p>
 									Well versed in git version control, VisualStudio-code IDE,
-									Chrome DevTools
+									Chrome DevTools, bash, cmd
 								</p>
 							</div>
 
@@ -84,7 +83,7 @@ const ServicesPage = () => {
 							</h1>
 							<div className='detail-item'>
 								<h5 className='sub-subtitle'>
-									Jamstack - Static Site Generator
+									Jamstack / Modern static site generator
 								</h5>
 								<p>Gatsby, React, GraphQL with Strapi headless CMS</p>
 							</div>

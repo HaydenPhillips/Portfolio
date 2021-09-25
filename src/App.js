@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
-import './CSS/Roy/ProjectRoy.css';
-import './CSS/Zap/ProjectZap.css';
 import Main from './components/Main';
+import './scss/App.scss';
 
 function App() {
 	return (
