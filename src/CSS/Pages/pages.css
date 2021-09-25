@@ -308,15 +308,8 @@ nav .navbar .nav-button.active {
   z-index: 1;
 }
 
-.page-grid .landing-page .hero .water-svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 100;
-}
-
-.page-grid .landing-page .hero .water-svg .water-svg-size {
-  width: 300px;
+.page-grid .landing-page .hero h1 {
+  font-size: 120px;
 }
 
 .page-grid .landing-page .hero .hero-title {

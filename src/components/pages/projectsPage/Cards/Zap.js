@@ -1,14 +1,14 @@
-import '../../../CSS/Card/card-full.css';
+import '../../../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
-import { Slug } from '../../Animations';
+import { Slug } from '../../../Animations';
 import { Link } from 'react-router-dom';
 
-export default function Planter({ onClose }) {
+export default function Zap({ onClose }) {
 	return (
 		<Fragment>
 			<div className='project-card'>
 				<div className='title-bar'>
-					<div className='title'>Planter</div>
+					<div className='title'>Zap</div>
 					<div className='close'>
 						<button className='button-1' onClick={onClose}>
 							<div className='inner'>
@@ -21,46 +21,45 @@ export default function Planter({ onClose }) {
 					<div className='left'>
 						<Slug delay={400}>
 							<div className='details'>Details</div>
+							{/* <div className="corner-left"></div> */}
+							{/* <div className="corner-right"></div> */}
 							<div className='row'>
 								<div className='small-title'>Overview</div>
 								<div className='text'>
-									Planting trees to offset carbon emissions is not a new idea,
-									but creating an autonomous organisation to make that happen
-									<b>is</b>. This whitepaper explores the intricacies of a
-									Decentralised Autonomous Organisation (DAO), and present them
-									in a palatable manner. Written during a summer trimester at
-									Victoria.
+									Zap is a way to send and receive payments seamlessly. It
+									allows the ability to split payments between friends, and
+									eliminates delay.
 								</div>
 							</div>
 							<div className='row'>
-								<div className='small-title'>More Info</div>
+								<div className='small-title'>Roles & Responsibilities</div>
 								<div className='text'>
-									Planter Project aids in environmental sustainability by
-									encouraging forestation of land. It's a platform that enables
-									landowners, companies, and consumers to collaborate as a
-									community to offset carbon emissions.
+									A mobile application prototype built by myself and two others,
+									Liam Malone and Chris Corbett, in 2020. Leveraging similar
+									services like Venmo and The-Cash-App, I was able to refined
+									and develope from pre-existing apps to create an effective Ui.
+									This prototype was pieced together using figma. The
+									presentation displayed on this website was done so using
+									React. --Work in progress.--
 								</div>
 							</div>
 							<div className='row'>
 								<div className='small-title'>Tags</div>
 								<div className='text'>
-									+Decentralised Autonomous Organisation (DAO) +Blockchain
+									+prototyping +figma +ui +ux +mobile-appication
 								</div>
 							</div>
 						</Slug>
 					</div>
 					<div className='right'>
 						<div className='image'>
-							<div
-								alt='planter-preview'
-								className='image-preview planterPreview'
-							/>
+							<div alt='zap-preview' className='image-preview zapPreview' />
 						</div>
 						<div className='clickables'>
-							<Link to={'/whitepaper'} target='_blank' activeClassName='active'>
+							<Link to={'/projectzap'} target='_blank' activeClassName='active'>
 								<button className='button-1'>
 									<div className='inner'>
-										<div className='title'>View Whitepaper</div>
+										<div className='title'>view project</div>
 									</div>
 								</button>
 							</Link>

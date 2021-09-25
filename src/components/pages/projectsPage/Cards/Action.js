@@ -1,6 +1,6 @@
-import '../../../CSS/Card/card-full.css';
+import '../../../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
-import { Slug } from '../../Animations';
+import { Slug } from '../../../Animations';
 import { Link } from 'react-router-dom';
 
 export default function Action({ onClose }) {

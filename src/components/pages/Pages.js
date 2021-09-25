@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Fragment, useRef } from 'react';
-import Projects from '../Projects/Projects';
+import Projects from '../pages/projectsPage/Projects/Projects';
 import LandingPage from '../pages/landingPage/LandingPage';
 import AboutPage from '../pages/aboutPage/AboutPage';
 import ContactPage from '../pages/contactPage/ContactPage';

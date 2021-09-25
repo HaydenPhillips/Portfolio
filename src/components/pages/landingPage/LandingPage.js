@@ -1,6 +1,4 @@
 import React, { Fragment } from 'react';
-// import LayeredPhotoMouseAnimation from './LayeredPhotoMouseAnimation';
-import { WaterAnimation } from '../../Animations';
 import Moon from './Moon';
 import { Slug } from '../../Animations';
 
@@ -12,15 +10,17 @@ const LandingPage = () => {
 					<Moon />
 				</div>
 				<div className='hero'>
-					<div className='water-svg'>
-						<WaterAnimation />
-					</div>
-					<Slug delay={1400}>
+					<Slug delay={200}>
+						<h1>hello</h1>
+					</Slug>
+					<Slug delay={1000}>
 						<h3 className='hero-title'>
 							welcome to my digital space, my name is hayden
 						</h3>
+					</Slug>
+					<Slug delay={1200}>
 						<p className='description'>
-							I'm a fullstack web developer, with a background in software
+							I'm a fullstack web developer with a background in software
 							engineering, design, and entrepreneurship.
 						</p>
 					</Slug>

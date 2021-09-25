@@ -1,25 +1,25 @@
 import React, { Fragment } from 'react';
 import ReactPlayer from 'react-player';
-import swinging_tag from '../../assets/videos/project_roy/swinging_tag.mp4';
-import eva_st from '../../assets/videos/project_roy/eva_st.mp4';
+import swinging_tag from '../../../../assets/videos/project_roy/swinging_tag.mp4';
+import eva_st from '../../../../assets/videos/project_roy/eva_st.mp4';
 // import wheel_1 from "../assets/videos/project_roy/sewing_motor_wheel_motion.mp4";
 // import wheel_2 from "../assets/videos/project_roy/overlocker_wheel_motion.mp4";
 // import wheel_3 from "../assets/videos/project_roy/overlocker_motor_wheel_motion.mp4";
 // import package_insert from "../assets/videos/project_roy/package_insert.mp4";
 // import five_swingtag from "../assets/images/project_roy/five_swingtag.jpg";
-import gif1 from '../../assets/images/project_roy/knolling_SS_navy_small.jpg';
+import gif1 from '../../../../assets/images/project_roy/knolling_SS_navy_small.jpg';
 // import gif2 from "../assets/images/project_roy/knolling_SS_white_small.jpg";
-import SS_front_blue from '../../assets/images/project_roy/SS_front_blue.jpg';
-import pyramid from '../../assets/images/project_roy/pyramid_blue_small.jpg';
+import SS_front_blue from '../../../../assets/images/project_roy/SS_front_blue.jpg';
+import pyramid from '../../../../assets/images/project_roy/pyramid_blue_small.jpg';
 // import roy_logo from "../assets/images/project_roy/logo_tree.jpg";
 // import roy_logo_white from "../assets/images/project_roy/logo_tree_white.png";
-import roy_logo_white from '../../assets/images/project_roy/logo_tree_white_small.png';
-import care_instructions from '../../assets/images/project_roy/care_instructions.jpg';
-import LS_navy_background from '../../assets/images/project_roy/LS_navy_background.jpg';
-import chiffon_macro from '../../assets/images/project_roy/chiffon_macro.jpg';
+import roy_logo_white from '../../../../assets/images/project_roy/logo_tree_white_small.png';
+import care_instructions from '../../../../assets/images/project_roy/care_instructions.jpg';
+import LS_navy_background from '../../../../assets/images/project_roy/LS_navy_background.jpg';
+import chiffon_macro from '../../../../assets/images/project_roy/chiffon_macro.jpg';
 // import machine_attachments from '../assets/images/project_roy/machine_attachments.jpg';
-import falling_leaves from '../../assets/images/project_roy/falling_leaves.png';
-import leaves_back from '../../assets/images/project_roy/leaves_layer.png';
+import falling_leaves from '../../../../assets/images/project_roy/falling_leaves.png';
+import leaves_back from '../../../../assets/images/project_roy/leaves_layer.png';
 // import LSR_1 from "../assets/images/project_roy/LSR_1.jpg";
 // import LSR_2 from "../assets/images/project_roy/LSR_2.jpg";
 // import LSR_3 from "../assets/images/project_roy/LSR_3.jpg";
@@ -28,28 +28,9 @@ import leaves_back from '../../assets/images/project_roy/leaves_layer.png';
 // import LSR_6 from "../assets/images/project_roy/LSR_6.jpg";
 // import ParallaxTest from './ParallaxTest';
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
-// import { useSpring } from 'react-spring'
-import { useInView } from 'react-intersection-observer';
-import Fade from '../fade';
-// import Deck from './Deck';
 
 const ProjectRoy = () => {
 	let parallax;
-
-	// const fade = useSpring({
-	//     from: { opacity: 0 },
-	//     to: { opacity: 1 },
-	//     config: { duration: 4000 }
-	// });
-
-	const [ref, inView] = useInView({
-		// threshold: 0,
-		// rootMargin: '400px 0px -200px 0px'
-	});
-
-	const someString = `The essence of Roy is to convey creative ideas that correlate 
-    with an individual via purposeful design. From concept to customer, 
-    we strive to produce the highest of quality through all forms of expression.`;
 
 	return (
 		<Fragment>
@@ -84,13 +65,6 @@ const ProjectRoy = () => {
 						}}
 					/>
 					<div className='wrapper'>
-						{/* <ParallaxLayer onClick={() => parallax.scrollTo(2)} offset={1.4} speed={-0.2} style={{ backgroundImage: `url(${machine_attachments})`, backgroundSize: 'cover', backgroundPosition: 'center' }} /> */}
-						{/* <ParallaxLayer
-                        onClick={() => parallax.scrollTo(2)}
-                        offset={2.45}
-                        speed={-0.2}
-                        style={{ backgroundImage: `url(${five_swingtag})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                    /> */}
 						<ParallaxLayer
 							onClick={() => parallax.scrollTo(1)}
 							offset={0}
@@ -268,12 +242,13 @@ const ProjectRoy = () => {
 									marginRight: '5%',
 								}}
 							>
-								<div className='text-30' ref={ref}>
-									{inView ? (
-										<Fade tagline={someString} />
-									) : (
-										<div className='empty' />
-									)}
+								<div className='text-30'>
+									<p>
+										The essence of Roy is to convey creative ideas that
+										correlate with an individual via purposeful design.
+										From concept to customer, we strive to produce the highest
+										of quality through all forms of expression.
+									</p>
 								</div>
 							</ParallaxLayer>
 

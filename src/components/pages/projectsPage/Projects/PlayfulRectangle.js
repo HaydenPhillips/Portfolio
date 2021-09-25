@@ -1,6 +1,6 @@
-import '../../CSS/Projects/projects.css';
+import '../../../../CSS/Projects/projects.css';
 import CardFull from './CardFull';
-import Modal from '../Modal';
+import Modal from '../../../Modal';
 import React, { useState, useRef, Fragment } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 

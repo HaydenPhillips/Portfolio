@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import '../../CSS/Projects/projects.css';
+import '../../../../CSS/Projects/projects.css';
 import PlayfulRectangle from './PlayfulRectangle';
 import Data from './Data';
 

@@ -1,14 +1,14 @@
-import '../../../CSS/Card/card-full.css';
-import '../../../CSS/flickity.css';
+import '../../../../CSS/Card/card-full.css';
+import '../../../../CSS/flickity.css';
 import React, { Fragment } from 'react';
-import { Slug } from '../../Animations.js';
+import { Slug } from '../../../Animations.js';
 import Flickity from 'react-flickity-component';
-import begin from '../../../assets/images/project_screenshots/armani/armani_begin.jpg';
-import intro from '../../../assets/images/project_screenshots/armani/armani_intro.jpg';
-import product from '../../../assets/images/project_screenshots/armani/armani_product.jpg';
-import selectPath from '../../../assets/images/project_screenshots/armani/armani_select_path.jpg';
-import vtoSidebar from '../../../assets/images/project_screenshots/armani/armani_vto_sidebar.jpg';
-import vto from '../../../assets/images/project_screenshots/armani/armani_vto.jpg';
+import begin from '../../../../assets/images/project_screenshots/armani/armani_begin.jpg';
+import intro from '../../../../assets/images/project_screenshots/armani/armani_intro.jpg';
+import product from '../../../../assets/images/project_screenshots/armani/armani_product.jpg';
+import selectPath from '../../../../assets/images/project_screenshots/armani/armani_select_path.jpg';
+import vtoSidebar from '../../../../assets/images/project_screenshots/armani/armani_vto_sidebar.jpg';
+import vto from '../../../../assets/images/project_screenshots/armani/armani_vto.jpg';
 
 const Armani = ({ onClose }) => {
 	const flickityOptions = {

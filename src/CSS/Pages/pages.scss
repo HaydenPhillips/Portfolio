@@ -254,12 +254,8 @@ nav {
 			max-width: 500px;
 			z-index: 1;
 
-			.water-svg {
-				display: flex;
-				z-index: 100;
-				.water-svg-size {
-					width: 300px;
-				}
+			h1 {
+				font-size: 120px;
 			}
 			.hero-title {
 				line-height: 1.2;

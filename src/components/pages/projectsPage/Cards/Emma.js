@@ -1,18 +1,18 @@
-import '../../../CSS/Card/card-full.css';
-import '../../../CSS/flickity.css';
+import '../../../../CSS/Card/card-full.css';
+import '../../../../CSS/flickity.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Slug } from '../../Animations.js';
+import { Slug } from '../../../Animations.js';
 import Flickity from 'react-flickity-component';
-import chihachevo from '../../../assets/images/project_screenshots/emma/emma_vp_chihachevo.jpg';
-import door from '../../../assets/images/project_screenshots/emma/emma_vp_door.jpg';
-import orphanage from '../../../assets/images/project_screenshots/emma/emma_vp_orphanage.jpg';
-import pechory from '../../../assets/images/project_screenshots/emma/emma_vp_pechory.jpg';
-import redSquare from '../../../assets/images/project_screenshots/emma/emma_vp_red_square.jpg';
-import timeline1 from '../../../assets/images/project_screenshots/emma/emma_vp_timeline_1.jpg';
-import timeline2 from '../../../assets/images/project_screenshots/emma/emma_vp_timeline_2.jpg';
-import vologda1 from '../../../assets/images/project_screenshots/emma/emma_vp_vologda_1.jpg';
-import vologda2 from '../../../assets/images/project_screenshots/emma/emma_vp_vologda_2.jpg';
+import chihachevo from '../../../../assets/images/project_screenshots/emma/emma_vp_chihachevo.jpg';
+import door from '../../../../assets/images/project_screenshots/emma/emma_vp_door.jpg';
+import orphanage from '../../../../assets/images/project_screenshots/emma/emma_vp_orphanage.jpg';
+import pechory from '../../../../assets/images/project_screenshots/emma/emma_vp_pechory.jpg';
+import redSquare from '../../../../assets/images/project_screenshots/emma/emma_vp_red_square.jpg';
+import timeline1 from '../../../../assets/images/project_screenshots/emma/emma_vp_timeline_1.jpg';
+import timeline2 from '../../../../assets/images/project_screenshots/emma/emma_vp_timeline_2.jpg';
+import vologda1 from '../../../../assets/images/project_screenshots/emma/emma_vp_vologda_1.jpg';
+import vologda2 from '../../../../assets/images/project_screenshots/emma/emma_vp_vologda_2.jpg';
 
 export default function Emma({ onClose }) {
 	const flickityOptions = {
