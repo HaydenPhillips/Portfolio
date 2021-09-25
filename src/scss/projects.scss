@@ -78,7 +78,6 @@
 						}
 					}
 					&:hover {
-						// box-shadow: 3px 3px 15px #696d85;
 						z-index: 100;
 						.name-hash {
 							transform: translateY(calc(-100% + 25px));
@@ -96,7 +95,6 @@
 	}
 
 	.title {
-		// margin: -15px -15px;
 		font-size: 80px;
 		font-family: BebasNeue;
 		letter-spacing: 10px;

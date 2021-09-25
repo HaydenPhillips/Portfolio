@@ -2,14 +2,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	// bottom: 20px;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;
 	width: 100%;
-	// height: 100%;
-	// min-height: 500px;
-	// max-height: 800px;
 	background-color: rgb(219, 234, 240);
 	border-radius: 5px;
 	animation-name: scaleUp;
@@ -72,13 +68,11 @@
 		gap: 30px;
 		padding: 30px;
 		margin-top: 90px;
-		// overflow-y: scroll;
 
 		.left {
 			position: relative;
 			display: grid;
 			grid-template-columns: 1fr;
-			// align-content: space-around;
 			height: 100%;
 
 			.details {
@@ -227,7 +221,6 @@
 				grid-template-rows: auto;
 				gap: 0;
 				justify-items: center;
-				// overflow-y: scroll;
 				.image-slider {
 					position: relative;
 					width: 80%;
@@ -235,7 +228,6 @@
 						width: 100%;
 						border-radius: 5px;
 						background-size: cover;
-						// margin: 0 50px;
 					}
 					.flickity-page-dots {
 						bottom: -20px;
@@ -259,7 +251,6 @@
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				align-content: unset;
-				// height: 100%;
 				.clickables {
 					display: grid;
 					a {
@@ -295,19 +286,3 @@
 		}
 	}
 }
-
-// .project-card--after-open {
-//   opacity: 1;
-//   transform: translateX(0px);
-// }
-
-// .project-card__Overlay--before-close {
-//   opacity: 0;
-//   transform: translateX(-100px);
-// }
-
-// .test {
-//   color: rgb(167, 183, 255);
-//   color: rgb(167, 195, 255);
-//   color: rgb(167, 198, 255);
-// }
