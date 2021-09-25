@@ -1,8 +1,3 @@
-@font-face {
-	font-family: BebasNeue;
-	src: url(../assets/fonts/BebasNeue.otf);
-}
-
 .projects-grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(300px, 1fr));
