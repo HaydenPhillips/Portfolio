@@ -1,4 +1,3 @@
-import '../../../../CSS/Card/card-full.css';
 import React, { Fragment } from 'react';
 import { Slug } from '../../../Animations';
 import { Link } from 'react-router-dom';

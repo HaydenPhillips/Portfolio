@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../../CSS/Whitepaper/whitepaper.css';
 import whitepaper from '../../../../assets/images/WHITEPAPER.jpg';
 
 const Whitepaper = () => {

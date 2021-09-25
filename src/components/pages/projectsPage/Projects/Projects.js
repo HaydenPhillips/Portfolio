@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from 'react';
-import '../../../../CSS/Projects/projects.css';
 import PlayfulRectangle from './PlayfulRectangle';
 import Data from './Data';
 
@@ -8,7 +7,7 @@ const Projects = () => {
 	return (
 		<Fragment>
 			<div className='page-wrap'>
-				<h1>projects</h1>
+				<h1 className='projects-title'>projects</h1>
 				<div className='projects-grid'>
 					<div className='col one'>
 						<PlayfulRectangle

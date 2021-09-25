@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 import { useSpring, animated } from 'react-spring';
-import '../../../../CSS/Hades/hades.css';
-import '../../../../CSS/Pages/pages.css';
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 40}px, ${y / 40}px,0)`;

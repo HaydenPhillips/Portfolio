@@ -4,7 +4,6 @@ import account_right from '../../../../assets/images/zap_prototype/account-45-ri
 import zap_logo from '../../../../assets/images/zap_prototype/zap_logo.png';
 import AnimationIn from './Mobile_prototype_animation';
 import { useInView } from 'react-intersection-observer';
-import '../../../../CSS/Zap/ProjectZap.css';
 
 const ProjectZap = () => {
 	const [ref, inView] = useInView({

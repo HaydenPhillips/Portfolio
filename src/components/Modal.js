@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import '../CSS/Modal/modal.css';
 
 export default function Modal({ open, children }) {
 	if (open) {

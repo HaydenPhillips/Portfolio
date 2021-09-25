@@ -1,5 +1,3 @@
-import '../../../../CSS/Card/card-full.css';
-import '../../../../CSS/flickity.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Slug } from '../../../Animations.js';

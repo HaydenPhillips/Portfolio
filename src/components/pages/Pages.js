@@ -5,7 +5,6 @@ import LandingPage from '../pages/landingPage/LandingPage';
 import AboutPage from '../pages/aboutPage/AboutPage';
 import ContactPage from '../pages/contactPage/ContactPage';
 import ServicesPage from '../pages/servicesPage/ServicesPage';
-import '../../CSS/Pages/pages.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import stars from '../../assets/images/LayeredScene/moon/stars.svg';
 import Navbar from '../Navbar';

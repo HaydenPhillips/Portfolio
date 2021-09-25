@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import '../../../CSS/Pages/pages.css';
 import { useInView } from 'react-intersection-observer';
 import { Asteroid1, Asteroid2, Asteroid3 } from './Asteroid';
 

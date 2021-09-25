@@ -1,4 +1,3 @@
-import '../../../../CSS/Card/card-full.css';
 import React from 'react';
 import Roy from '../Cards/Roy';
 import Zap from '../Cards/Zap';
