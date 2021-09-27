@@ -2,10 +2,7 @@ import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
 export default function Modal({ open, children }) {
-	if (open) {
-		console.log('open: ', open);
-	} else {
-		console.log('close: ', open);
+	if (!open) {
 		return null;
 	}
 
