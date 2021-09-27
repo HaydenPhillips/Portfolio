@@ -1,13 +1,25 @@
-import React, { Fragment } from 'react';
-import ContactForm from './ContactForm';
-import earth from '../../../assets/icons/earth.svg';
-import satellite from '../../../assets/images/LayeredScene/moon/satellite.svg';
+import React, { Fragment, useState } from 'react'
+import ContactForm from './ContactForm'
+import ContactFormSpringload from './ContactFormSpringload'
+import earth from '../../../assets/icons/earth.svg'
+import satellite from '../../../assets/images/LayeredScene/moon/satellite.svg'
 
 const ContactPage = () => {
+	const [isSpringloadShowing, setIsSpringloadShowing] = useState(false)
+
 	return (
 		<Fragment>
 			<section className='contact-page'>
-				<ContactForm />
+				{isSpringloadShowing ? <ContactFormSpringload /> : <ContactForm />}
+
+				<button
+					className='springload-test'
+					onClick={() => setIsSpringloadShowing(!isSpringloadShowing)}
+				>
+					{isSpringloadShowing
+						? 'Back to original form'
+						: 'Springload Code Test'}
+				</button>
 				<div className='satellite'>
 					<img src={satellite} alt='satellite' />
 				</div>
@@ -16,7 +28,7 @@ const ContactPage = () => {
 				</div>
 			</section>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default ContactPage;
+export default ContactPage
