@@ -33,6 +33,16 @@ body {
 		font-weight: 500;
 		font-style: normal;
 	}
+	label,
+	input,
+	textarea {
+		font-family: neue-haas-thin;
+		font-size: 22px !important;
+		margin: 0;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: 1px;
+	}
 
 	button {
 		padding: 0;
@@ -374,64 +384,39 @@ nav {
 
 		.contact-form {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr;
 			gap: 30px;
-			justify-items: center;
-			align-self: center;
-			width: 50%;
-			height: auto;
-			max-width: 600px;
-			z-index: 1;
-			color: white;
-
-			.form-title {
-				grid-column: span 2;
-				justify-self: flex-start;
-				font-family: BebasNeue;
-				letter-spacing: 12px;
-			}
-
-			input {
-				padding: 15px;
-				border: none;
-				border-radius: 5px;
-				font-size: 20px;
-				&:focus-visible {
-					outline: none;
+			justify-items: flex-start;
+			width: 500px;
+			padding: 30px;
+			z-index: 2;
+			.form-field {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				width: 100%;
+				input {
+					height: 40px;
+					padding: 0 10px;
+					border-radius: 5px;
+					border: white solid 2px;
+					&:focus-visible {
+						outline: none;
+					}
+				}
+				textarea {
+					padding: 10px;
+					border-radius: 5px;
+					border: white solid 2px;
+					&:focus-visible {
+						outline: none;
+					}
 				}
 			}
-			textarea {
+			button {
 				padding: 15px;
-				border: none;
+				min-width: 200px;
 				border-radius: 5px;
-				overflow: hidden;
-				&:focus-visible {
-					outline: none;
-				}
-			}
-
-			.name {
-				width: 100%;
-				height: 50px;
-				// background-color: rgb(255, 255, 255);
-			}
-			.email {
-				width: 100%;
-				height: 50px;
-				// background-color: rgb(255, 255, 255);
-			}
-			.message {
-				grid-column: span 2;
-				width: 100%;
-				font-size: 20px;
-				overflow: scroll;
-			}
-			.submit {
-				cursor: pointer;
-				width: 100%;
-				height: 50px;
-				border-radius: 5px;
-				font-size: 20px;
 			}
 		}
 
@@ -455,19 +440,6 @@ nav {
 				width: 800px;
 				height: 800px;
 			}
-		}
-
-		.hades-wrap {
-			position: absolute;
-			right: 250px;
-			bottom: 50px;
-			display: grid;
-			justify-content: flex-end;
-			align-content: flex-end;
-			align-self: flex-end;
-			align-items: flex-end;
-			width: 100%;
-			height: 100vh;
 		}
 	}
 }

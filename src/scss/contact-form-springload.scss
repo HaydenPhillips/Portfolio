@@ -1,0 +1,121 @@
+.contact-form-springload {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	max-width: 550px;
+	border-radius: 5px;
+	z-index: 1;
+	color: white;
+	background-color: #161b3ae8;
+
+	.form-title {
+		justify-self: flex-start;
+		font-family: BebasNeue;
+		letter-spacing: 12px;
+	}
+
+	.form-field {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		width: 100%;
+		font-size: 20px;
+
+		input {
+			font-size: 20px;
+			padding: 10px;
+			border: white solid 2px;
+			border-radius: 5px;
+			color: white;
+			background-color: #161b3ae8;
+			transition: border 0.4s ease;
+			&:focus-visible {
+				outline: none;
+			}
+			&:-webkit-autofill {
+				-webkit-text-fill-color: white;
+				-webkit-box-shadow: 0 0 0px 100px #161b3a inset;
+			}
+		}
+		.picker {
+			display: flex;
+			gap: 30px;
+
+			.radio {
+				display: flex;
+				gap: 15px;
+				input[type='radio']:after {
+					width: 15px;
+					height: 15px;
+					border-radius: 15px;
+					top: -2px;
+					left: -1px;
+					position: relative;
+					background-color: white;
+					content: '';
+					display: inline-block;
+					border: 2px solid rgb(255, 255, 255);
+				}
+				input[type='radio']:checked:after {
+					width: 15px;
+					height: 15px;
+					border-radius: 15px;
+					top: -2px;
+					left: -1px;
+					position: relative;
+					background-color: #313772;
+					content: '';
+					display: inline-block;
+					border: 2px solid white;
+				}
+			}
+			.checkbox {
+				display: flex;
+				gap: 15px;
+				input[type='checkbox']:after {
+					width: 15px;
+					height: 15px;
+					border-radius: 15px;
+					top: -2px;
+					left: -1px;
+					position: relative;
+					background-color: white;
+					content: '';
+					display: inline-block;
+					border: 2px solid rgb(255, 255, 255);
+				}
+				input[type='checkbox']:checked:after {
+					width: 15px;
+					height: 15px;
+					border-radius: 15px;
+					top: -2px;
+					left: -1px;
+					position: relative;
+					background-color: #313772;
+					content: '';
+					display: inline-block;
+					border: 2px solid white;
+				}
+			}
+		}
+	}
+	.submit {
+		cursor: pointer;
+		width: 200px;
+		height: 50px;
+		border-radius: 5px;
+		font-size: 20px;
+	}
+}
+
+.springload-test {
+	cursor: pointer;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px 20px;
+	z-index: 2;
+}
