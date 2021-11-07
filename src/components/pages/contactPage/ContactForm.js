@@ -17,20 +17,30 @@ const ContactForm = () => {
 	}
 
 	const handleSubmit = (e) => {
-		fetch('/', {
+		const result = fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: encode({ 'form-name': 'contact-form', ...formState }),
 		})
-			.then(() => {
-				alert('Message successfully sent.')
+			.then((response) => {
 				setIsFormSubmitted(true)
 				resetFormValues()
+				if (response === 200) {
+					alert('Message successfully sent.')
+				} else {
+					alert(
+						'Something went wrong: ' +
+							response.status +
+							' ' +
+							response.statusText
+					)
+				}
 			})
 			.catch((error) => alert(error))
 
 		e.preventDefault()
 		console.log('formState: ', formState)
+		console.log('result: ', result)
 	}
 
 	const resetFormValues = () => {
@@ -56,10 +66,7 @@ const ContactForm = () => {
 				className='contact-form'
 				name='contact-form'
 				method='post'
-				data-netlify='true'
-				data-netlify-honeypot='bot-field'
 			>
-				<input type='hidden' name='bot-field' />
 				<input type='hidden' name='form-name' value='contact-form' />
 				<div className='form-field'>
 					<label htmlFor='name'>
