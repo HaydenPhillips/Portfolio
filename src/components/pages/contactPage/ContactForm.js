@@ -25,7 +25,7 @@ const ContactForm = () => {
 			.then((response) => {
 				setIsFormSubmitted(true)
 				resetFormValues()
-				if (response === 200) {
+				if (response.status === 200) {
 					alert('Message successfully sent.')
 				} else {
 					alert(
