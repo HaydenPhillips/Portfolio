@@ -1,28 +1,27 @@
-import React, { useState } from 'react';
-import { Fragment, useRef } from 'react';
-import Projects from '../pages/projectsPage/Projects/Projects';
-import LandingPage from '../pages/landingPage/LandingPage';
-import AboutPage from '../pages/aboutPage/AboutPage';
-import ContactPage from '../pages/contactPage/ContactPage';
-import ServicesPage from '../pages/servicesPage/ServicesPage';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import stars from '../../assets/images/LayeredScene/moon/stars.svg';
-import Navbar from '../Navbar';
-import { InView } from 'react-intersection-observer';
+import React, { useState } from 'react'
+import { Fragment, useRef } from 'react'
+import Projects from '../pages/projectsPage/Projects/Projects'
+import LandingPage from '../pages/landingPage/LandingPage'
+import ContactPage from '../pages/contactPage/ContactPage'
+import ExperiencePage from './experiencePage/ExperiencePage'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import stars from '../../assets/images/LayeredScene/moon/stars.svg'
+import Navbar from '../Navbar'
+import { InView } from 'react-intersection-observer'
 
 const Pages = () => {
-	const [isActive, setIsActive] = useState('');
-	const pageRef = useRef(null);
+	const [isActive, setIsActive] = useState('')
+	const pageRef = useRef(null)
 
 	function handleClick(section) {
-		if (section === 'about') {
-			pageRef.current.scrollTo(1);
-		} else if (section === 'services') {
-			pageRef.current.scrollTo(3);
+		if (section === 'landing') {
+			pageRef.current.scrollTo(0)
 		} else if (section === 'projects') {
-			pageRef.current.scrollTo(5.3);
+			pageRef.current.scrollTo(1)
+		} else if (section === 'experience') {
+			pageRef.current.scrollTo(2)
 		} else if (section === 'contact') {
-			pageRef.current.scrollTo(7);
+			pageRef.current.scrollTo(4)
 		}
 	}
 
@@ -30,7 +29,7 @@ const Pages = () => {
 		<Fragment>
 			<Navbar handleClick={handleClick} isActive={isActive} />
 			<Parallax
-				pages={8}
+				pages={5}
 				ref={pageRef}
 				style={{
 					display: 'grid',
@@ -71,29 +70,16 @@ const Pages = () => {
 				<div className='page-grid'>
 					<div id='landing'>
 						<ParallaxLayer offset={0} speed={1}>
-							<LandingPage></LandingPage>
+							<InView
+								onChange={(inView) => inView && setIsActive('landing')}
+								id='landing'
+							>
+								<LandingPage></LandingPage>
+							</InView>
 						</ParallaxLayer>
 					</div>
 
-					<ParallaxLayer offset={1} speed={0.6}>
-						<InView
-							onChange={(inView) => inView && setIsActive('about')}
-							id='about'
-						>
-							<AboutPage></AboutPage>
-						</InView>
-					</ParallaxLayer>
-
-					<ParallaxLayer offset={3} speed={0.6}>
-						<InView
-							onChange={(inView) => inView && setIsActive('services')}
-							id='services'
-						>
-							<ServicesPage />
-						</InView>
-					</ParallaxLayer>
-
-					<ParallaxLayer offset={5.5} speed={0.6} className='modal-bg-actions'>
+					<ParallaxLayer offset={1} speed={0.6} className='modal-bg-actions'>
 						<InView
 							onChange={(inView) => inView && setIsActive('projects')}
 							id='projects'
@@ -104,7 +90,16 @@ const Pages = () => {
 						</InView>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={7} speed={1}>
+					<ParallaxLayer offset={2} speed={0.6}>
+						<InView
+							onChange={(inView) => inView && setIsActive('experience')}
+							id='experience'
+						>
+							<ExperiencePage />
+						</InView>
+					</ParallaxLayer>
+
+					<ParallaxLayer offset={4} speed={1}>
 						<InView
 							onChange={(inView) => inView && setIsActive('contact')}
 							id='contact'
@@ -115,7 +110,7 @@ const Pages = () => {
 				</div>
 			</Parallax>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default Pages;
+export default Pages

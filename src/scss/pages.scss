@@ -16,6 +16,12 @@ body {
 		font-size: 50px;
 		margin: 0;
 	}
+	h4 {
+		font-family: neue-haas-bold;
+		font-size: 24px;
+		margin: 0;
+		letter-spacing: 1px;
+	}
 	h5 {
 		font-family: garamond-bold;
 		font-size: 35px;
@@ -37,7 +43,7 @@ body {
 	input,
 	textarea {
 		font-family: neue-haas-thin;
-		font-size: 22px !important;
+		font-size: 18px !important;
 		margin: 0;
 		font-weight: 400;
 		font-style: normal;
@@ -241,7 +247,9 @@ nav {
 			z-index: 1;
 
 			h1 {
-				font-size: 120px;
+				font-size: 100px;
+				font-family: neue-haas-thin;
+				line-height: 0.8;
 			}
 			.hero-title {
 				line-height: 1.2;
@@ -249,6 +257,73 @@ nav {
 
 			.description {
 				max-width: 350px;
+			}
+		}
+	}
+
+	.projects-page {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		gap: 30px;
+		justify-items: center;
+		align-content: center;
+		// height: calc(100vh - 180px);
+		padding: 90px 10%;
+		.page-wrap {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 30px;
+			height: 100%;
+			align-content: center;
+			.projects-title {
+				padding-left: 20px;
+			}
+		}
+	}
+
+	.experience-page {
+		display: grid;
+		justify-items: center;
+		padding: 90px 8vw;
+
+		.page-wrap {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 60px;
+			max-width: 1000px;
+
+			.exp-hero {
+				display: grid;
+				grid-template-columns: auto auto 1fr;
+				gap: 30px;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+				.title {
+					display: flex;
+					flex-direction: column;
+					min-width: 300px;
+					justify-items: flex-start;
+					line-height: 1.1;
+					margin-top: -5px;
+					border-right: white solid 3px;
+				}
+				.details {
+					display: flex;
+					flex-direction: column;
+					gap: 30px;
+
+					.text-item {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+
+						:nth-child(2) {
+							padding-left: 30px;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -307,7 +382,6 @@ nav {
 		display: grid;
 		grid-template-columns: 1fr;
 		justify-items: center;
-		// height: calc(200vh - 180px - 65px);
 		padding: 90px 10%;
 
 		.page-wrap {
@@ -351,27 +425,6 @@ nav {
 		}
 	}
 
-	.projects-page {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
-		gap: 30px;
-		justify-items: center;
-		align-content: center;
-		// height: calc(100vh - 180px);
-		padding: 90px 10%;
-		.page-wrap {
-			display: grid;
-			grid-template-columns: 1fr;
-			gap: 30px;
-			height: 100%;
-			align-content: center;
-			.projects-title {
-				padding-left: 20px;
-			}
-		}
-	}
-
 	.contact-page {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -387,8 +440,10 @@ nav {
 			grid-template-columns: 1fr;
 			gap: 30px;
 			justify-items: flex-start;
-			width: 500px;
+			width: 400px;
 			padding: 30px;
+			background-color: #101430da;
+			border-radius: 10px;
 			z-index: 2;
 			.form-field {
 				display: flex;
@@ -400,23 +455,55 @@ nav {
 					padding: 0 10px;
 					border-radius: 5px;
 					border: white solid 2px;
+					background-color: transparent;
+					color: white;
 					&:focus-visible {
 						outline: none;
+					}
+					&:-webkit-autofill {
+						-webkit-text-fill-color: white;
+						-webkit-box-shadow: 0 0 0px 100px #161b3a inset;
 					}
 				}
 				textarea {
 					padding: 10px;
 					border-radius: 5px;
 					border: white solid 2px;
+					background-color: transparent;
+					color: white;
 					&:focus-visible {
 						outline: none;
 					}
 				}
 			}
 			button {
-				padding: 15px;
-				min-width: 200px;
-				border-radius: 5px;
+				display: flex;
+				align-items: center;
+				padding: 2px;
+				font-size: 25px;
+				border-radius: 25px;
+				color: #cccedd;
+				background-color: transparent;
+				transition: all 0.2s ease;
+				box-shadow: -2px -2px 6px #39417a, 2px 2px 6px #00000080;
+				cursor: pointer;
+
+				.inner {
+					padding: 8px 30px;
+					border-radius: 25px;
+					&:active {
+						box-shadow: inset -2px -2px 5px #39417a, inset 2px 2px 5px #00000080;
+					}
+				}
+				&:hover {
+					color: #e4e5ee;
+					box-shadow: -2px -2px 3px #39417a, 2px 2px 3px #00000080;
+				}
+				&.active {
+					color: white;
+					box-shadow: -2px -2px 3px #39417a, 2px 2px 3px #00000080;
+					background-color: #0000001c;
+				}
 			}
 		}
 

@@ -110,11 +110,15 @@ const ContactForm = () => {
 				</div>
 				{isFormSubmitted ? (
 					<button type='submit' disabled>
-						<h6>Message Sent</h6>
+						<div className='inner'>
+							<h6>message sent</h6>
+						</div>
 					</button>
 				) : (
 					<button type='submit'>
-						<h6>Send</h6>
+						<div className='inner'>
+							<h6>send</h6>
+						</div>
 					</button>
 				)}
 			</form>
