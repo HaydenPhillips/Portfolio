@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { Asteroid1, Asteroid2, Asteroid3 } from './Asteroid';
+import React, { Fragment } from 'react'
+import { useInView } from 'react-intersection-observer'
+import { Asteroid1, Asteroid2, Asteroid3 } from './Asteroid'
 
 const ServicesPage = () => {
 	const [ref, inView] = useInView({
 		threshold: 0,
 		triggerOnce: true,
-	});
+	})
 
 	return (
 		<Fragment>
@@ -18,11 +18,11 @@ const ServicesPage = () => {
 						<div className='details'>
 							<p>
 								I aim to produce highly performant and secure software solutions
-								with great code readability and maintainability. I have been
-								programming for five years, three of which in the web space.
-								Making use of my experience with modern software tools, I am
-								able to design and build full stack web applications, from
-								conception to launch.
+								with an emphasis on code readability and maintainability. I have
+								been programming for five years, three of which have been in the
+								web space, both front-end and back-end. Making use of my
+								experience with modern software tools, I am able to design and
+								develop full stack web applications, from conception to launch.
 							</p>
 							<h1 className='subtitle'>programming tools & language</h1>
 							<div className='detail-item'>
@@ -130,7 +130,7 @@ const ServicesPage = () => {
 				{inView && <Asteroid3 />}
 			</section>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default ServicesPage;
+export default ServicesPage

@@ -1,35 +1,24 @@
-import React from 'react';
+import React from 'react'
 
 const Navbar = ({ handleClick, isActive }) => {
 	return (
 		<nav>
 			<div className='navbar'>
 				<button
-					className={`nav-button ${isActive === 'about' && 'active'}`}
+					className={`nav-button ${isActive === 'landing' && 'active'}`}
 					onClick={() => {
-						handleClick('about');
+						handleClick('landing')
 					}}
 				>
 					<div className='inner'>
-						<h6>about</h6>
-					</div>
-				</button>
-
-				<button
-					className={`nav-button ${isActive === 'services' && 'active'}`}
-					onClick={() => {
-						handleClick('services');
-					}}
-				>
-					<div className='inner'>
-						<h6>services</h6>
+						<h6>landing</h6>
 					</div>
 				</button>
 
 				<button
 					className={`nav-button ${isActive === 'projects' && 'active'}`}
 					onClick={() => {
-						handleClick('projects');
+						handleClick('projects')
 					}}
 				>
 					<div className='inner'>
@@ -38,9 +27,20 @@ const Navbar = ({ handleClick, isActive }) => {
 				</button>
 
 				<button
+					className={`nav-button ${isActive === 'experience' && 'active'}`}
+					onClick={() => {
+						handleClick('experience')
+					}}
+				>
+					<div className='inner'>
+						<h6>experience</h6>
+					</div>
+				</button>
+
+				<button
 					className={`nav-button ${isActive === 'contact' && 'active'}`}
 					onClick={() => {
-						handleClick('contact');
+						handleClick('contact')
 					}}
 				>
 					<div className='inner'>
@@ -49,7 +49,7 @@ const Navbar = ({ handleClick, isActive }) => {
 				</button>
 			</div>
 		</nav>
-	);
-};
+	)
+}
 
-export default Navbar;
+export default Navbar
