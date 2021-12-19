@@ -401,7 +401,7 @@ nav {
 				.title {
 					display: flex;
 					flex-direction: column;
-					min-width: 300px;
+					width: 300px;
 					justify-items: flex-start;
 					line-height: 1.1;
 					margin-top: -5px;
@@ -419,8 +419,21 @@ nav {
 					margin: 0;
 					padding: 0;
 
+					&.row {
+						.text-item {
+							flex-direction: row;
+						}
+					}
+					&.indent {
+						.text-item {
+							p {
+								margin-left: 30px;
+							}
+						}
+					}
 					.text-item {
 						display: flex;
+						flex-direction: column;
 						gap: 10px;
 
 						p {
@@ -593,6 +606,7 @@ nav {
 					}
 					&:-webkit-autofill {
 						-webkit-text-fill-color: white;
+						box-shadow: 0 0 0px 100px #161b3a inset;
 						-webkit-box-shadow: 0 0 0px 100px #161b3a inset;
 					}
 				}
