@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
-import { Slug } from '../../../Animations';
-import { Link } from 'react-router-dom';
+import React, { Fragment } from 'react'
+import { Slug } from '../../../Animations'
+import { Link } from 'react-router-dom'
 
 export default function Zap({ onClose }) {
 	return (
@@ -20,8 +20,6 @@ export default function Zap({ onClose }) {
 					<div className='left'>
 						<Slug delay={400}>
 							<div className='details'>Details</div>
-							{/* <div className="corner-left"></div> */}
-							{/* <div className="corner-right"></div> */}
 							<div className='row'>
 								<div className='small-title'>Overview</div>
 								<div className='text'>
@@ -67,5 +65,5 @@ export default function Zap({ onClose }) {
 				</div>
 			</div>
 		</Fragment>
-	);
+	)
 }

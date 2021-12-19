@@ -4,5 +4,12 @@
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact"
 	},
-	"emmet.triggerExpansionOnTab": true
+	"emmet.triggerExpansionOnTab": true,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"editor.detectIndentation": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true
 }

@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
-import { Slug } from '../../../Animations.js';
-import { Link } from 'react-router-dom';
+import React, { Fragment } from 'react'
+import { Slug } from '../../../Animations.js'
+import { Link } from 'react-router-dom'
 
 export default function Roy({ onClose }) {
 	return (
@@ -23,10 +23,10 @@ export default function Roy({ onClose }) {
 							<div className='row'>
 								<div className='small-title'>Overview</div>
 								<div className='text'>
-									Roy Apparel is a menswear brand that was owned and operated by
-									myself between 2014 & 2017 in Wellington NZ. Good times were
-									had, many lessons learnt, quality garments and digital content
-									was made.
+									Roy Apparel is a menswear brand that I owned and operated
+									between 2014 & 2017 in Wellington NZ. Good times were had,
+									many lessons were learnt, quality garments and digital content were
+									made.
 								</div>
 							</div>
 							<div className='row'>
@@ -70,5 +70,5 @@ export default function Roy({ onClose }) {
 				</div>
 			</div>
 		</Fragment>
-	);
+	)
 }

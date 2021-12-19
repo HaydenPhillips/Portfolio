@@ -1,13 +1,13 @@
-import React, { useState, Fragment } from 'react';
-import PlayfulRectangle from './PlayfulRectangle';
-import Data from './Data';
+import React, { useState, Fragment } from 'react'
+import PlayfulRectangle from './PlayfulRectangle'
+import projectCardData from './Data'
 
 const Projects = () => {
-	const [data] = useState(Data);
+	const [data] = useState(projectCardData)
+
 	return (
 		<Fragment>
 			<div className='page-wrap'>
-				<h1 className='projects-title'>projects</h1>
 				<div className='projects-grid'>
 					<div className='col one'>
 						<PlayfulRectangle
@@ -31,12 +31,6 @@ const Projects = () => {
 							tags={data[2].tags}
 							color={data[2].color}
 						/>
-						<PlayfulRectangle
-							componentName={data[3].componentName}
-							name={data[3].name}
-							tags={data[3].tags}
-							color={data[3].color}
-						/>
 
 						<PlayfulRectangle
 							componentName={data[4].componentName}
@@ -53,22 +47,16 @@ const Projects = () => {
 							color={data[5].color}
 						/>
 						<PlayfulRectangle
-							componentName={data[6].componentName}
-							name={data[6].name}
-							tags={data[6].tags}
-							color={data[6].color}
-						/>
-						<PlayfulRectangle
-							componentName={data[7].componentName}
-							name={data[7].name}
-							tags={data[7].tags}
-							color={data[7].color}
+							componentName={data[3].componentName}
+							name={data[3].name}
+							tags={data[3].tags}
+							color={data[3].color}
 						/>
 					</div>
 				</div>
 			</div>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default Projects;
+export default Projects

@@ -41,22 +41,4 @@ export default [
 		tags: '+animal-sanctuary +jquery +php +word-press +scss',
 		color: 'linear-gradient(#adc5ff, #beacff)',
 	},
-	// {
-	// 	componentName: 'Hades',
-	// 	name: 'Hades',
-	// 	tags: '+animation +react-spring',
-	// 	color: 'linear-gradient(#adc5ff, #beacff)',
-	// },
-	{
-		componentName: 'Zap',
-		name: 'Zap',
-		tags: '+basic-prototype +mobile-application',
-		color: 'linear-gradient(#acb8ff, #c08fee)',
-	},
-	{
-		componentName: 'Planter',
-		name: 'Planter Project',
-		tags: '+whitepaper +DAO +blockchain',
-		color: 'linear-gradient(#73b0ff, #adc5ff)',
-	},
-];
+]
