@@ -24,19 +24,18 @@ export default function Roy({ onClose }) {
 								<div className='small-title'>Overview</div>
 								<div className='text'>
 									Roy Apparel is a menswear brand that I owned and operated
-									between 2014 & 2017 in Wellington NZ. Good times were had,
-									many lessons were learnt, quality garments and digital content were
+									between 2014 & 2017 in Wellington NZ. Good times were had, many
+									lessons were learnt, quality garments and digital content were
 									made.
 								</div>
 							</div>
 							<div className='row'>
 								<div className='small-title'>Roles & Responsibilities</div>
 								<div className='text'>
-									- Design and manufacture clothing from concept to final
-									product
+									- Design and manufacture clothing from concept to final product
 									<br />
-									- Produce digital content e.g. product photography,
-									videography, animations, lookbooks
+									- Produce digital content e.g. product photography, videography,
+									animations, lookbooks
 									<br />
 									- Coordinated all activities required to bring the product to
 									market

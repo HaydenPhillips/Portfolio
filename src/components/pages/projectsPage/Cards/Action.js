@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
-import { Slug } from '../../../Animations';
-import { Link } from 'react-router-dom';
+import React, { Fragment } from 'react'
+import { Slug } from '../../../Animations'
+import { Link } from 'react-router-dom'
 
 export default function Action({ onClose }) {
 	return (
@@ -32,8 +32,8 @@ export default function Action({ onClose }) {
 							<div className='row'>
 								<div className='small-title'>Client info</div>
 								<div className='text'>
-									This client is a budding company in the auto mechanics
-									industry, specialising in motorsports racing.
+									This client is a budding company in the auto mechanics industry,
+									specialising in motorsports racing.
 								</div>
 							</div>
 							<div className='row'>
@@ -44,14 +44,13 @@ export default function Action({ onClose }) {
 					</div>
 					<div className='right'>
 						<div className='image'>
-							<div
-								alt='action-preview'
-								className='image-preview actionPreview'
-							/>
+							<div alt='action-preview' className='image-preview actionPreview' />
 						</div>
 						<div className='clickables'>
 							<Link
-								to={{ pathname: 'https://actionmotorsport.co.nz' }}
+								to={{
+									pathname: 'https://actionmotorsport.co.nz'
+								}}
 								target='_blank'
 								activeClassName='active'
 							>
@@ -66,5 +65,5 @@ export default function Action({ onClose }) {
 				</div>
 			</div>
 		</Fragment>
-	);
+	)
 }

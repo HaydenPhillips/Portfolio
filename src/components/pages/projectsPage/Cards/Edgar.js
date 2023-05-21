@@ -1,17 +1,17 @@
-import React, { Fragment } from 'react';
-import { Slug } from '../../../Animations.js';
-import { Link } from 'react-router-dom';
-import Flickity from 'react-flickity-component';
-import kindness from '../../../../assets/images/project_screenshots/edgar/kindness.jpg';
-import tickets from '../../../../assets/images/project_screenshots/edgar/tickets.jpg';
-import gallery from '../../../../assets/images/project_screenshots/edgar/gallery.jpg';
+import React, { Fragment } from 'react'
+import { Slug } from '../../../Animations.js'
+import { Link } from 'react-router-dom'
+import Flickity from 'react-flickity-component'
+import kindness from '../../../../assets/images/project_screenshots/edgar/kindness.jpg'
+import tickets from '../../../../assets/images/project_screenshots/edgar/tickets.jpg'
+import gallery from '../../../../assets/images/project_screenshots/edgar/gallery.jpg'
 
 export default function Edgar({ onClose }) {
 	const flickityOptions = {
 		wrapAround: true,
 		contain: true,
-		adaptiveHeight: true,
-	};
+		adaptiveHeight: true
+	}
 
 	return (
 		<Fragment>
@@ -41,10 +41,10 @@ export default function Edgar({ onClose }) {
 							<div className='row'>
 								<div className='details'>Details</div>
 								<div className='text'>
-									Edgar’s Mission is a not for profit sanctuary for rescued
-									farmed animals that seeks to create a humane and just world
-									for humans and non-humans. Home to over 400 rescued animals in
-									Victoria, Australia.
+									Edgar’s Mission is a not for profit sanctuary for rescued farmed
+									animals that seeks to create a humane and just world for humans
+									and non-humans. Home to over 400 rescued animals in Victoria,
+									Australia.
 								</div>
 							</div>
 							<div className='row'>
@@ -65,7 +65,9 @@ export default function Edgar({ onClose }) {
 							<div className='row'>
 								<div className='clickables'>
 									<Link
-										to={{ pathname: 'http://edgarsmission.kinsta.cloud/' }}
+										to={{
+											pathname: 'http://edgarsmission.kinsta.cloud/'
+										}}
 										target='_blank'
 										activeClassName='active'
 									>
@@ -82,5 +84,5 @@ export default function Edgar({ onClose }) {
 				</div>
 			</div>
 		</Fragment>
-	);
+	)
 }

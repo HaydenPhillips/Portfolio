@@ -16,14 +16,13 @@ const ExperiencePage = () => {
 					<ul className='details gap-increase'>
 						<li className='text-item'>
 							<p>
-								I have been designing and developing web applications for the
-								past three years. Working freelance for the most part, with a
-								stint at NZs largest tech shop, ANZ. Throughout this time I have
-								collaborated with a range of clients, digital studios,
-								designers, and developers to create outstanding products for the
-								web. My aim is to deliver beautiful, accessible, and robust
-								screen based interfaces, helping to improve the experience of
-								the user.
+								I have been designing and developing web applications for the past
+								three years. Working freelance for the most part, with a stint at
+								NZs largest tech shop, ANZ. Throughout this time I have collaborated
+								with a range of clients, digital studios, designers, and developers
+								to create outstanding products for the web. My aim is to deliver
+								beautiful, accessible, and robust screen based interfaces, helping
+								to improve the experience of the user.
 							</p>
 						</li>
 					</ul>
@@ -34,20 +33,20 @@ const ExperiencePage = () => {
 					<ul className='details gap-increase'>
 						<li className='text-item'>
 							<p>
-								For fun, I play sports- mainly basketball with a bit of
-								badminton, squash, summer volleyball, and table tennis. I mess
-								around with a few video games like Tekken and GTA, but my
-								favourite game of all is chess.
+								For fun, I play sports- mainly basketball with a bit of badminton,
+								squash, summer volleyball, and table tennis. I mess around with a
+								few video games like Tekken and GTA, but my favourite game of all is
+								chess.
 							</p>
 							<p>
-								To scratch my creative itch I make clothing, which was my bread
-								and butter prior to my career in software. I'm always exploring
-								new terrains with a camera in hand, and friends by side.
+								To scratch my creative itch I make clothing, which was my bread and
+								butter prior to my career in software. I'm always exploring new
+								terrains with a camera in hand, and friends by side.
 							</p>
 							<p>
-								I'm a curious and open minded individual, so I often ask a lot
-								of questions. This helps me become a better problem solver as it
-								gives rise to exploration and discovery of new possibilities.
+								I'm a curious and open minded individual, so I often ask a lot of
+								questions. This helps me become a better problem solver as it gives
+								rise to exploration and discovery of new possibilities.
 							</p>
 						</li>
 						<li className='text-item'>
@@ -143,19 +142,19 @@ const ExperiencePage = () => {
 							<h4 className='subtitle'>Papers</h4>
 							<p>
 								Application Development, Software Development, Artificial
-								Intelligence, Machine Learning, Database Systems Engineering,
-								User Interface Design, Computer Graphics, Advanced Data
-								Structures & Algorithms, Software Correctness, Safety Critical
-								Systems, Systems Programming, Engineering Modelling & Design,
-								Computer Networks, Compilers & Interpreters.
+								Intelligence, Machine Learning, Database Systems Engineering, User
+								Interface Design, Computer Graphics, Advanced Data Structures &
+								Algorithms, Software Correctness, Safety Critical Systems, Systems
+								Programming, Engineering Modelling & Design, Computer Networks,
+								Compilers & Interpreters.
 							</p>
 							<p>
 								Blockchain Bootcamp, Project Management, Digital Innovation &
 								Enterprise.
 							</p>
 							<p>
-								Engineering Math with logic and stats. Intro to Physics, Physics
-								for Electronics, Engineering Science.
+								Engineering Math with logic and stats. Intro to Physics, Physics for
+								Electronics, Engineering Science.
 							</p>
 						</li>
 					</ul>

@@ -6,10 +6,9 @@ import { useSpring, animated } from '@react-spring/web'
 const calc = (x, y, rect) => [
 	-(y - rect.top - rect.height / 2) / 10,
 	(x - rect.left - rect.width / 2) / 10,
-	1.1,
+	1.1
 ]
-const trans = (x, y, s) =>
-	`perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 export default function PlayfulRectangle({ componentName, name, tags, color }) {
 	const ref = useRef(null)
@@ -23,7 +22,7 @@ export default function PlayfulRectangle({ componentName, name, tags, color }) {
 		clamp: false,
 		precision: 0.01,
 		velocity: 0,
-		easing: (t) => t,
+		easing: (t) => t
 	}
 
 	const onClose = () => {
@@ -38,7 +37,10 @@ export default function PlayfulRectangle({ componentName, name, tags, color }) {
 				<div className=' card-main' ref={ref}>
 					<animated.div
 						className='playful-card'
-						style={{ transform: props.xys.to(trans), backgroundImage: color }}
+						style={{
+							transform: props.xys.to(trans),
+							backgroundImage: color
+						}}
 						onMouseLeave={() => set([0, 0, 1])}
 						onMouseMove={(e) => {
 							const rect = ref.current.getBoundingClientRect()

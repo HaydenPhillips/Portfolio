@@ -9,7 +9,7 @@ const ContactFormSpringload = () => {
 		tiger: false,
 		snake: false,
 		donkey: false,
-		tigerType: '',
+		tigerType: ''
 	})
 
 	const handleInputCheckbox = (e) => {
@@ -58,7 +58,7 @@ const ContactFormSpringload = () => {
 			tiger: false,
 			snake: false,
 			donkey: false,
-			tigerType: '',
+			tigerType: ''
 		})
 		setColour('white')
 		setEmail('')
@@ -188,7 +188,7 @@ const ContactFormSpringload = () => {
 				<div
 					className='form-field'
 					style={{
-						visibility: animals.tiger ? 'visible' : 'hidden',
+						visibility: animals.tiger ? 'visible' : 'hidden'
 					}}
 				>
 					<label htmlFor='tigerType'>Type of tiger</label>
@@ -199,7 +199,7 @@ const ContactFormSpringload = () => {
 						onChange={handleInputText}
 						required={animals.tiger}
 						style={{
-							border: `${colour} solid 2px`,
+							border: `${colour} solid 2px`
 						}}
 					/>
 				</div>

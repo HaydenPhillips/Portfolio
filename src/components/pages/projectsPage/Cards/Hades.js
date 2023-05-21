@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
-import { Slug } from '../../../Animations.js';
-import HadesAnimation from '../Projects/HadesAnimation';
+import React, { Fragment } from 'react'
+import { Slug } from '../../../Animations.js'
+import HadesAnimation from '../Projects/HadesAnimation'
 
 export default function Hades({ onClose }) {
 	return (
@@ -40,5 +40,5 @@ export default function Hades({ onClose }) {
 				</div>
 			</div>
 		</Fragment>
-	);
+	)
 }

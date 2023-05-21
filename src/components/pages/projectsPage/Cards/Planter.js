@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
-import { Slug } from '../../../Animations';
-import { Link } from 'react-router-dom';
+import React, { Fragment } from 'react'
+import { Slug } from '../../../Animations'
+import { Link } from 'react-router-dom'
 
 export default function Planter({ onClose }) {
 	return (
@@ -23,11 +23,11 @@ export default function Planter({ onClose }) {
 							<div className='row'>
 								<div className='small-title'>Overview</div>
 								<div className='text'>
-									Planting trees to offset carbon emissions is not a new idea,
-									but creating an autonomous organisation to make that happen
+									Planting trees to offset carbon emissions is not a new idea, but
+									creating an autonomous organisation to make that happen
 									<b>is</b>. This whitepaper explores the intricacies of a
-									Decentralised Autonomous Organisation (DAO), and present them
-									in a palatable manner. Written during a summer trimester at
+									Decentralised Autonomous Organisation (DAO), and present them in
+									a palatable manner. Written during a summer trimester at
 									Victoria.
 								</div>
 							</div>
@@ -50,10 +50,7 @@ export default function Planter({ onClose }) {
 					</div>
 					<div className='right'>
 						<div className='image'>
-							<div
-								alt='planter-preview'
-								className='image-preview planterPreview'
-							/>
+							<div alt='planter-preview' className='image-preview planterPreview' />
 						</div>
 						<div className='clickables'>
 							<Link to={'/whitepaper'} target='_blank' activeClassName='active'>
@@ -68,5 +65,5 @@ export default function Planter({ onClose }) {
 				</div>
 			</div>
 		</Fragment>
-	);
+	)
 }
