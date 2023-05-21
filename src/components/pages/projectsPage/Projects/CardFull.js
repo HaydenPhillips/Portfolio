@@ -1,41 +1,41 @@
-import React from 'react';
-import Roy from '../Cards/Roy';
-import Zap from '../Cards/Zap';
-import Action from '../Cards/Action';
-import Planter from '../Cards/Planter';
-import Hades from '../Cards/Hades';
-import Emma from '../Cards/Emma';
-import Armani from '../Cards/Armani';
-import Edgar from '../Cards/Edgar';
-import Empower from '../Cards/Empower';
+import React from 'react'
+import Roy from '../Cards/Roy'
+import Zap from '../Cards/Zap'
+import Action from '../Cards/Action'
+import Planter from '../Cards/Planter'
+import Hades from '../Cards/Hades'
+import Emma from '../Cards/Emma'
+import Armani from '../Cards/Armani'
+import Edgar from '../Cards/Edgar'
+import Empower from '../Cards/Empower'
 
 const CardFull = ({ componentName, onClose }) => {
 	const component = (cn) => {
 		switch (cn) {
 			case 'Roy':
-				return <Roy onClose={onClose} />;
+				return <Roy onClose={onClose} />
 			case 'Zap':
-				return <Zap onClose={onClose} />;
+				return <Zap onClose={onClose} />
 			case 'Action':
-				return <Action onClose={onClose} />;
+				return <Action onClose={onClose} />
 			case 'Planter':
-				return <Planter onClose={onClose} />;
+				return <Planter onClose={onClose} />
 			case 'Hades':
-				return <Hades onClose={onClose} />;
+				return <Hades onClose={onClose} />
 			case 'Emma':
-				return <Emma onClose={onClose} />;
+				return <Emma onClose={onClose} />
 			case 'Armani':
-				return <Armani onClose={onClose} />;
+				return <Armani onClose={onClose} />
 			case 'Edgar':
-				return <Edgar onClose={onClose} />;
+				return <Edgar onClose={onClose} />
 			case 'Empower':
-				return <Empower onClose={onClose} />;
+				return <Empower onClose={onClose} />
 			default:
-				return null;
+				return null
 		}
-	};
+	}
 
-	return <div>{component(componentName)}</div>;
-};
+	return <div>{component(componentName)}</div>
+}
 
-export default CardFull;
+export default CardFull

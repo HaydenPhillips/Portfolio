@@ -5,14 +5,14 @@ const ContactForm = () => {
 	const [formState, setFormState] = useState({
 		name: '',
 		email: '',
-		message: '',
+		message: ''
 	})
 	const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 
 	const handleChange = (e) => {
 		setFormState({
 			...formState,
-			[e.target.name]: e.target.value,
+			[e.target.name]: e.target.value
 		})
 	}
 
@@ -20,7 +20,7 @@ const ContactForm = () => {
 		const result = fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encode({ 'form-name': 'contact-form', ...formState }),
+			body: encode({ 'form-name': 'contact-form', ...formState })
 		})
 			.then((response) => {
 				setIsFormSubmitted(true)
@@ -28,12 +28,7 @@ const ContactForm = () => {
 				if (response.status === 200) {
 					alert('Message successfully sent.')
 				} else {
-					alert(
-						'Something went wrong: ' +
-							response.status +
-							' ' +
-							response.statusText
-					)
+					alert('Something went wrong: ' + response.status + ' ' + response.statusText)
 				}
 			})
 			.catch((error) => alert(error))
@@ -47,15 +42,13 @@ const ContactForm = () => {
 		setFormState({
 			name: '',
 			email: '',
-			message: '',
+			message: ''
 		})
 	}
 
 	const encode = (data) => {
 		return Object.keys(data)
-			.map(
-				(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-			)
+			.map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
 			.join('&')
 	}
 

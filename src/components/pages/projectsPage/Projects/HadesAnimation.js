@@ -1,19 +1,19 @@
-import React, { Fragment } from 'react';
-import { useSpring, animated } from 'react-spring';
+import React, { Fragment } from 'react'
+import { useSpring, animated } from 'react-spring'
 
-const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
-const trans1 = (x, y) => `translate3d(${x / 40}px, ${y / 40}px,0)`;
-const trans2 = (x, y) => `translate3d(${x / 35 - 75}px, ${y / 35}px,0)`;
-const trans3 = (x, y) => `translate3d(${x / 35 - 5}px, ${y / 35 - 15}px,0)`;
-const trans4 = (x, y) => `translate3d(${x / 40 - 30}px, ${y / 40 - 18}px,0)`;
-const trans5 = (x, y) => `translate3d(${x / 25 - 15}px, ${y / 20 - 10}px,0)`;
-const trans6 = (x, y) => `translate3d(${x / 25 - 65}px, ${y / 20 - 0}px,0)`;
+const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
+const trans1 = (x, y) => `translate3d(${x / 40}px, ${y / 40}px,0)`
+const trans2 = (x, y) => `translate3d(${x / 35 - 75}px, ${y / 35}px,0)`
+const trans3 = (x, y) => `translate3d(${x / 35 - 5}px, ${y / 35 - 15}px,0)`
+const trans4 = (x, y) => `translate3d(${x / 40 - 30}px, ${y / 40 - 18}px,0)`
+const trans5 = (x, y) => `translate3d(${x / 25 - 15}px, ${y / 20 - 10}px,0)`
+const trans6 = (x, y) => `translate3d(${x / 25 - 65}px, ${y / 20 - 0}px,0)`
 
 function HadesAnimation() {
 	const [props, set] = useSpring(() => ({
 		xy: [0, 0],
-		config: { mass: 10, tension: 300, friction: 100 },
-	}));
+		config: { mass: 10, tension: 300, friction: 100 }
+	}))
 	return (
 		<Fragment>
 			<div className='container'>
@@ -56,7 +56,7 @@ function HadesAnimation() {
 				onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
 			></div>
 		</Fragment>
-	);
+	)
 }
 
-export default HadesAnimation;
+export default HadesAnimation

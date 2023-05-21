@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer'
 const ProjectZap = () => {
 	const [prototypeRef, inView] = useInView({
 		threshold: 0,
-		rootMargin: '800px 0px -400px 0px',
+		rootMargin: '800px 0px -400px 0px'
 	})
 
 	return (

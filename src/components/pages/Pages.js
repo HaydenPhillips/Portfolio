@@ -37,7 +37,7 @@ const Pages = () => {
 					backgroundRepeat: 'repeat',
 					backgroundColor: '#161b3a',
 					width: '100%',
-					height: '100%',
+					height: '100%'
 				}}
 			>
 				<ParallaxLayer
@@ -50,7 +50,7 @@ const Pages = () => {
 						width: 'unset',
 						height: '120%',
 						opacity: '0.5',
-						left: '-500px',
+						left: '-500px'
 					}}
 					id='stars-120'
 				/>
@@ -63,7 +63,7 @@ const Pages = () => {
 						backgroundSize: 'cover',
 						width: 'unset',
 						height: '200%',
-						left: '-500px',
+						left: '-500px'
 					}}
 					id='stars-200'
 				/>

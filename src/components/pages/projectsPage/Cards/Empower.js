@@ -1,17 +1,17 @@
-import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import { Slug } from '../../../Animations.js';
-import Flickity from 'react-flickity-component';
-import menuScroll from '../../../../assets/images/project_screenshots/empower/menu_scroll.jpg';
-import ourValues from '../../../../assets/images/project_screenshots/empower/our_value.jpg';
-import videoJS from '../../../../assets/images/project_screenshots/empower/video.jpg';
+import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
+import { Slug } from '../../../Animations.js'
+import Flickity from 'react-flickity-component'
+import menuScroll from '../../../../assets/images/project_screenshots/empower/menu_scroll.jpg'
+import ourValues from '../../../../assets/images/project_screenshots/empower/our_value.jpg'
+import videoJS from '../../../../assets/images/project_screenshots/empower/video.jpg'
 
 const Empower = ({ onClose }) => {
 	const flickityOptions = {
 		wrapAround: true,
 		contain: true,
-		adaptiveHeight: true,
-	};
+		adaptiveHeight: true
+	}
 
 	return (
 		<Fragment>
@@ -42,15 +42,15 @@ const Empower = ({ onClose }) => {
 								<div className='details'>Details</div>
 								<div className='small-title'>Overview</div>
 								<div className='text'>
-									Empower is an advertising and marketing agency headquartered
-									in Cincinnati, Ohio.
+									Empower is an advertising and marketing agency headquartered in
+									Cincinnati, Ohio.
 								</div>
 							</div>
 							<div className='row'>
 								<div className='small-title'>Roles & Responsibilities</div>
 								<div className='text'>
-									- Website development including animations, card sliders, and
-									a custom video player. <br />- Built using JQuery, HTML, CSS,
+									- Website development including animations, card sliders, and a
+									custom video player. <br />- Built using JQuery, HTML, CSS,
 									flickity, and video.js.
 								</div>
 							</div>
@@ -61,7 +61,9 @@ const Empower = ({ onClose }) => {
 							<div className='row'>
 								<div className='clickables'>
 									<Link
-										to={{ pathname: 'https://www.empowermm.com/' }}
+										to={{
+											pathname: 'https://www.empowermm.com/'
+										}}
 										target='_blank'
 										activeClassName='active'
 									>
@@ -78,7 +80,7 @@ const Empower = ({ onClose }) => {
 				</div>
 			</div>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default Empower;
+export default Empower

@@ -12,7 +12,7 @@ const Armani = ({ onClose }) => {
 	const flickityOptions = {
 		wrapAround: true,
 		contain: true,
-		adaptiveHeight: true,
+		adaptiveHeight: true
 	}
 
 	return (

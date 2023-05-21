@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from 'react'
 
 const Design = () => {
 	return (
@@ -10,7 +10,7 @@ const Design = () => {
 				</div>
 			</div>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default Design;
+export default Design

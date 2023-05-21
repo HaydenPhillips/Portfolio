@@ -5,7 +5,7 @@ import { Asteroid1, Asteroid2, Asteroid3 } from './Asteroid'
 const ServicesPage = () => {
 	const [ref, inView] = useInView({
 		threshold: 0,
-		triggerOnce: true,
+		triggerOnce: true
 	})
 
 	return (
@@ -19,10 +19,10 @@ const ServicesPage = () => {
 							<p>
 								I aim to produce highly performant and secure software solutions
 								with an emphasis on code readability and maintainability. I have
-								been programming for five years, three of which have been in the
-								web space, both front-end and back-end. Making use of my
-								experience with modern software tools, I am able to design and
-								develop full stack web applications, from conception to launch.
+								been programming for five years, three of which have been in the web
+								space, both front-end and back-end. Making use of my experience with
+								modern software tools, I am able to design and develop full stack
+								web applications, from conception to launch.
 							</p>
 							<h1 className='subtitle'>programming tools & language</h1>
 							<div className='detail-item'>
@@ -35,9 +35,8 @@ const ServicesPage = () => {
 							<div className='detail-item'>
 								<h5 className='sub-subtitle'>CSS</h5>
 								<p>
-									I style components using SCSS, a CSS pre-processor, that
-									reduces code repetition, and promotes cleaner, more
-									maintainable code.
+									I style components using SCSS, a CSS pre-processor, that reduces
+									code repetition, and promotes cleaner, more maintainable code.
 								</p>
 							</div>
 							<div className='detail-item'>
@@ -52,8 +51,8 @@ const ServicesPage = () => {
 								<p>
 									Working with the DOM directly means it's easy to use and
 									reasonable effective for basic websites, however, I prefer to
-									use tools that utilise state management in a virtual DOM in
-									most cases.
+									use tools that utilise state management in a virtual DOM in most
+									cases.
 								</p>
 							</div>
 							<div className='detail-item'>
@@ -104,19 +103,17 @@ const ServicesPage = () => {
 								<h1 className='subtitle'>wireframing</h1>
 								<p>
 									When building wireframes, I focus on building intuitive
-									navigational structure, prioritisation of content, and
-									arranging elements in a manner that’s clear and effective.
+									navigational structure, prioritisation of content, and arranging
+									elements in a manner that’s clear and effective.
 								</p>
 							</div>
 							<div className='detail-item'>
-								<h1 className='subtitle'>
-									user interface design & prototyping
-								</h1>
+								<h1 className='subtitle'>user interface design & prototyping</h1>
 								<p>
 									I have experience creating user and system flow diagrams that
-									visually map the step by step experience of the user as well
-									as the system logic at play. I also have exposure to personas
-									and usability testing methodology. For fast and effective user
+									visually map the step by step experience of the user as well as
+									the system logic at play. I also have exposure to personas and
+									usability testing methodology. For fast and effective user
 									demonstrations and validation, I tend towards Figma or Xd's
 									prototyping functionality.
 								</p>

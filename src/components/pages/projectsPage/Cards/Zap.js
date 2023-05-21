@@ -23,9 +23,9 @@ export default function Zap({ onClose }) {
 							<div className='row'>
 								<div className='small-title'>Overview</div>
 								<div className='text'>
-									Zap is a way to send and receive payments seamlessly. It
-									allows the ability to split payments between friends, and
-									eliminates delay.
+									Zap is a way to send and receive payments seamlessly. It allows
+									the ability to split payments between friends, and eliminates
+									delay.
 								</div>
 							</div>
 							<div className='row'>
@@ -33,11 +33,11 @@ export default function Zap({ onClose }) {
 								<div className='text'>
 									A mobile application prototype built by myself and two others,
 									Liam Malone and Chris Corbett, in 2020. Leveraging similar
-									services like Venmo and The-Cash-App, I was able to refined
-									and develope from pre-existing apps to create an effective Ui.
-									This prototype was pieced together using figma. The
-									presentation displayed on this website was done so using
-									React. --Work in progress.--
+									services like Venmo and The-Cash-App, I was able to refined and
+									develope from pre-existing apps to create an effective Ui. This
+									prototype was pieced together using figma. The presentation
+									displayed on this website was done so using React. --Work in
+									progress.--
 								</div>
 							</div>
 							<div className='row'>

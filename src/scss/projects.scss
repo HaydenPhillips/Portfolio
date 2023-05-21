@@ -121,8 +121,7 @@ button {
 	text-align: center;
 	padding: 1px 1px;
 	z-index: 2;
-	box-shadow: -2px -2px 8px rgb(255, 255, 255),
-		2px 2px 8px rgba(25, 55, 99, 0.3);
+	box-shadow: -2px -2px 8px rgb(255, 255, 255), 2px 2px 8px rgba(25, 55, 99, 0.3);
 	background-color: transparent;
 	transition: all 0.2s ease;
 	cursor: pointer;
@@ -158,8 +157,7 @@ button {
 	}
 
 	&:hover {
-		box-shadow: -2px -2px 4px rgb(255, 255, 255),
-			2px 2px 4px rgba(25, 55, 99, 0.3);
+		box-shadow: -2px -2px 4px rgb(255, 255, 255), 2px 2px 4px rgba(25, 55, 99, 0.3);
 	}
 }
 

@@ -1,17 +1,17 @@
-import React, { Fragment } from 'react';
-import ReactPlayer from 'react-player';
-import swinging_tag from '../../../../assets/videos/project_roy/swinging_tag.mp4';
-import eva_st from '../../../../assets/videos/project_roy/eva_st.mp4';
-import gif1 from '../../../../assets/images/project_roy/knolling_SS_navy_small.jpg';
-import SS_front_blue from '../../../../assets/images/project_roy/SS_front_blue.jpg';
-import pyramid from '../../../../assets/images/project_roy/pyramid_blue_small.jpg';
-import roy_logo_white from '../../../../assets/images/project_roy/logo_tree_white_small.png';
-import care_instructions from '../../../../assets/images/project_roy/care_instructions.jpg';
-import LS_navy_background from '../../../../assets/images/project_roy/LS_navy_background.jpg';
-import chiffon_macro from '../../../../assets/images/project_roy/chiffon_macro.jpg';
-import falling_leaves from '../../../../assets/images/project_roy/falling_leaves.png';
-import leaves_back from '../../../../assets/images/project_roy/leaves_layer.png';
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+import React, { Fragment } from 'react'
+import ReactPlayer from 'react-player'
+import swinging_tag from '../../../../assets/videos/project_roy/swinging_tag.mp4'
+import eva_st from '../../../../assets/videos/project_roy/eva_st.mp4'
+import gif1 from '../../../../assets/images/project_roy/knolling_SS_navy_small.jpg'
+import SS_front_blue from '../../../../assets/images/project_roy/SS_front_blue.jpg'
+import pyramid from '../../../../assets/images/project_roy/pyramid_blue_small.jpg'
+import roy_logo_white from '../../../../assets/images/project_roy/logo_tree_white_small.png'
+import care_instructions from '../../../../assets/images/project_roy/care_instructions.jpg'
+import LS_navy_background from '../../../../assets/images/project_roy/LS_navy_background.jpg'
+import chiffon_macro from '../../../../assets/images/project_roy/chiffon_macro.jpg'
+import falling_leaves from '../../../../assets/images/project_roy/falling_leaves.png'
+import leaves_back from '../../../../assets/images/project_roy/leaves_layer.png'
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 // import wheel_1 from "../assets/videos/project_roy/sewing_motor_wheel_motion.mp4";
 // import wheel_2 from "../assets/videos/project_roy/overlocker_wheel_motion.mp4";
 // import wheel_3 from "../assets/videos/project_roy/overlocker_motor_wheel_motion.mp4";
@@ -30,7 +30,7 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 // import ParallaxTest from './ParallaxTest';
 
 const ProjectRoy = () => {
-	let parallax;
+	let parallax
 
 	return (
 		<Fragment>
@@ -40,7 +40,7 @@ const ProjectRoy = () => {
 					ref={(ref) => (parallax = ref)}
 					style={{
 						display: 'grid',
-						margin: 'auto',
+						margin: 'auto'
 					}}
 				>
 					<ParallaxLayer
@@ -50,7 +50,7 @@ const ProjectRoy = () => {
 							backgroundImage: `url(${leaves_back})`,
 							backgroundRepeat: 'repeat-y',
 							backgroundSize: 'contain',
-							height: '100%',
+							height: '100%'
 						}}
 					/>
 
@@ -61,7 +61,7 @@ const ProjectRoy = () => {
 							backgroundImage: `url(${falling_leaves})`,
 							backgroundRepeat: 'repeat-y',
 							backgroundSize: 'contain',
-							height: '100%',
+							height: '100%'
 						}}
 					/>
 					<div className='wrapper'>
@@ -72,7 +72,7 @@ const ProjectRoy = () => {
 							style={{
 								display: 'flex',
 								alignItems: 'center',
-								justifyContent: 'center',
+								justifyContent: 'center'
 							}}
 						>
 							<ReactPlayer
@@ -107,7 +107,7 @@ const ProjectRoy = () => {
 							speed={0.5}
 							style={{
 								backgroundPosition: 'center',
-								backgroundColor: 'rgb(244, 244, 244)',
+								backgroundColor: 'rgb(244, 244, 244)'
 							}}
 						/>
 						<ParallaxLayer
@@ -120,7 +120,7 @@ const ProjectRoy = () => {
 								backgroundPosition: 'center',
 								backgroundColor: 'rgb(247, 247, 247)',
 								width: '110%',
-								marginLeft: '-15%',
+								marginLeft: '-15%'
 							}}
 						/>
 
@@ -130,7 +130,7 @@ const ProjectRoy = () => {
 							style={{
 								backgroundImage: `url(${chiffon_macro})`,
 								backgroundSize: 'cover',
-								backgroundPosition: 'center',
+								backgroundPosition: 'center'
 							}}
 						/>
 
@@ -141,7 +141,7 @@ const ProjectRoy = () => {
 								style={{
 									display: 'flex',
 									alignItems: 'center',
-									justifyContent: 'center',
+									justifyContent: 'center'
 								}}
 							>
 								<div className='title'>
@@ -155,7 +155,7 @@ const ProjectRoy = () => {
 								style={{
 									display: 'flex',
 									alignItems: 'center',
-									justifyContent: 'center',
+									justifyContent: 'center'
 								}}
 							>
 								<div className='sub-title'>
@@ -168,14 +168,10 @@ const ProjectRoy = () => {
 								style={{
 									display: 'flex',
 									alignItems: 'center',
-									justifyContent: 'center',
+									justifyContent: 'center'
 								}}
 							>
-								<img
-									src={roy_logo_white}
-									className='logo-small'
-									alt='roy_logo'
-								/>
+								<img src={roy_logo_white} className='logo-small' alt='roy_logo' />
 							</ParallaxLayer>
 
 							<ParallaxLayer
@@ -184,7 +180,7 @@ const ProjectRoy = () => {
 								style={{
 									display: 'flex',
 									alignItems: 'center',
-									justifyContent: 'flex-start',
+									justifyContent: 'flex-start'
 								}}
 							>
 								<img className='image' src={SS_front_blue} alt='' />
@@ -195,7 +191,7 @@ const ProjectRoy = () => {
 								style={{
 									display: 'flex',
 									alignItems: 'center',
-									justifyContent: 'center',
+									justifyContent: 'center'
 								}}
 							>
 								<img className='image' src={pyramid} alt='' />
@@ -206,7 +202,7 @@ const ProjectRoy = () => {
 								style={{
 									display: 'flex',
 									alignItems: 'center',
-									justifyContent: 'flex-end',
+									justifyContent: 'flex-end'
 								}}
 							>
 								<img className='image' src={gif1} alt='' />
@@ -218,7 +214,7 @@ const ProjectRoy = () => {
 								style={{
 									display: 'flex',
 									alignItems: 'center',
-									marginLeft: '5%',
+									marginLeft: '5%'
 								}}
 							>
 								<ReactPlayer
@@ -239,7 +235,7 @@ const ProjectRoy = () => {
 									alignItems: 'center',
 									justifyContent: 'flex-end',
 									justifyItems: 'flex-end',
-									marginRight: '5%',
+									marginRight: '5%'
 								}}
 							>
 								<div className='text-30'>
@@ -257,7 +253,7 @@ const ProjectRoy = () => {
 								speed={1.2}
 								style={{
 									display: 'flex',
-									alignItems: 'center',
+									alignItems: 'center'
 								}}
 							>
 								<img
@@ -275,7 +271,7 @@ const ProjectRoy = () => {
 										position: 'static',
 										display: 'flex',
 										alignItems: 'center',
-										height: 'auto',
+										height: 'auto'
 									}}
 								>
 									<div className='header'>
@@ -292,7 +288,7 @@ const ProjectRoy = () => {
 										position: 'static',
 										display: 'flex',
 										alignItems: 'center',
-										height: 'auto',
+										height: 'auto'
 									}}
 								>
 									<div className='text-50'>
@@ -315,7 +311,7 @@ const ProjectRoy = () => {
 									position: 'static',
 									display: 'flex',
 									alignContent: 'center',
-									height: 'auto',
+									height: 'auto'
 								}}
 							>
 								<div className='text'>
@@ -334,7 +330,7 @@ const ProjectRoy = () => {
 				</Parallax>
 			</div>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default ProjectRoy;
+export default ProjectRoy

@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Fragment } from 'react'
+import ReactDOM from 'react-dom'
 
 export default function Modal({ open, children }) {
 	if (!open) {
-		return null;
+		return null
 	}
 
 	return ReactDOM.createPortal(
@@ -13,5 +13,5 @@ export default function Modal({ open, children }) {
 			</div>
 		</Fragment>,
 		document.getElementById('portal')
-	);
+	)
 }
