@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { PureComponent, Children } from 'react'
 import { Transition, Trail, animated } from 'react-spring/renderprops'
 import { useSpring } from 'react-spring'
 
-export class Slug extends React.PureComponent {
+export class Slug extends PureComponent {
 	render() {
 		const {
 			children,
@@ -10,7 +10,7 @@ export class Slug extends React.PureComponent {
 			to = { opacity: 1, transform: 'translate3d(0, 0px, 0)' },
 			...rest
 		} = this.props
-		const result = React.Children.map(children, (child) => (styles) => {
+		const result = Children.map(children, (child) => (styles) => {
 			const Component = animated[child.type] || animated(child.type)
 			const props = {
 				...child.props,
@@ -36,7 +36,7 @@ export class Slug extends React.PureComponent {
 	}
 }
 
-export class Diagonal extends React.PureComponent {
+export class Diagonal extends PureComponent {
 	render() {
 		const {
 			children,
@@ -44,7 +44,7 @@ export class Diagonal extends React.PureComponent {
 			to = { transform: 'translate3d(0, 0px, 0)' },
 			...rest
 		} = this.props
-		const result = React.Children.map(children, (child) => (styles) => {
+		const result = Children.map(children, (child) => (styles) => {
 			const Component = animated[child.type] || animated(child.type)
 			const props = {
 				...child.props,
@@ -70,7 +70,7 @@ export class Diagonal extends React.PureComponent {
 	}
 }
 
-export class Fade extends React.PureComponent {
+export class Fade extends PureComponent {
 	render() {
 		const {
 			children,
@@ -109,7 +109,7 @@ export class Fade extends React.PureComponent {
 	}
 }
 
-export class FadeUp extends React.PureComponent {
+export class FadeUp extends PureComponent {
 	render() {
 		const {
 			children,
