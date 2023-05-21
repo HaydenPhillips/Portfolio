@@ -32,7 +32,7 @@ function LayeredPhotoMouseAnimation() {
 					style={{ transform: props.xy.interpolate(trans3) }}
 					alt='ferriswheel'
 				>
-					{/* <div className='plus'>+</div> */}
+					{/* <div className='plus'>+</div>  */}
 				</animated.div>
 				<animated.div
 					className='bush'
